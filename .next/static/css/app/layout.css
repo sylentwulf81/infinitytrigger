@@ -767,9 +767,6 @@ video {
 .ml-2 {
   margin-left: 0.5rem;
 }
-.ml-4 {
-  margin-left: 1rem;
-}
 .ml-auto {
   margin-left: auto;
 }
@@ -1472,6 +1469,9 @@ video {
 .fill-current {
   fill: currentColor;
 }
+.object-contain {
+  object-fit: contain;
+}
 .object-cover {
   object-fit: cover;
 }
@@ -1615,10 +1615,6 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
 .text-\[0\.8rem\] {
   font-size: 0.8rem;
 }
@@ -1653,9 +1649,6 @@ video {
 }
 .font-semibold {
   font-weight: 600;
-}
-.italic {
-  font-style: italic;
 }
 .tabular-nums {
   --tw-numeric-spacing: tabular-nums;
@@ -2950,10 +2943,6 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:p-8 {
-    padding: 2rem;
   }
 
   .md\:px-6 {

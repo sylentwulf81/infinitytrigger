@@ -1,69 +1,13 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, Code, Globe, Smartphone, Users } from "lucide-react"
-import { ParallaxSection } from "@/components/parallax-section"
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ArrowRight, Code, Globe, Smartphone, Users } from "lucide-react";
+import { ParallaxSection } from "@/components/parallax-section";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="/images/logo.png"
-              alt="Infinity Trigger Logo"
-              width={32}
-              height={32}
-              className="rounded-full object-cover"
-            />
-            <span className="text-xl font-bold tracking-tight">Infinity Trigger</span>
-          </Link>
-          <nav className="hidden md:flex gap-6">
-            <Link href="#services" className="text-sm font-medium relative group">
-              <span className="block">Services</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link href="/projects" className="text-sm font-medium relative group">
-              <span className="block">Projects</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link href="/about" className="text-sm font-medium relative group">
-              <span className="block">About</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link href="/contact" className="text-sm font-medium relative group">
-              <span className="block">Contact</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-          </nav>
-          <div className="flex items-center gap-4">
-            <Link href="/contact" className="hidden md:block">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Get in Touch</Button>
-            </Link>
-            <Button variant="outline" size="icon" className="md:hidden">
-              <span className="sr-only">Toggle menu</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-6 w-6"
-              >
-                <line x1="4" x2="20" y1="12" y2="12" />
-                <line x1="4" x2="20" y1="6" y2="6" />
-                <line x1="4" x2="20" y1="18" y2="18" />
-              </svg>
-            </Button>
-          </div>
-        </div>
-      </header>
+    <div className="flex flex-col">
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="container px-4 md:px-6">
@@ -74,8 +18,9 @@ export default function Home() {
                     Full-Stack Web Development from Nagano, Japan
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    We build beautiful, functional websites and mobile apps that help businesses grow. From concept to
-                    deployment, we handle every aspect of your digital presence.
+                    We build beautiful, functional websites and mobile apps that
+                    help businesses grow. From concept to deployment, we handle
+                    every aspect of your digital presence.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -96,7 +41,9 @@ export default function Home() {
                       className="w-full min-[400px]:w-auto group border-primary/20 hover:border-primary/50"
                     >
                       <span>View Our Work</span>
-                      <span className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">→</span>
+                      <span className="ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        →
+                      </span>
                     </Button>
                   </Link>
                 </div>
@@ -114,73 +61,84 @@ export default function Home() {
           </div>
         </section>
 
-        <ParallaxSection
-          backgroundImage="/images/services-bg.png"
-          className="w-full py-12 md:py-24 lg:py-32"
-          id="services"
-        >
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Our Services
+        <div id="services">
+          <ParallaxSection
+            backgroundImage="/images/services-bg.png"
+            className="w-full py-12 md:py-24 lg:py-32"
+          >
+            <div className="container px-4 md:px-6">
+              <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                <div className="space-y-2">
+                  <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
+                    Our Services
+                  </div>
+                  <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-white">
+                    Comprehensive Web & Mobile Solutions
+                  </h2>
+                  <p className="max-w-[900px] text-white/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    We offer end-to-end development services to bring your
+                    digital vision to life.
+                  </p>
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-white">
-                  Comprehensive Web & Mobile Solutions
-                </h2>
-                <p className="max-w-[900px] text-white/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  We offer end-to-end development services to bring your digital vision to life.
-                </p>
+              </div>
+              <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3">
+                <Card className="relative overflow-hidden bg-background/95 backdrop-blur-sm">
+                  <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20">
+                      <Globe className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-bold">Web Development</h3>
+                    <p className="text-muted-foreground">
+                      Custom websites and web applications built with modern
+                      frameworks and responsive design.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="relative overflow-hidden bg-background/95 backdrop-blur-sm">
+                  <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20">
+                      <Smartphone className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-bold">Mobile Apps</h3>
+                    <p className="text-muted-foreground">
+                      Native and cross-platform mobile applications for iOS and
+                      Android devices.
+                    </p>
+                  </CardContent>
+                </Card>
+                <Card className="relative overflow-hidden bg-background/95 backdrop-blur-sm">
+                  <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20">
+                      <Code className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-bold">Full-Stack Solutions</h3>
+                    <p className="text-muted-foreground">
+                      End-to-end development with robust backend systems and
+                      intuitive frontends.
+                    </p>
+                  </CardContent>
+                </Card>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3">
-              <Card className="relative overflow-hidden bg-background/95 backdrop-blur-sm">
-                <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20">
-                    <Globe className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold">Web Development</h3>
-                  <p className="text-muted-foreground">
-                    Custom websites and web applications built with modern frameworks and responsive design.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="relative overflow-hidden bg-background/95 backdrop-blur-sm">
-                <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20">
-                    <Smartphone className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold">Mobile Apps</h3>
-                  <p className="text-muted-foreground">
-                    Native and cross-platform mobile applications for iOS and Android devices.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="relative overflow-hidden bg-background/95 backdrop-blur-sm">
-                <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20">
-                    <Code className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="text-xl font-bold">Full-Stack Solutions</h3>
-                  <p className="text-muted-foreground">
-                    End-to-end development with robust backend systems and intuitive frontends.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </ParallaxSection>
+          </ParallaxSection>
+        </div>
 
-        <section id="featured-projects" className="w-full py-12 md:py-24 lg:py-32">
+        <section
+          id="featured-projects"
+          className="w-full py-12 md:py-24 lg:py-32"
+        >
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                   Featured Projects
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Our Recent Work</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                  Our Recent Work
+                </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Take a look at some of our recent projects that showcase our expertise and creativity.
+                  Take a look at some of our recent projects that showcase our
+                  expertise and creativity.
                 </p>
               </div>
             </div>
@@ -205,8 +163,9 @@ export default function Home() {
                       </div>
                     </div>
                     <p className="text-muted-foreground mb-4">
-                      A daily writing companion for iOS that helps users develop a consistent writing practice with
-                      guided prompts, progress tracking, and journaling tools.
+                      A daily writing companion for iOS that helps users develop
+                      a consistent writing practice with guided prompts,
+                      progress tracking, and journaling tools.
                     </p>
                     <div className="flex items-center text-primary font-medium group-hover:underline">
                       View Project{" "}
@@ -235,7 +194,8 @@ export default function Home() {
                       </div>
                     </div>
                     <p className="text-muted-foreground mb-4">
-                      A full-featured online shopping platform with advanced product filtering and secure checkout.
+                      A full-featured online shopping platform with advanced
+                      product filtering and secure checkout.
                     </p>
                     <div className="flex items-center text-primary font-medium group-hover:underline">
                       View All Projects{" "}
@@ -248,7 +208,10 @@ export default function Home() {
 
             <div className="flex justify-center">
               <Link href="/projects">
-                <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                <Button
+                  size="lg"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90"
+                >
                   View All Projects
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -257,67 +220,79 @@ export default function Home() {
           </div>
         </section>
 
-        <ParallaxSection
-          backgroundImage="/images/testimonials-bg.png"
-          className="w-full py-12 md:py-24 lg:py-32"
-          id="testimonials"
-        >
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
-                  Testimonials
+        <div id="testimonials">
+          <ParallaxSection
+            backgroundImage="/images/testimonials-bg.png"
+            className="w-full py-12 md:py-24 lg:py-32"
+          >
+            <div className="container px-4 md:px-6">
+              <div className="flex flex-col items-center justify-center space-y-4 text-center">
+                <div className="space-y-2">
+                  <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
+                    Testimonials
+                  </div>
+                  <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-white">
+                    What Our Clients Say
+                  </h2>
+                  <p className="max-w-[900px] text-white/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    Don't just take our word for it. Here's what our clients
+                    have to say about working with us.
+                  </p>
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-white">
-                  What Our Clients Say
-                </h2>
-                <p className="max-w-[900px] text-white/80 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Don't just take our word for it. Here's what our clients have to say about working with us.
-                </p>
+              </div>
+              <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-2">
+                <Card className="relative overflow-hidden bg-background/95 backdrop-blur-sm">
+                  <CardContent className="p-6">
+                    <div className="flex flex-col space-y-4">
+                      <div className="flex items-center space-x-4">
+                        <div className="rounded-full bg-primary/20 p-1">
+                          <Users className="h-6 w-6 text-primary" />
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-bold">
+                            Tokyo Tech Solutions
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            Web Application
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground">
+                        "Infinity Trigger delivered our project on time and
+                        exceeded our expectations. Their attention to detail and
+                        technical expertise made all the difference."
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+                <Card className="relative overflow-hidden bg-background/95 backdrop-blur-sm">
+                  <CardContent className="p-6">
+                    <div className="flex flex-col space-y-4">
+                      <div className="flex items-center space-x-4">
+                        <div className="rounded-full bg-primary/20 p-1">
+                          <Users className="h-6 w-6 text-primary" />
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-bold">
+                            Osaka Retail Group
+                          </h3>
+                          <p className="text-sm text-muted-foreground">
+                            Mobile Application
+                          </p>
+                        </div>
+                      </div>
+                      <p className="text-muted-foreground">
+                        "Working with Infinity Trigger was a pleasure. They
+                        understood our needs and created a mobile app that has
+                        significantly improved our customer engagement."
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-2">
-              <Card className="relative overflow-hidden bg-background/95 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <div className="flex flex-col space-y-4">
-                    <div className="flex items-center space-x-4">
-                      <div className="rounded-full bg-primary/20 p-1">
-                        <Users className="h-6 w-6 text-primary" />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-bold">Tokyo Tech Solutions</h3>
-                        <p className="text-sm text-muted-foreground">Web Application</p>
-                      </div>
-                    </div>
-                    <p className="text-muted-foreground">
-                      "Infinity Trigger delivered our project on time and exceeded our expectations. Their attention to
-                      detail and technical expertise made all the difference."
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card className="relative overflow-hidden bg-background/95 backdrop-blur-sm">
-                <CardContent className="p-6">
-                  <div className="flex flex-col space-y-4">
-                    <div className="flex items-center space-x-4">
-                      <div className="rounded-full bg-primary/20 p-1">
-                        <Users className="h-6 w-6 text-primary" />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-bold">Osaka Retail Group</h3>
-                        <p className="text-sm text-muted-foreground">Mobile Application</p>
-                      </div>
-                    </div>
-                    <p className="text-muted-foreground">
-                      "Working with Infinity Trigger was a pleasure. They understood our needs and created a mobile app
-                      that has significantly improved our customer engagement."
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </ParallaxSection>
+          </ParallaxSection>
+        </div>
 
         <section id="about" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
@@ -331,18 +306,24 @@ export default function Home() {
                     Based in Nagano, Serving Globally
                   </h2>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-                    Infinity Trigger is a full-stack web development company founded with a passion for creating
-                    exceptional digital experiences. From our base in Nagano, Japan, we work with clients around the
-                    world to bring their digital visions to life.
+                    Infinity Trigger is a full-stack web development company
+                    founded with a passion for creating exceptional digital
+                    experiences. From our base in Nagano, Japan, we work with
+                    clients around the world to bring their digital visions to
+                    life.
                   </p>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-                    Our team combines technical expertise with creative problem-solving to deliver solutions that not
-                    only meet but exceed our clients' expectations.
+                    Our team combines technical expertise with creative
+                    problem-solving to deliver solutions that not only meet but
+                    exceed our clients' expectations.
                   </p>
                 </div>
                 <div>
                   <Link href="/about">
-                    <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                    <Button
+                      size="lg"
+                      className="bg-primary text-primary-foreground hover:bg-primary/90"
+                    >
                       Learn More About Us
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
@@ -374,7 +355,10 @@ export default function Home() {
               </div>
               <div className="mx-auto w-full max-w-sm space-y-2">
                 <Link href="/contact">
-                  <Button size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+                  <Button
+                    size="lg"
+                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                  >
                     Contact Us Today
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -384,31 +368,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="w-full border-t py-6 md:py-0">
-        <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
-          <div className="flex items-center gap-2">
-            <Image
-              src="/images/logo.png"
-              alt="Infinity Trigger Logo"
-              width={24}
-              height={24}
-              className="rounded-full object-cover"
-            />
-            <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Infinity Trigger. All rights reserved.
-            </p>
-          </div>
-          <nav className="flex gap-4 sm:gap-6">
-            <Link href="/privacy-policy" className="text-sm font-medium hover:text-primary transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="/terms-of-service" className="text-sm font-medium hover:text-primary transition-colors">
-              Terms of Service
-            </Link>
-          </nav>
-        </div>
-      </footer>
     </div>
-  )
+  );
 }
-

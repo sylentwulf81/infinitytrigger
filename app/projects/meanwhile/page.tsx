@@ -14,76 +14,7 @@ import {
 
 export default function MeanwhileProjectPage() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="/images/logo.png"
-              alt="Infinity Trigger Logo"
-              width={32}
-              height={32}
-              className="rounded-full object-cover"
-            />
-            <span className="text-xl font-bold tracking-tight">
-              Infinity Trigger
-            </span>
-          </Link>
-          <nav className="hidden md:flex gap-6">
-            <Link
-              href="/#services"
-              className="text-sm font-medium relative group"
-            >
-              <span className="block">Services</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link
-              href="/projects"
-              className="text-sm font-medium relative group"
-            >
-              <span className="block">Projects</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link href="/about" className="text-sm font-medium relative group">
-              <span className="block">About</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link
-              href="/contact"
-              className="text-sm font-medium relative group"
-            >
-              <span className="block">Contact</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-          </nav>
-          <div className="flex items-center gap-4">
-            <Link href="/contact" className="hidden md:block">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-                Get in Touch
-              </Button>
-            </Link>
-            <Button variant="outline" size="icon" className="md:hidden">
-              <span className="sr-only">Toggle menu</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-6 w-6"
-              >
-                <line x1="4" x2="20" y1="12" y2="12" />
-                <line x1="4" x2="20" y1="6" y2="6" />
-                <line x1="4" x2="20" y1="18" y2="18" />
-              </svg>
-            </Button>
-          </div>
-        </div>
-      </header>
+    <div className="flex flex-col">
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
           <div className="container px-4 md:px-6">
@@ -491,51 +422,6 @@ export default function MeanwhileProjectPage() {
           </div>
         </section>
       </main>
-      <footer className="w-full border-t py-6 md:py-0">
-        <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
-          <div className="flex items-center gap-2">
-            <Image
-              src="/images/logo.png"
-              alt="Infinity Trigger Logo"
-              width={24}
-              height={24}
-              className="rounded-full object-cover"
-            />
-            <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Infinity Trigger. All rights
-              reserved.
-            </p>
-          </div>
-          <nav className="flex gap-4 sm:gap-6">
-            <Link
-              href="/privacy-policy"
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms-of-service"
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Terms of Service
-            </Link>
-            <Link
-              href="/meanwhile-privacy.html"
-              target="_blank"
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Meanwhile Privacy Policy
-            </Link>
-            <Link
-              href="/meanwhile-terms.html"
-              target="_blank"
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Meanwhile Terms
-            </Link>
-          </nav>
-        </div>
-      </footer>
     </div>
   );
 }
