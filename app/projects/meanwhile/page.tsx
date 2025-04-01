@@ -472,6 +472,12 @@ export default function MeanwhileProjectPage() {
             <Link href="/terms-of-service" className="text-sm font-medium hover:text-primary transition-colors">
               Terms of Service
             </Link>
+            <Link href="/meanwhile-privacy.html" target="_blank" className="text-sm font-medium hover:text-primary transition-colors">
+              Meanwhile Privacy Policy
+            </Link>
+            <Link href="/meanwhile-terms.html" target="_blank" className="text-sm font-medium hover:text-primary transition-colors">
+              Meanwhile Terms
+            </Link>
           </nav>
         </div>
       </footer>
