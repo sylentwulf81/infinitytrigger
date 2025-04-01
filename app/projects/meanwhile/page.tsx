@@ -1,8 +1,16 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, Calendar, Check, Edit3, Smartphone, Star, Zap } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  ArrowRight,
+  Calendar,
+  Check,
+  Edit3,
+  Smartphone,
+  Star,
+  Zap,
+} from "lucide-react";
 
 export default function MeanwhileProjectPage() {
   return (
@@ -17,14 +25,22 @@ export default function MeanwhileProjectPage() {
               height={32}
               className="rounded-full object-cover"
             />
-            <span className="text-xl font-bold tracking-tight">Infinity Trigger</span>
+            <span className="text-xl font-bold tracking-tight">
+              Infinity Trigger
+            </span>
           </Link>
           <nav className="hidden md:flex gap-6">
-            <Link href="/#services" className="text-sm font-medium relative group">
+            <Link
+              href="/#services"
+              className="text-sm font-medium relative group"
+            >
               <span className="block">Services</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link href="/projects" className="text-sm font-medium relative group">
+            <Link
+              href="/projects"
+              className="text-sm font-medium relative group"
+            >
               <span className="block">Projects</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </Link>
@@ -32,14 +48,19 @@ export default function MeanwhileProjectPage() {
               <span className="block">About</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link href="/contact" className="text-sm font-medium relative group">
+            <Link
+              href="/contact"
+              className="text-sm font-medium relative group"
+            >
               <span className="block">Contact</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </nav>
           <div className="flex items-center gap-4">
             <Link href="/contact" className="hidden md:block">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Get in Touch</Button>
+              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+                Get in Touch
+              </Button>
             </Link>
             <Button variant="outline" size="icon" className="md:hidden">
               <span className="sr-only">Toggle menu</span>
@@ -72,19 +93,32 @@ export default function MeanwhileProjectPage() {
                   <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                     iOS App
                   </div>
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-muted-foreground">Meanwhile</h1>
+                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-muted-foreground">
+                    Meanwhile
+                  </h1>
                   <p className="max-w-[600px] text-muted-foreground/80 md:text-xl/relaxed">
-                    A daily writing companion designed to encourage people to develop a consistent writing practice
-                    through journaling, guided prompts, and progress tracking.
+                    A daily writing companion designed to encourage people to
+                    develop a consistent writing practice through journaling,
+                    guided prompts, and progress tracking.
                   </p>
                 </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <div className="flex flex-col gap-2 min-[400px]:flex-row items-center">
+                  <Link href="#" className="inline-block mt-4">
+                    <Image
+                      src="/images/app-store-badge.svg"
+                      alt="Download on the App Store"
+                      width={150}
+                      height={50}
+                    />
+                  </Link>
                   <Link href="/contact">
                     <Button
                       size="lg"
                       className="w-full min-[400px]:w-auto group relative overflow-hidden bg-primary text-primary-foreground hover:bg-primary/90"
                     >
-                      <span className="relative z-10">Discuss a Similar Project</span>
+                      <span className="relative z-10">
+                        Discuss a Similar Project
+                      </span>
                       <span className="absolute inset-0 bg-primary-foreground/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
                       <ArrowRight className="ml-2 h-4 w-4 relative z-10 group-hover:translate-x-1 transition-transform duration-300" />
                     </Button>
@@ -110,10 +144,12 @@ export default function MeanwhileProjectPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">About the Project</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                  About the Project
+                </h2>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  Meanwhile is a thoughtfully designed iOS application that helps users establish and maintain a daily
-                  writing habit.
+                  Meanwhile is a thoughtfully designed iOS application that
+                  helps users establish and maintain a daily writing habit.
                 </p>
               </div>
             </div>
@@ -122,36 +158,52 @@ export default function MeanwhileProjectPage() {
               <div className="space-y-6">
                 <h3 className="text-2xl font-bold">The Challenge</h3>
                 <p className="text-muted-foreground">
-                  Many people want to write more regularly but struggle with consistency and motivation. Traditional
-                  journaling apps often lack the specific features needed to build a sustainable writing habit.
+                  Many people want to write more regularly but struggle with
+                  consistency and motivation. Traditional journaling apps often
+                  lack the specific features needed to build a sustainable
+                  writing habit.
                 </p>
                 <p className="text-muted-foreground">
-                  Our client approached us with a vision for an app that would specifically focus on helping users
-                  develop a daily writing practice through gentle encouragement, thoughtful prompts, and a
-                  distraction-free writing environment.
+                  Our client approached us with a vision for an app that would
+                  specifically focus on helping users develop a daily writing
+                  practice through gentle encouragement, thoughtful prompts, and
+                  a distraction-free writing environment.
                 </p>
 
                 <h3 className="text-2xl font-bold mt-8">Our Approach</h3>
                 <p className="text-muted-foreground">
-                  We worked closely with the client to understand the psychology behind habit formation and what makes
-                  writing apps effective. Our approach focused on:
+                  We worked closely with the client to understand the psychology
+                  behind habit formation and what makes writing apps effective.
+                  Our approach focused on:
                 </p>
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Creating a minimalist, distraction-free writing environment</span>
+                    <span>
+                      Creating a minimalist, distraction-free writing
+                      environment
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Implementing gentle reminders and streak tracking to build consistency</span>
+                    <span>
+                      Implementing gentle reminders and streak tracking to build
+                      consistency
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Developing a library of thoughtful writing prompts to inspire users</span>
+                    <span>
+                      Developing a library of thoughtful writing prompts to
+                      inspire users
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Designing an intuitive interface that gets out of the way of the writing process</span>
+                    <span>
+                      Designing an intuitive interface that gets out of the way
+                      of the writing process
+                    </span>
                   </li>
                 </ul>
               </div>
@@ -200,9 +252,12 @@ export default function MeanwhileProjectPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-muted-foreground">Key Features</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-muted-foreground">
+                  Key Features
+                </h2>
                 <p className="max-w-[700px] text-muted-foreground/80 md:text-xl">
-                  Meanwhile combines thoughtful design with practical features to make daily writing effortless.
+                  Meanwhile combines thoughtful design with practical features
+                  to make daily writing effortless.
                 </p>
               </div>
             </div>
@@ -215,7 +270,8 @@ export default function MeanwhileProjectPage() {
                   </div>
                   <h3 className="text-xl font-bold">Daily Reminders</h3>
                   <p className="text-muted-foreground">
-                    Customizable notifications to help users maintain their writing streak and build a consistent habit.
+                    Customizable notifications to help users maintain their
+                    writing streak and build a consistent habit.
                   </p>
                 </CardContent>
               </Card>
@@ -227,7 +283,8 @@ export default function MeanwhileProjectPage() {
                   </div>
                   <h3 className="text-xl font-bold">Distraction-Free Editor</h3>
                   <p className="text-muted-foreground">
-                    A clean, minimalist writing environment that helps users focus solely on their thoughts and words.
+                    A clean, minimalist writing environment that helps users
+                    focus solely on their thoughts and words.
                   </p>
                 </CardContent>
               </Card>
@@ -239,8 +296,9 @@ export default function MeanwhileProjectPage() {
                   </div>
                   <h3 className="text-xl font-bold">Writing Prompts</h3>
                   <p className="text-muted-foreground">
-                    A curated library of thought-provoking prompts and writing guides covering fiction fundamentals,
-                    creativity techniques, and personal growth.
+                    A curated library of thought-provoking prompts and writing
+                    guides covering fiction fundamentals, creativity techniques,
+                    and personal growth.
                   </p>
                 </CardContent>
               </Card>
@@ -252,8 +310,9 @@ export default function MeanwhileProjectPage() {
                   </div>
                   <h3 className="text-xl font-bold">Streak Tracking</h3>
                   <p className="text-muted-foreground">
-                    Visual representation of writing consistency with current streaks, lifetime counts, and personal
-                    bests to motivate users to maintain their daily practice.
+                    Visual representation of writing consistency with current
+                    streaks, lifetime counts, and personal bests to motivate
+                    users to maintain their daily practice.
                   </p>
                 </CardContent>
               </Card>
@@ -265,7 +324,8 @@ export default function MeanwhileProjectPage() {
                   </div>
                   <h3 className="text-xl font-bold">iOS Integration</h3>
                   <p className="text-muted-foreground">
-                    Seamless integration with iOS features including iCloud sync, dark mode, and accessibility options.
+                    Seamless integration with iOS features including iCloud
+                    sync, dark mode, and accessibility options.
                   </p>
                 </CardContent>
               </Card>
@@ -277,8 +337,8 @@ export default function MeanwhileProjectPage() {
                   </div>
                   <h3 className="text-xl font-bold">Export Options</h3>
                   <p className="text-muted-foreground">
-                    Multiple ways to export writings, including text files, PDFs, and direct sharing to other
-                    applications.
+                    Multiple ways to export writings, including text files,
+                    PDFs, and direct sharing to other applications.
                   </p>
                 </CardContent>
               </Card>
@@ -290,9 +350,12 @@ export default function MeanwhileProjectPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Technical Details</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                  Technical Details
+                </h2>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  Meanwhile was built using modern iOS development technologies to ensure performance and reliability.
+                  Meanwhile was built using modern iOS development technologies
+                  to ensure performance and reliability.
                 </p>
               </div>
             </div>
@@ -304,39 +367,44 @@ export default function MeanwhileProjectPage() {
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>
-                      <strong>Swift</strong> - For native iOS development with optimal performance
+                      <strong>Swift</strong> - For native iOS development with
+                      optimal performance
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>
-                      <strong>SwiftUI</strong> - For building the modern, responsive user interface
+                      <strong>SwiftUI</strong> - For building the modern,
+                      responsive user interface
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>
-                      <strong>Core Data</strong> - For efficient local data storage and management
+                      <strong>Core Data</strong> - For efficient local data
+                      storage and management
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>
-                      <strong>CloudKit</strong> - For seamless data synchronization across devices
+                      <strong>CloudKit</strong> - For seamless data
+                      synchronization across devices
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>
-                      <strong>UserNotifications</strong> - For implementing the reminder system
+                      <strong>UserNotifications</strong> - For implementing the
+                      reminder system
                     </span>
                   </li>
                 </ul>
 
                 <h3 className="text-2xl font-bold mt-8">Development Process</h3>
                 <p className="text-muted-foreground">
-                  We followed an agile development methodology, working closely with the client through each iteration.
-                  The process included:
+                  We followed an agile development methodology, working closely
+                  with the client through each iteration. The process included:
                 </p>
                 <ul className="space-y-2 text-muted-foreground">
                   <li className="flex items-start gap-2">
@@ -353,7 +421,9 @@ export default function MeanwhileProjectPage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Comprehensive testing across multiple iOS devices</span>
+                    <span>
+                      Comprehensive testing across multiple iOS devices
+                    </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
@@ -382,48 +452,12 @@ export default function MeanwhileProjectPage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-muted-foreground">
-                  Results & Impact
+                  Start Your Writing Journey
                 </h2>
                 <p className="max-w-[700px] text-muted-foreground/80 md:text-xl">
-                  Meanwhile has helped thousands of users develop and maintain a consistent writing practice.
+                  Ready to build a consistent writing habit? Download Meanwhile
+                  and discover the benefits of daily journaling.
                 </p>
-              </div>
-            </div>
-
-            <div className="grid gap-6 md:grid-cols-3">
-              <Card className="bg-background">
-                <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
-                  <div className="text-4xl font-bold text-primary">4.8</div>
-                  <p className="text-muted-foreground">Average App Store Rating</p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-background">
-                <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
-                  <div className="text-4xl font-bold text-primary">50K+</div>
-                  <p className="text-muted-foreground">Active Monthly Users</p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-background">
-                <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
-                  <div className="text-4xl font-bold text-primary">68%</div>
-                  <p className="text-muted-foreground">User Retention Rate</p>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className="mt-12 bg-background rounded-lg p-6 md:p-8">
-              <blockquote className="text-lg md:text-xl italic text-muted-foreground">
-                "Working with Infinity Trigger on Meanwhile was a fantastic experience. They understood our vision from
-                the start and delivered an app that exceeded our expectations. The attention to detail and focus on user
-                experience has resulted in an app that our users truly love."
-              </blockquote>
-              <div className="mt-4 flex items-center">
-                <div className="ml-4">
-                  <p className="font-medium">Client Name</p>
-                  <p className="text-sm text-muted-foreground">Founder, Meanwhile</p>
-                </div>
               </div>
             </div>
           </div>
@@ -433,15 +467,21 @@ export default function MeanwhileProjectPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Interested in a Similar Project?</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                  Interested in a Similar Project?
+                </h2>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  Let's discuss how we can help bring your mobile app idea to life with the same attention to detail and
-                  user-focused approach.
+                  Let's discuss how we can help bring your mobile app idea to
+                  life with the same attention to detail and user-focused
+                  approach.
                 </p>
               </div>
               <div className="mx-auto w-full max-w-sm space-y-2">
                 <Link href="/contact">
-                  <Button size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+                  <Button
+                    size="lg"
+                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                  >
                     Contact Us Today
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -462,26 +502,40 @@ export default function MeanwhileProjectPage() {
               className="rounded-full object-cover"
             />
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Infinity Trigger. All rights reserved.
+              © {new Date().getFullYear()} Infinity Trigger. All rights
+              reserved.
             </p>
           </div>
           <nav className="flex gap-4 sm:gap-6">
-            <Link href="/privacy-policy" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="/privacy-policy"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
               Privacy Policy
             </Link>
-            <Link href="/terms-of-service" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="/terms-of-service"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
               Terms of Service
             </Link>
-            <Link href="/meanwhile-privacy.html" target="_blank" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="/meanwhile-privacy.html"
+              target="_blank"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
               Meanwhile Privacy Policy
             </Link>
-            <Link href="/meanwhile-terms.html" target="_blank" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="/meanwhile-terms.html"
+              target="_blank"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
               Meanwhile Terms
             </Link>
           </nav>
         </div>
       </footer>
     </div>
-  )
+  );
 }
-
