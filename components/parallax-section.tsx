@@ -12,8 +12,8 @@ interface ParallaxSectionProps {
 
 export function ParallaxSection({
   backgroundImage,
-  overlayColor = "rgb(55, 20, 20)", // Dark brown to match our theme
-  overlayOpacity = 0.85,
+  overlayColor = "rgb(30, 30, 30)", // Changed to a neutral dark gray
+  overlayOpacity = 0.6, // Reduced opacity to show more of the background
   children,
   className = "",
 }: ParallaxSectionProps) {
@@ -51,7 +51,7 @@ export function ParallaxSection({
       <div
         className="absolute inset-0"
         style={{
-          backgroundColor: overlayColor,
+          background: `linear-gradient(to bottom, ${overlayColor} 0%, ${overlayColor} 70%, rgba(0,0,0,0.8) 100%)`,
           opacity: overlayOpacity,
         }}
       />

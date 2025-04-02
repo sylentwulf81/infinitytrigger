@@ -1,77 +1,24 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ArrowLeft, Globe, Smartphone } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ArrowLeft, Globe, Smartphone } from "lucide-react";
 
 export default function ProjectsPage() {
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="/images/logo.png"
-              alt="Infinity Trigger Logo"
-              width={32}
-              height={32}
-              className="rounded-full object-cover"
-            />
-            <span className="text-xl font-bold tracking-tight">Infinity Trigger</span>
-          </Link>
-          <nav className="hidden md:flex gap-6">
-            <Link href="/#services" className="text-sm font-medium relative group">
-              <span className="block">Services</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link href="/projects" className="text-sm font-medium relative group">
-              <span className="block">Projects</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link href="/about" className="text-sm font-medium relative group">
-              <span className="block">About</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link href="/contact" className="text-sm font-medium relative group">
-              <span className="block">Contact</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-          </nav>
-          <div className="flex items-center gap-4">
-            <Link href="/contact" className="hidden md:block">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90">Get in Touch</Button>
-            </Link>
-            <Button variant="outline" size="icon" className="md:hidden">
-              <span className="sr-only">Toggle menu</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-6 w-6"
-              >
-                <line x1="4" x2="20" y1="12" y2="12" />
-                <line x1="4" x2="20" y1="6" y2="6" />
-                <line x1="4" x2="20" y1="18" y2="18" />
-              </svg>
-            </Button>
-          </div>
-        </div>
-      </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Projects</h1>
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Our Projects
+                </h1>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  Explore our portfolio of web and mobile applications that we've built for clients around the world.
+                  Explore our portfolio of web and mobile applications that
+                  showcase our expertise and creativity.
                 </p>
               </div>
             </div>
@@ -120,8 +67,8 @@ export default function ProjectsPage() {
                           </div>
                         </div>
                         <p className="text-sm text-muted-foreground">
-                          A daily writing companion for iOS that encourages users to develop a consistent writing
-                          practice.
+                          A daily writing companion for iOS that encourages
+                          users to develop a consistent writing practice.
                         </p>
                       </CardContent>
                     </Card>
@@ -183,13 +130,16 @@ export default function ProjectsPage() {
                       </div>
                       <CardContent className="p-4">
                         <div className="flex justify-between items-center mb-2">
-                          <h3 className="font-bold text-lg">Web Project {item}</h3>
+                          <h3 className="font-bold text-lg">
+                            Web Project {item}
+                          </h3>
                           <div className="flex items-center justify-center rounded-full bg-primary/20 p-1">
                             <Globe className="h-4 w-4 text-primary" />
                           </div>
                         </div>
                         <p className="text-sm text-muted-foreground">
-                          Web platform providing seamless user experience and robust functionality.
+                          Web platform providing seamless user experience and
+                          robust functionality.
                         </p>
                       </CardContent>
                     </Card>
@@ -219,8 +169,8 @@ export default function ProjectsPage() {
                           </div>
                         </div>
                         <p className="text-sm text-muted-foreground">
-                          A daily writing companion for iOS that encourages users to develop a consistent writing
-                          practice.
+                          A daily writing companion for iOS that encourages
+                          users to develop a consistent writing practice.
                         </p>
                       </CardContent>
                     </Card>
@@ -243,13 +193,16 @@ export default function ProjectsPage() {
                       </div>
                       <CardContent className="p-4">
                         <div className="flex justify-between items-center mb-2">
-                          <h3 className="font-bold text-lg">Mobile Project {item}</h3>
+                          <h3 className="font-bold text-lg">
+                            Mobile Project {item}
+                          </h3>
                           <div className="flex items-center justify-center rounded-full bg-primary/20 p-1">
                             <Smartphone className="h-4 w-4 text-primary" />
                           </div>
                         </div>
                         <p className="text-sm text-muted-foreground">
-                          Mobile application with advanced features and intuitive design.
+                          Mobile application with advanced features and
+                          intuitive design.
                         </p>
                       </CardContent>
                     </Card>
@@ -283,20 +236,26 @@ export default function ProjectsPage() {
               className="rounded-full object-cover"
             />
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} Infinity Trigger. All rights reserved.
+              © {new Date().getFullYear()} Infinity Trigger. All rights
+              reserved.
             </p>
           </div>
           <nav className="flex gap-4 sm:gap-6">
-            <Link href="/privacy-policy" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="/privacy-policy"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
               Privacy Policy
             </Link>
-            <Link href="/terms-of-service" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="/terms-of-service"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
               Terms of Service
             </Link>
           </nav>
         </div>
       </footer>
     </div>
-  )
+  );
 }
-
