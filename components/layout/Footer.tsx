@@ -13,7 +13,7 @@ export function Footer() {
             height={27} // Adjust height based on aspect ratio
             className="object-contain" // Use object-contain
           />
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-gray-600">
             © {new Date().getFullYear()} Infinity Trigger. All rights reserved.
           </p>
         </div>
