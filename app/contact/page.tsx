@@ -17,24 +17,24 @@ export default function ContactPage() {
   return (
     <div className="flex flex-col">
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
                   Join Our TestFlight
                 </h1>
-                <p className="max-w-[700px] text-muted-foreground md:text-xl">
+                <p className="max-w-[700px] text-gray-600 md:text-xl">
                   Get early access to Myriad Worlds through TestFlight, or reach out with questions about our creative tools. 
                   Meanwhile is now available on the App Store!
                 </p>
               </div>
             </div>
             <div className="mx-auto grid max-w-6xl gap-6 py-12 lg:grid-cols-2">
-              <Card className="bg-background">
+              <Card className="bg-white shadow-sm">
                 <CardHeader>
-                  <CardTitle>Contact Information</CardTitle>
-                  <CardDescription>
+                  <CardTitle className="text-gray-900">Contact Information</CardTitle>
+                  <CardDescription className="text-gray-600">
                     Reach out to us with questions about our apps or to join TestFlight.
                   </CardDescription>
                 </CardHeader>
@@ -42,8 +42,8 @@ export default function ContactPage() {
                   <div className="flex items-start space-x-4">
                     <MapPin className="h-6 w-6 text-primary" />
                     <div>
-                      <h3 className="font-medium">Address</h3>
-                      <p className="text-sm text-muted-foreground">
+                      <h3 className="font-medium text-gray-900">Address</h3>
+                      <p className="text-sm text-gray-600">
                         Nagano City, Nagano Prefecture, Japan
                       </p>
                     </div>
@@ -51,8 +51,8 @@ export default function ContactPage() {
                   <div className="flex items-start space-x-4">
                     <Mail className="h-6 w-6 text-primary" />
                     <div>
-                      <h3 className="font-medium">Email</h3>
-                      <p className="text-sm text-muted-foreground">
+                      <h3 className="font-medium text-gray-900">Email</h3>
+                      <p className="text-sm text-gray-600">
                         contact@infinitytrigger.com
                       </p>
                     </div>
@@ -60,8 +60,8 @@ export default function ContactPage() {
                   <div className="flex items-start space-x-4">
                     <Phone className="h-6 w-6 text-primary" />
                     <div>
-                      <h3 className="font-medium">Phone</h3>
-                      <p className="text-sm text-muted-foreground">
+                      <h3 className="font-medium text-gray-900">Phone</h3>
+                      <p className="text-sm text-gray-600">
                         +81 (0) 123-456-789
                       </p>
                     </div>
@@ -77,10 +77,10 @@ export default function ContactPage() {
                   </div>
                 </CardContent>
               </Card>
-              <Card className="bg-background">
+              <Card className="bg-white shadow-sm">
                 <CardHeader>
-                  <CardTitle>Get in Touch</CardTitle>
-                  <CardDescription>
+                  <CardTitle className="text-gray-900">Get in Touch</CardTitle>
+                  <CardDescription className="text-gray-600">
                     Join our TestFlight or ask questions about Meanwhile and Myriad Worlds.
                   </CardDescription>
                 </CardHeader>
@@ -88,14 +88,14 @@ export default function ContactPage() {
                   <form className="space-y-4">
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                       <div className="space-y-2">
-                        <Label htmlFor="first-name">First name</Label>
+                        <Label htmlFor="first-name" className="text-gray-900">First name</Label>
                         <Input
                           id="first-name"
                           placeholder="Enter your first name"
                         />
                       </div>
                       <div className="space-y-2">
-                        <Label htmlFor="last-name">Last name</Label>
+                        <Label htmlFor="last-name" className="text-gray-900">Last name</Label>
                         <Input
                           id="last-name"
                           placeholder="Enter your last name"
@@ -103,7 +103,7 @@ export default function ContactPage() {
                       </div>
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email</Label>
+                      <Label htmlFor="email" className="text-gray-900">Email</Label>
                       <Input
                         id="email"
                         type="email"
@@ -111,7 +111,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="interest">What are you interested in?</Label>
+                      <Label htmlFor="interest" className="text-gray-900">What are you interested in?</Label>
                       <select
                         id="interest"
                         className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
@@ -124,7 +124,7 @@ export default function ContactPage() {
                       </select>
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="message">Message</Label>
+                      <Label htmlFor="message" className="text-gray-900">Message</Label>
                       <Textarea
                         id="message"
                         placeholder="Tell us about your interest in our creative tools or ask any questions"

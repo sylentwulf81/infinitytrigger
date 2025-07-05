@@ -16,7 +16,7 @@ export default function MeanwhileProjectPage() {
   return (
     <div className="flex flex-col">
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <div className="flex flex-col justify-center space-y-4">
@@ -24,10 +24,10 @@ export default function MeanwhileProjectPage() {
                   <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground">
                     iOS App
                   </div>
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-muted-foreground">
+                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
                     Meanwhile
                   </h1>
-                  <p className="max-w-[600px] text-muted-foreground/80 md:text-xl/relaxed">
+                  <p className="max-w-[600px] text-gray-600 md:text-xl/relaxed">
                     A daily writing companion designed to encourage people to
                     develop a consistent writing practice through journaling,
                     guided prompts, and progress tracking.
@@ -83,7 +83,7 @@ export default function MeanwhileProjectPage() {
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
                   About Meanwhile
                 </h2>
-                <p className="max-w-[700px] text-muted-foreground md:text-xl">
+                <p className="max-w-[700px] text-gray-600 md:text-xl">
                   Meanwhile is a thoughtfully designed iOS application that
                   helps users establish and maintain a daily writing habit.
                 </p>
@@ -92,26 +92,26 @@ export default function MeanwhileProjectPage() {
 
             <div className="grid gap-12 lg:grid-cols-2">
               <div className="space-y-6">
-                <h3 className="text-2xl font-bold">The Inspiration</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-2xl font-bold text-gray-900">The Inspiration</h3>
+                <p className="text-gray-700 leading-relaxed">
                   Many people want to write more regularly but struggle with
                   consistency and motivation. Traditional journaling apps often
                   lack the specific features needed to build a sustainable
                   writing habit.
                 </p>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   We created Meanwhile with a vision for an app that would
                   specifically focus on helping users develop a daily writing
                   practice through gentle encouragement, thoughtful prompts, and
                   a distraction-free writing environment.
                 </p>
 
-                <h3 className="text-2xl font-bold mt-8">Our Approach</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-2xl font-bold mt-8 text-gray-900">Our Approach</h3>
+                <p className="text-gray-700 leading-relaxed">
                   We focused on understanding the psychology behind habit formation 
                   and what makes writing apps effective. Our approach centered on:
                 </p>
-                <ul className="space-y-2 text-muted-foreground">
+                <ul className="space-y-2 text-gray-700 leading-relaxed">
                   <li className="flex items-start gap-2">
                     <Check className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <span>
@@ -183,14 +183,14 @@ export default function MeanwhileProjectPage() {
           </div>
         </section>
 
-        <section className="w-full py-12 md:py-24 bg-muted">
+        <section className="w-full py-12 md:py-24 bg-white">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-muted-foreground">
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-gray-900">
                   Key Features
                 </h2>
-                <p className="max-w-[700px] text-muted-foreground/80 md:text-xl">
+                <p className="max-w-[700px] text-gray-600 md:text-xl">
                   Meanwhile combines thoughtful design with practical features
                   to make daily writing effortless.
                 </p>
@@ -198,61 +198,61 @@ export default function MeanwhileProjectPage() {
             </div>
 
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <Card className="bg-background">
+              <Card className="bg-gray-50 border-gray-100">
                 <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20">
                     <Calendar className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold">Daily Prompts</h3>
-                  <p className="text-muted-foreground">
+                  <h3 className="text-xl font-bold text-gray-900">Daily Prompts</h3>
+                  <p className="text-gray-600 leading-relaxed">
                     Thoughtfully curated writing prompts to inspire daily
                     reflection and creativity.
                   </p>
                 </CardContent>
               </Card>
-              <Card className="bg-background">
+              <Card className="bg-gray-50 border-gray-100">
                 <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20">
                     <Zap className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold">Streak Tracking</h3>
-                  <p className="text-muted-foreground">
+                  <h3 className="text-xl font-bold text-gray-900">Streak Tracking</h3>
+                  <p className="text-gray-600 leading-relaxed">
                     Visual progress tracking to help maintain consistency and
                     build lasting habits.
                   </p>
                 </CardContent>
               </Card>
-              <Card className="bg-background">
+              <Card className="bg-gray-50 border-gray-100">
                 <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20">
                     <Edit3 className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold">Distraction-Free Writing</h3>
-                  <p className="text-muted-foreground">
+                  <h3 className="text-xl font-bold text-gray-900">Distraction-Free Writing</h3>
+                  <p className="text-gray-600 leading-relaxed">
                     Clean, minimalist interface designed to keep you focused on
                     your thoughts.
                   </p>
                 </CardContent>
               </Card>
-              <Card className="bg-background">
+              <Card className="bg-gray-50 border-gray-100">
                 <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20">
                     <Smartphone className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold">Mobile Optimized</h3>
-                  <p className="text-muted-foreground">
+                  <h3 className="text-xl font-bold text-gray-900">Mobile Optimized</h3>
+                  <p className="text-gray-600 leading-relaxed">
                     Designed specifically for iOS with native performance and
                     intuitive gestures.
                   </p>
                 </CardContent>
               </Card>
-              <Card className="bg-background">
+              <Card className="bg-gray-50 border-gray-100">
                 <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20">
                     <Star className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold">Progress Insights</h3>
-                  <p className="text-muted-foreground">
+                  <h3 className="text-xl font-bold text-gray-900">Progress Insights</h3>
+                  <p className="text-gray-600 leading-relaxed">
                     Track your writing journey with meaningful statistics and
                     achievements.
                   </p>
@@ -262,14 +262,14 @@ export default function MeanwhileProjectPage() {
           </div>
         </section>
 
-        <section className="w-full py-12 md:py-24">
+        <section className="w-full py-12 md:py-24 bg-gray-50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl text-gray-900">
                   Ready to Start Writing?
                 </h2>
-                <p className="max-w-[700px] text-muted-foreground md:text-xl">
+                <p className="max-w-[700px] text-gray-600 md:text-xl">
                   Download Meanwhile from the App Store and start your daily writing journey today.
                 </p>
               </div>
