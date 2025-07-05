@@ -17,29 +17,24 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/Assets/logo-no-background.png" // Use the new logo
+            src="/Assets/logo-no-background.png"
             alt="Infinity Trigger Logo"
-            width={150} // Adjust width as needed
-            height={40} // Adjust height based on aspect ratio
-            className="object-contain" // Use object-contain to maintain aspect ratio
-            priority // Add priority for LCP optimization
+            width={150}
+            height={40}
+            className="object-contain"
+            priority
           />
-          {/* Removed the text span */}
         </Link>
         <nav className="hidden md:flex gap-6">
           <Link
-            href="/#services"
+            href="/about"
             className="text-sm font-medium relative group"
           >
-            <span className="block">Services</span>
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link href="/#clients" className="text-sm font-medium relative group">
-            <span className="block">Clients</span>
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link href="/about" className="text-sm font-medium relative group">
             <span className="block">About</span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+          </Link>
+          <Link href="/products" className="text-sm font-medium relative group">
+            <span className="block">Products</span>
             <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link href="/contact" className="text-sm font-medium relative group">
@@ -50,7 +45,7 @@ export function Header() {
         <div className="flex items-center gap-4">
           <Link href="/contact" className="hidden md:block">
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-              Get in Touch
+              Join TestFlight
             </Button>
           </Link>
           <Button
@@ -105,25 +100,18 @@ export function Header() {
           <div className="container py-4 space-y-4">
             <nav className="flex flex-col space-y-4">
               <Link
-                href="/#services"
-                className="text-sm font-medium py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Services
-              </Link>
-              <Link
-                href="/#clients"
-                className="text-sm font-medium py-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Clients
-              </Link>
-              <Link
                 href="/about"
                 className="text-sm font-medium py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
+              </Link>
+              <Link
+                href="/products"
+                className="text-sm font-medium py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Products
               </Link>
               <Link
                 href="/contact"
@@ -136,7 +124,7 @@ export function Header() {
             <div className="pt-4">
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
                 <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                  Get in Touch
+                  Join TestFlight
                 </Button>
               </Link>
             </div>

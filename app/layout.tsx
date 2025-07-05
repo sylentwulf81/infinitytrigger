@@ -8,9 +8,9 @@ import { Footer } from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Infinity Trigger | Full-Stack Web Development from Nagano, Japan",
+  title: "Infinity Trigger | Creative Tools for Humans",
   description:
-    "We build beautiful, functional websites and mobile apps that help businesses grow. From concept to deployment, we handle every aspect of your digital presence.",
+    "We make creative tools that celebrate human creativity and put you in the driver's seat. Discover Meanwhile and Myriad Worlds - apps designed to inspire your creative journey.",
   generator: "v0.dev",
 };
 

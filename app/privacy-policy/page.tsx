@@ -7,14 +7,14 @@ export default function PrivacyPolicyPage() {
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24">
+        <section className="w-full py-12 md:py-24 bg-gray-50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900">
                   Privacy Policy
                 </h1>
-                <p className="text-muted-foreground">
+                <p className="text-gray-600">
                   Last updated:{" "}
                   {new Date().toLocaleDateString("en-US", {
                     month: "long",
@@ -25,17 +25,17 @@ export default function PrivacyPolicyPage() {
               </div>
             </div>
 
-            <div className="mx-auto max-w-3xl space-y-8">
+            <div className="mx-auto max-w-3xl bg-white rounded-lg shadow-sm p-8 space-y-8">
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">1. Introduction</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-gray-900">1. Introduction</h2>
+                <p className="text-gray-700 leading-relaxed">
                   Infinity Trigger ("we," "our," or "us") is committed to
                   protecting your privacy. This Privacy Policy explains how we
                   collect, use, disclose, and safeguard your information when
                   you visit our website or use our web and mobile applications
                   (collectively, the "Services").
                 </p>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   Please read this Privacy Policy carefully. By accessing or
                   using our Services, you acknowledge that you have read,
                   understood, and agree to be bound by all the terms of this
@@ -44,17 +44,17 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">
+                <h2 className="text-2xl font-bold text-gray-900">
                   2. Information We Collect
                 </h2>
-                <h3 className="text-xl font-semibold">
+                <h3 className="text-xl font-semibold text-gray-800">
                   2.1 Personal Information
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   We may collect personal information that you voluntarily
                   provide to us when you:
                 </p>
-                <ul className="list-disc pl-6 text-muted-foreground space-y-2">
+                <ul className="list-disc pl-6 text-gray-700 space-y-2 leading-relaxed">
                   <li>Fill out forms on our website</li>
                   <li>Create an account</li>
                   <li>
@@ -63,10 +63,10 @@ export default function PrivacyPolicyPage() {
                   <li>Subscribe to our newsletter</li>
                   <li>Request customer support</li>
                 </ul>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   The personal information we collect may include:
                 </p>
-                <ul className="list-disc pl-6 text-muted-foreground space-y-2">
+                <ul className="list-disc pl-6 text-gray-700 space-y-2 leading-relaxed">
                   <li>Name</li>
                   <li>Email address</li>
                   <li>Phone number</li>
@@ -75,14 +75,14 @@ export default function PrivacyPolicyPage() {
                   <li>Billing information</li>
                 </ul>
 
-                <h3 className="text-xl font-semibold">
+                <h3 className="text-xl font-semibold text-gray-800">
                   2.2 Automatically Collected Information
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   When you access our Services, we may automatically collect
                   certain information, including:
                 </p>
-                <ul className="list-disc pl-6 text-muted-foreground space-y-2">
+                <ul className="list-disc pl-6 text-gray-700 space-y-2 leading-relaxed">
                   <li>
                     Device information (e.g., device type, operating system)
                   </li>
@@ -95,14 +95,14 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">
+                <h2 className="text-2xl font-bold text-gray-900">
                   3. How We Use Your Information
                 </h2>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   We may use the information we collect for various purposes,
                   including to:
                 </p>
-                <ul className="list-disc pl-6 text-muted-foreground space-y-2">
+                <ul className="list-disc pl-6 text-gray-700 space-y-2 leading-relaxed">
                   <li>Provide, maintain, and improve our Services</li>
                   <li>Process transactions and send related information</li>
                   <li>Respond to your comments, questions, and requests</li>
@@ -129,13 +129,13 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">
+                <h2 className="text-2xl font-bold text-gray-900">
                   4. Disclosure of Your Information
                 </h2>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   We may share your information in the following situations:
                 </p>
-                <ul className="list-disc pl-6 text-muted-foreground space-y-2">
+                <ul className="list-disc pl-6 text-gray-700 space-y-2 leading-relaxed">
                   <li>
                     <strong>Service Providers:</strong> We may share your
                     information with third-party vendors, service providers,
@@ -161,8 +161,8 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">5. Data Security</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-gray-900">5. Data Security</h2>
+                <p className="text-gray-700 leading-relaxed">
                   We implement appropriate technical and organizational measures
                   to protect the security of your personal information. However,
                   please be aware that no method of transmission over the
@@ -171,8 +171,8 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">6. Third-Party Services</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-gray-900">6. Third-Party Services</h2>
+                <p className="text-gray-700 leading-relaxed">
                   Our Services may contain links to third-party websites and
                   services that are not owned or controlled by us. We have no
                   control over, and assume no responsibility for, the content,
@@ -182,12 +182,12 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">7. Your Rights</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-gray-900">7. Your Rights</h2>
+                <p className="text-gray-700 leading-relaxed">
                   Depending on your location, you may have certain rights
                   regarding your personal information, including:
                 </p>
-                <ul className="list-disc pl-6 text-muted-foreground space-y-2">
+                <ul className="list-disc pl-6 text-gray-700 space-y-2 leading-relaxed">
                   <li>The right to access your personal information</li>
                   <li>The right to rectify inaccurate personal information</li>
                   <li>
@@ -204,15 +204,15 @@ export default function PrivacyPolicyPage() {
                     information
                   </li>
                 </ul>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   To exercise these rights, please contact us using the
                   information provided in the "Contact Us" section below.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">8. Children's Privacy</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-gray-900">8. Children's Privacy</h2>
+                <p className="text-gray-700 leading-relaxed">
                   Our Services are not intended for individuals under the age of
                   16. We do not knowingly collect personal information from
                   children under 16. If you are a parent or guardian and believe
@@ -222,16 +222,16 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">
+                <h2 className="text-2xl font-bold text-gray-900">
                   9. Changes to This Privacy Policy
                 </h2>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   We may update our Privacy Policy from time to time. We will
                   notify you of any changes by posting the new Privacy Policy on
                   this page and updating the "Last updated" date at the top of
                   this Privacy Policy.
                 </p>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   You are advised to review this Privacy Policy periodically for
                   any changes. Changes to this Privacy Policy are effective when
                   they are posted on this page.
@@ -239,12 +239,12 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">10. Contact Us</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-gray-900">10. Contact Us</h2>
+                <p className="text-gray-700 leading-relaxed">
                   If you have any questions about this Privacy Policy, please
                   contact us at:
                 </p>
-                <div className="text-muted-foreground">
+                <div className="text-gray-700 leading-relaxed">
                   <p>Infinity Trigger</p>
                   <p>Nagano City, Nagano Prefecture, Japan</p>
                   <p>Email: privacy@infinitytrigger.com</p>

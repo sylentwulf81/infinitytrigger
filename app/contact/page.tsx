@@ -22,11 +22,11 @@ export default function ContactPage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Get in Touch
+                  Join Our TestFlight
                 </h1>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
-                  Have a project in mind? We'd love to hear from you. Fill out
-                  the form below and we'll get back to you as soon as possible.
+                  Get early access to Myriad Worlds through TestFlight, or reach out with questions about our creative tools. 
+                  Meanwhile is now available on the App Store!
                 </p>
               </div>
             </div>
@@ -35,7 +35,7 @@ export default function ContactPage() {
                 <CardHeader>
                   <CardTitle>Contact Information</CardTitle>
                   <CardDescription>
-                    Reach out to us through any of these channels.
+                    Reach out to us with questions about our apps or to join TestFlight.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
@@ -79,9 +79,9 @@ export default function ContactPage() {
               </Card>
               <Card className="bg-background">
                 <CardHeader>
-                  <CardTitle>Send Us a Message</CardTitle>
+                  <CardTitle>Get in Touch</CardTitle>
                   <CardDescription>
-                    Fill out the form below to get started.
+                    Join our TestFlight or ask questions about Meanwhile and Myriad Worlds.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -111,40 +111,23 @@ export default function ContactPage() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Phone (optional)</Label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        placeholder="Enter your phone number"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="company">Company (optional)</Label>
-                      <Input
-                        id="company"
-                        placeholder="Enter your company name"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="project-type">Project Type</Label>
+                      <Label htmlFor="interest">What are you interested in?</Label>
                       <select
-                        id="project-type"
+                        id="interest"
                         className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                       >
-                        <option value="">Select a project type</option>
-                        <option value="web">Website Development</option>
-                        <option value="mobile">Mobile App Development</option>
-                        <option value="fullstack">
-                          Full-Stack Development
-                        </option>
-                        <option value="other">Other</option>
+                        <option value="">Select your interest</option>
+                        <option value="testflight">Join TestFlight</option>
+                        <option value="meanwhile">Meanwhile App</option>
+                        <option value="myriad-worlds">Myriad Worlds App</option>
+                        <option value="general">General Questions</option>
                       </select>
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="message">Message</Label>
                       <Textarea
                         id="message"
-                        placeholder="Tell us about your project and requirements"
+                        placeholder="Tell us about your interest in our creative tools or ask any questions"
                         className="min-h-[120px]"
                       />
                     </div>

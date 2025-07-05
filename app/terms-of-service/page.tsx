@@ -7,14 +7,14 @@ export default function TermsOfServicePage() {
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24">
+        <section className="w-full py-12 md:py-24 bg-gray-50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900">
                   Terms of Service
                 </h1>
-                <p className="text-muted-foreground">
+                <p className="text-gray-600">
                   Last updated:{" "}
                   {new Date().toLocaleDateString("en-US", {
                     month: "long",
@@ -25,16 +25,16 @@ export default function TermsOfServicePage() {
               </div>
             </div>
 
-            <div className="mx-auto max-w-3xl space-y-8">
+            <div className="mx-auto max-w-3xl bg-white rounded-lg shadow-sm p-8 space-y-8">
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">1. Agreement to Terms</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-gray-900">1. Agreement to Terms</h2>
+                <p className="text-gray-700 leading-relaxed">
                   These Terms of Service ("Terms") constitute a legally binding
                   agreement between you and Infinity Trigger ("we," "our," or
                   "us") regarding your access to and use of our website and
                   services (collectively, the "Services").
                 </p>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   By accessing or using our Services, you agree to be bound by
                   these Terms. If you do not agree to these Terms, you may not
                   access or use the Services.
@@ -42,28 +42,28 @@ export default function TermsOfServicePage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">2. Services Description</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-gray-900">2. Services Description</h2>
+                <p className="text-gray-700 leading-relaxed">
                   Infinity Trigger provides web and mobile application
                   development services, including but not limited to website
                   design, application development, maintenance, and related
                   consulting services.
                 </p>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   We reserve the right to modify, suspend, or discontinue any
                   aspect of our Services at any time, with or without notice.
                 </p>
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">3. User Accounts</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-gray-900">3. User Accounts</h2>
+                <p className="text-gray-700 leading-relaxed">
                   Some of our Services may require you to create an account. You
                   agree to provide accurate, current, and complete information
                   during the registration process and to update such information
                   to keep it accurate, current, and complete.
                 </p>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   You are responsible for safeguarding your account credentials
                   and for all activities that occur under your account. You
                   agree to notify us immediately of any unauthorized use of your
@@ -72,13 +72,13 @@ export default function TermsOfServicePage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">
+                <h2 className="text-2xl font-bold text-gray-900">
                   4. Client Responsibilities
                 </h2>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   If you engage our development services, you agree to:
                 </p>
-                <ul className="list-disc pl-6 text-muted-foreground space-y-2">
+                <ul className="list-disc pl-6 text-gray-700 space-y-2 leading-relaxed">
                   <li>
                     Provide accurate and complete information necessary for the
                     completion of the project
@@ -99,19 +99,19 @@ export default function TermsOfServicePage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">5. Intellectual Property</h2>
-                <h3 className="text-xl font-semibold">
+                <h2 className="text-2xl font-bold text-gray-900">5. Intellectual Property</h2>
+                <h3 className="text-xl font-semibold text-gray-800">
                   5.1 Our Intellectual Property
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   The Services, including all content, features, and
                   functionality, are owned by Infinity Trigger or our licensors
                   and are protected by copyright, trademark, and other
                   intellectual property laws.
                 </p>
 
-                <h3 className="text-xl font-semibold">5.2 Client Materials</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-xl font-semibold text-gray-800">5.2 Client Materials</h3>
+                <p className="text-gray-700 leading-relaxed">
                   You retain ownership of all materials you provide to us. By
                   providing materials to us, you grant us a non-exclusive,
                   worldwide, royalty-free license to use, reproduce, modify, and
@@ -119,13 +119,13 @@ export default function TermsOfServicePage() {
                   Services to you.
                 </p>
 
-                <h3 className="text-xl font-semibold">5.3 Deliverables</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-xl font-semibold text-gray-800">5.3 Deliverables</h3>
+                <p className="text-gray-700 leading-relaxed">
                   Upon full payment of all applicable fees, we will assign to
                   you all rights, title, and interest in the deliverables
                   specifically created for you, except for:
                 </p>
-                <ul className="list-disc pl-6 text-muted-foreground space-y-2">
+                <ul className="list-disc pl-6 text-gray-700 space-y-2 leading-relaxed">
                   <li>
                     Third-party materials incorporated into the deliverables
                   </li>
@@ -138,12 +138,12 @@ export default function TermsOfServicePage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">6. Payment Terms</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-gray-900">6. Payment Terms</h2>
+                <p className="text-gray-700 leading-relaxed">
                   Payment terms will be specified in the project proposal or
                   contract. Unless otherwise agreed upon:
                 </p>
-                <ul className="list-disc pl-6 text-muted-foreground space-y-2">
+                <ul className="list-disc pl-6 text-gray-700 space-y-2 leading-relaxed">
                   <li>A deposit may be required before work begins</li>
                   <li>Invoices are due upon receipt</li>
                   <li>Late payments may incur additional fees</li>
@@ -155,17 +155,17 @@ export default function TermsOfServicePage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">
+                <h2 className="text-2xl font-bold text-gray-900">
                   7. Limitation of Liability
                 </h2>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   To the maximum extent permitted by law, in no event shall
                   Infinity Trigger be liable for any indirect, incidental,
                   special, consequential, or punitive damages, including without
                   limitation, loss of profits, data, use, goodwill, or other
                   intangible losses, resulting from:
                 </p>
-                <ul className="list-disc pl-6 text-muted-foreground space-y-2">
+                <ul className="list-disc pl-6 text-gray-700 space-y-2 leading-relaxed">
                   <li>
                     Your access to or use of or inability to access or use the
                     Services
@@ -182,8 +182,8 @@ export default function TermsOfServicePage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">8. Indemnification</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-gray-900">8. Indemnification</h2>
+                <p className="text-gray-700 leading-relaxed">
                   You agree to defend, indemnify, and hold harmless Infinity
                   Trigger and our officers, directors, employees, and agents
                   from and against any claims, liabilities, damages, judgments,
@@ -194,14 +194,14 @@ export default function TermsOfServicePage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">9. Termination</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-gray-900">9. Termination</h2>
+                <p className="text-gray-700 leading-relaxed">
                   We may terminate or suspend your access to the Services
                   immediately, without prior notice or liability, for any reason
                   whatsoever, including without limitation if you breach these
                   Terms.
                 </p>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   Upon termination, your right to use the Services will
                   immediately cease. All provisions of these Terms which by
                   their nature should survive termination shall survive
@@ -210,15 +210,15 @@ export default function TermsOfServicePage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">10. Changes to Terms</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-gray-900">10. Changes to Terms</h2>
+                <p className="text-gray-700 leading-relaxed">
                   We reserve the right to modify or replace these Terms at any
                   time. If a revision is material, we will provide at least 30
                   days' notice prior to any new terms taking effect. What
                   constitutes a material change will be determined at our sole
                   discretion.
                 </p>
-                <p className="text-muted-foreground">
+                <p className="text-gray-700 leading-relaxed">
                   By continuing to access or use our Services after any
                   revisions become effective, you agree to be bound by the
                   revised terms.
@@ -226,8 +226,8 @@ export default function TermsOfServicePage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">11. Governing Law</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-gray-900">11. Governing Law</h2>
+                <p className="text-gray-700 leading-relaxed">
                   These Terms shall be governed by and construed in accordance
                   with the laws of Japan, without regard to its conflict of law
                   provisions.
@@ -235,12 +235,12 @@ export default function TermsOfServicePage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold">12. Contact Us</h2>
-                <p className="text-muted-foreground">
+                <h2 className="text-2xl font-bold text-gray-900">12. Contact Us</h2>
+                <p className="text-gray-700 leading-relaxed">
                   If you have any questions about these Terms, please contact us
                   at:
                 </p>
-                <div className="text-muted-foreground">
+                <div className="text-gray-700 leading-relaxed">
                   <p>Infinity Trigger</p>
                   <p>Nagano City, Nagano Prefecture, Japan</p>
                   <p>Email: legal@infinitytrigger.com</p>

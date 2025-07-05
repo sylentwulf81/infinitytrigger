@@ -1,4 +1,4 @@
-// File: /Users/damienlavizzo/Desktop/infinitytrigger/app/layout.tsx
+// File: C:\Users\dlavi\Desktop\Coding\infinitytrigger\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
