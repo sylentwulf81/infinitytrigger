@@ -291,7 +291,7 @@ export default function MeanwhileProjectPage() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="w-full min-[400px]:w-auto"
+                    className="w-full min-[400px]:w-auto hover:bg-gray-100"
                   >
                     Explore Our Other Products
                   </Button>

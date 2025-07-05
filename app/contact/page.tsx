@@ -147,7 +147,7 @@ export default function ContactPage() {
               <Link href="/">
                 <Button
                   variant="outline"
-                  className="gap-1 group transition-all duration-300 hover:bg-background/80 border-primary/20 hover:border-primary/50"
+                  className="gap-1 group transition-all duration-300 border-gray-300 hover:bg-gray-900 hover:text-white"
                 >
                   <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform duration-300" />
                   <span>Back to Home</span>

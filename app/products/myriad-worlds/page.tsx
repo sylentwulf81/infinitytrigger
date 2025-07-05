@@ -28,7 +28,7 @@ export default function MyriadWorldsPage() {
                   </Button>
                 </Link>
                 <Link href="/products">
-                  <Button size="lg" variant="outline">
+                  <Button size="lg" variant="outline" className="hover:bg-gray-100">
                     View All Products
                   </Button>
                 </Link>
@@ -146,7 +146,7 @@ export default function MyriadWorldsPage() {
                   </Button>
                 </Link>
                 <Link href="/products">
-                  <Button size="lg" variant="outline">
+                  <Button size="lg" variant="outline" className="hover:bg-gray-100">
                     <ArrowLeft className="mr-2 h-4 w-4" />
                     Back to Products
                   </Button>
