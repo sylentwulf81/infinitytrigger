@@ -59,7 +59,7 @@ export default function MyriadWorldsPage() {
               <div className="flex items-center justify-center">
                 <div className="aspect-square relative overflow-hidden rounded-lg max-w-md">
                   <Image
-                    src="/images/project2.png"
+                    src="/assets/myriadworlds_mockup.png"
                     alt="Myriad Worlds Creative Commons"
                     fill
                     className="object-cover"
