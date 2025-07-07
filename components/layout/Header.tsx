@@ -17,7 +17,7 @@ export function Header() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/Assets/logo-no-background.png"
+            src="/assets/logo-no-background.png"
             alt="Infinity Trigger Logo"
             width={150}
             height={40}
