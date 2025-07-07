@@ -101,7 +101,7 @@ export default function Home() {
                 <CardContent className="relative">
                   <Image
                     src="/assets/myriadworlds_mockup.png"
-                    alt="Myriad Worlds App Preview"
+                    alt="Myriad Worlds creative storytelling app interface preview"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
