@@ -7,11 +7,11 @@ export function Footer() {
       <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
         <div className="flex items-center gap-2">
           <Image
-            src="/Assets/logo-no-background.png" // Use the new logo
+            src="/Assets/logo-no-background.png"
             alt="Infinity Trigger Logo"
-            width={100} // Adjust width for footer
-            height={27} // Adjust height based on aspect ratio
-            className="object-contain" // Use object-contain
+            width={100} 
+            height={27} 
+            className="object-contain" 
           />
           <p className="text-sm text-gray-600">
             © {new Date().getFullYear()} Infinity Trigger. All rights reserved.
