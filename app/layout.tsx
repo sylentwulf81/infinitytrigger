@@ -8,10 +8,9 @@ import { Footer } from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Infinity Trigger | Creative Tools for Humans",
+  title: "Infinity Trigger | Creative Tools for Creatives",
   description:
-    "We make creative tools that celebrate human creativity and put you in the driver's seat. Discover Meanwhile and Myriad Worlds - apps designed to inspire your creative journey.",
-  generator: "v0.dev",
+    "We make creative tools that celebrate human creativity. Discover Meanwhile and Myriad Worlds - apps designed to inspire your creative journey."
 };
 
 export default function RootLayout({

@@ -21,8 +21,8 @@ export default function ProductsPage() {
                   Our Products
                 </h1>
                 <p className="mx-auto max-w-[700px] text-lg text-gray-600 md:text-xl">
-                  Tools designed to inspire and support your creative process. Each product puts humans first, 
-                  celebrating your unique creative voice.
+                  Tools designed to inspire and support your creative process. Each product puts your creativity first, 
+                  and helps you express your unique creative voice.
                 </p>
               </div>
             </div>
@@ -141,9 +141,9 @@ export default function ProductsPage() {
                       <h4 className="font-semibold text-gray-900">Key Features:</h4>
                       <ul className="text-sm text-gray-600 space-y-1">
                         <li>• Human-crafted stories and characters</li>
-                        <li>• Creative Commons licensing</li>
+                        <li>• Creative Commons commercial licensing</li>
                         <li>• Rich storytelling worlds to explore</li>
-                        <li>• Tools to build your own narratives</li>
+                        <li>• Tools to build your own characters, narratives, and worlds</li>
                       </ul>
                     </div>
                     
@@ -157,7 +157,7 @@ export default function ProductsPage() {
                       <Link href="/contact">
                         <Button variant="outline" className="border-2 border-purple-200 text-purple-600 hover:bg-purple-600 hover:text-white transition-all duration-300">
                           <TestTube className="mr-2 h-4 w-4" />
-                          Join TestFlight
+                          Join Our Community
                         </Button>
                       </Link>
                     </div>
@@ -177,7 +177,7 @@ export default function ProductsPage() {
                   Ready to Get Started?
                 </h2>
                 <p className="mx-auto max-w-[700px] text-blue-100 md:text-xl">
-                  Download Meanwhile from the App Store or join our TestFlight to try Myriad Worlds.
+                  Download Meanwhile from the App Store or join our TestFLight waiting list to try Myriad Worlds.
                 </p>
               </div>
               <div className="flex flex-col gap-4 min-[400px]:flex-row">
@@ -194,7 +194,7 @@ export default function ProductsPage() {
                 <Link href="/contact">
                   <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-gray-900 backdrop-blur-sm transition-all duration-300">
                     <TestTube className="mr-2 h-4 w-4" />
-                    Join TestFlight
+                    Join Waiting List
                   </Button>
                 </Link>
               </div>

@@ -45,7 +45,7 @@ export function Header() {
         <div className="flex items-center gap-4">
           <Link href="/contact" className="hidden md:block">
             <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
-              Join TestFlight
+              Get In Touch
             </Button>
           </Link>
           <Button
@@ -124,7 +124,7 @@ export function Header() {
             <div className="pt-4">
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
                 <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                  Join TestFlight
+                  Contact Us
                 </Button>
               </Link>
             </div>

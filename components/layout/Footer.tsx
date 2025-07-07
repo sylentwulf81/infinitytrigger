@@ -30,15 +30,6 @@ export function Footer() {
           >
             Terms of Service
           </Link>
-          {/* Add back Meanwhile links if needed universally, or keep them page-specific */}
-          {/* 
-          <Link href="/meanwhile-privacy.html" target="_blank" className="text-sm font-medium hover:text-primary transition-colors">
-            Meanwhile Privacy Policy
-          </Link>
-          <Link href="/meanwhile-terms.html" target="_blank" className="text-sm font-medium hover:text-primary transition-colors">
-            Meanwhile Terms
-          </Link>
-          */}
         </nav>
       </div>
     </footer>

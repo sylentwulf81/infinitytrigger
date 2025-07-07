@@ -20,10 +20,10 @@ export default function Home() {
                 </div>
                 
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-clip-text text-transparent">
-                  Humans First, Always
+                  Creatives First, Always
                 </h1>
                 <p className="mx-auto max-w-[700px] text-lg text-gray-600 md:text-xl">
-                  We build creative tools that celebrate human creativity and put you in the driver's seat. 
+                  We build creative tools that celebrate and foster creativity and put you in the driver's seat. 
                   Every piece of content is human-generated, designed to inspire your creative journey.
                 </p>
               </div>

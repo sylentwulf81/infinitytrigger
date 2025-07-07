@@ -20,6 +20,11 @@ const config = {
     },
     extend: {
       colors: {
+        rosequartz: "#AF90A9",
+        chinarose: "#A05C7B",
+        lime: "#CEFF00",
+        cordovan: "#944654",
+        russianviolet: "#23022E",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

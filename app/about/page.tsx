@@ -17,10 +17,10 @@ export default function AboutPage() {
                   Our Mission
                 </div>
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl bg-gradient-to-r from-blue-900 via-green-900 to-gray-900 bg-clip-text text-transparent">
-                  Tools for Creatives, Humans First
+                  Human-First Tools for Creatives
                 </h1>
                 <p className="mx-auto max-w-[700px] text-lg text-gray-600 md:text-xl">
-                  We make tools that celebrate human creativity and put you in the driver's seat.
+                  We make tools and services that celebrate human creativity.
                 </p>
               </div>
             </div>
@@ -33,7 +33,7 @@ export default function AboutPage() {
             <div className="mx-auto max-w-4xl space-y-12">
               <div className="text-center space-y-6">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  Our Mission
+                  Our Ethos
                 </h2>
               </div>
               
@@ -64,7 +64,7 @@ export default function AboutPage() {
                         <h3 className="text-xl font-semibold">Human-Generated</h3>
                       </div>
                       <p className="text-gray-600">
-                        Every story, prompt, and piece of content is crafted by real humans who pour their creativity into each work.
+                        Every story, prompt, and piece of content is crafted by real creatives who pour their creativity into each work.
                       </p>
                     </div>
                   </div>
@@ -126,12 +126,12 @@ export default function AboutPage() {
                     <div className="p-4 rounded-2xl bg-gradient-to-br from-red-500 to-red-600 shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <Heart className="h-8 w-8 text-white" />
                     </div>
-                    <CardTitle className="text-xl">Human-Generated Content</CardTitle>
+                    <CardTitle className="text-xl">For Creatives, By Creatives</CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent className="relative text-center flex-1 flex items-center">
                   <p className="text-gray-600 leading-relaxed">
-                    All of our creative content is made by humans, for humans. We believe in authentic, human-crafted experiences.
+                    We make our creative content for other creatives - writers, aritsts, game designers, and more.
                   </p>
                 </CardContent>
               </Card>
@@ -176,7 +176,7 @@ export default function AboutPage() {
                 </Link>
                 <Link href="/contact">
                   <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-blue-600 backdrop-blur-sm transition-all duration-300">
-                    Join TestFlight
+                    Join Our Community
                   </Button>
                 </Link>
               </div>

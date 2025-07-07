@@ -214,8 +214,8 @@ export default function PrivacyPolicyPage() {
                 <h2 className="text-2xl font-bold text-gray-900">8. Children's Privacy</h2>
                 <p className="text-gray-700 leading-relaxed">
                   Our Services are not intended for individuals under the age of
-                  16. We do not knowingly collect personal information from
-                  children under 16. If you are a parent or guardian and believe
+                  13. We do not knowingly collect personal information from
+                  children under 13. If you are a parent or guardian and believe
                   that your child has provided us with personal information,
                   please contact us.
                 </p>
@@ -246,9 +246,7 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <div className="text-gray-700 leading-relaxed">
                   <p>Infinity Trigger</p>
-                  <p>Nagano City, Nagano Prefecture, Japan</p>
-                  <p>Email: privacy@infinitytrigger.com</p>
-                  <p>Phone: +81 (0) 123-456-789</p>
+                  <p>Email: support@infinitytrigger.com</p>
                 </div>
               </div>
             </div>

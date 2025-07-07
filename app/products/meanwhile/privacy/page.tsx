@@ -190,7 +190,6 @@ export default function MeanwhilePrivacyPage() {
                   <p>Trigger Infinity</p>
                   <p>Nagano City, Nagano Prefecture, Japan</p>
                   <p>Email: contact@triggerinfinity.com</p>
-                  <p>Phone: 070 3771 8976</p>
                 </div>
               </div>
 

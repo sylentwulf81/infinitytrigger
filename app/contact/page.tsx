@@ -22,10 +22,10 @@ export default function ContactPage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
-                  Join Our TestFlight
+                  Get In Touch
                 </h1>
                 <p className="max-w-[700px] text-gray-600 md:text-xl">
-                  Get early access to Myriad Worlds through TestFlight, or reach out with questions about our creative tools. 
+                  Get early access to our upcoming app Myriad Worlds through TestFlight, or reach out with questions about our creative tools. 
                   Meanwhile is now available on the App Store!
                 </p>
               </div>
@@ -53,7 +53,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-medium text-gray-900">Email</h3>
                       <p className="text-sm text-gray-600">
-                        contact@infinitytrigger.com
+                        support@infinitytrigger.com
                       </p>
                     </div>
                   </div>
@@ -62,7 +62,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-medium text-gray-900">Phone</h3>
                       <p className="text-sm text-gray-600">
-                        +81 (0) 123-456-789
+                        // Phone: +81 (0) 123-456-789
                       </p>
                     </div>
                   </div>
@@ -118,8 +118,8 @@ export default function ContactPage() {
                       >
                         <option value="">Select your interest</option>
                         <option value="testflight">Join TestFlight</option>
-                        <option value="meanwhile">Meanwhile App</option>
-                        <option value="myriad-worlds">Myriad Worlds App</option>
+                        <option value="meanwhile">Meanwhile Feedback</option>
+                        <option value="myriad-worlds">Myriad Worlds Feedback</option>
                         <option value="general">General Questions</option>
                       </select>
                     </div>

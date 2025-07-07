@@ -243,8 +243,7 @@ export default function TermsOfServicePage() {
                 <div className="text-gray-700 leading-relaxed">
                   <p>Infinity Trigger</p>
                   <p>Nagano City, Nagano Prefecture, Japan</p>
-                  <p>Email: legal@infinitytrigger.com</p>
-                  <p>Phone: +81 (0) 123-456-789</p>
+                  <p>Email: support@infinitytrigger.com</p>
                 </div>
               </div>
             </div>

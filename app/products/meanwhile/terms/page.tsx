@@ -368,8 +368,8 @@ export default function MeanwhileTermsPage() {
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                   Some states do not allow the exclusion of implied warranties or limitation of liability for incidental
-                  or consequential damages, which means that some of the above limitations may not apply. In these
-                  states, each party's liability will be limited to the greatest extent permitted by law.
+                  or consequential damages, which means that some of the above limitations may not apply to You. But in such a case the exclusions and limitations set forth in this section shall be
+                  applied to the greatest extent enforceable under applicable law.
                 </p>
               </div>
 
@@ -493,7 +493,7 @@ export default function MeanwhileTermsPage() {
                 <p className="text-gray-700 leading-relaxed">
                   If you have any questions about these Terms and Conditions, You can contact us:
                 </p>
-                <p className="text-gray-700 leading-relaxed">By email: meanwhile@infinitytrigger.com</p>
+                <p className="text-gray-700 leading-relaxed">By email: support@infinitytrigger.com</p>
               </div>
             </div>
 
