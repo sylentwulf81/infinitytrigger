@@ -127,7 +127,7 @@ export default function Home() {
             <div className="flex flex-col items-center space-y-4 text-center mb-12">
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  Humans First, Always
+                  Human-Driven Creativity
                 </h2>
                 <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl">
                   At Infinity Trigger, we believe human creativity should be celebrated, fostered, and encouraged.
