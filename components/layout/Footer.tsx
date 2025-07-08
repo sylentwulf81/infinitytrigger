@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
         <div className="flex items-center gap-2">
           <Image
-            src="/assets/logo-no-background.png"
+            src="/Assets/logo-no-background.png"
             alt="Infinity Trigger Logo"
             width={100} 
             height={27} 

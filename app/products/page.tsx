@@ -148,7 +148,7 @@ export default function Products() {
                 <CardContent className="relative space-y-6">
                   <div className="aspect-video relative rounded-lg overflow-hidden bg-gradient-to-br from-brand-purple/20 to-brand-neon/10">
                     <Image
-                      src="/assets/myriadworlds_mockup.png"
+                      src="/Assets/myriadworlds_mockup.png"
                       alt="Myriad Worlds creative storytelling app interface preview"
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
