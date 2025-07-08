@@ -20,11 +20,15 @@ const config = {
     },
     extend: {
       colors: {
-        rosequartz: "#AF90A9",
-        chinarose: "#A05C7B",
-        lime: "#CEFF00",
-        cordovan: "#944654",
-        russianviolet: "#23022E",
+        // New sophisticated brand colors from Coolors palette
+        brand: {
+          lavender: "#d9dbf1",    // Soft lavender/periwinkle
+          gray: "#acb0bd",        // Muted gray-blue
+          mint: "#b1e69b",        // Soft mint green (Volt-like but distinct)
+          teal: "#416165",        // Deep teal
+          dark: "#0b3948",        // Very dark teal/blue
+          pink: "#FFC2CC",        // Soft pink (user requested)
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

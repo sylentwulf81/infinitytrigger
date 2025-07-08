@@ -13,7 +13,7 @@ export function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-brand-lavender/20 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Image
@@ -28,30 +28,36 @@ export function Header() {
         <nav className="hidden md:flex gap-6">
           <Link
             href="/about"
-            className="text-sm font-medium relative group"
+            className="text-sm font-medium relative group text-brand-dark hover:text-brand-teal transition-colors duration-300"
           >
             <span className="block">About</span>
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-teal to-brand-mint transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <Link href="/products" className="text-sm font-medium relative group">
+          <Link 
+            href="/products" 
+            className="text-sm font-medium relative group text-brand-dark hover:text-brand-teal transition-colors duration-300"
+          >
             <span className="block">Products</span>
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-teal to-brand-mint transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <Link href="/contact" className="text-sm font-medium relative group">
+          <Link 
+            href="/contact" 
+            className="text-sm font-medium relative group text-brand-dark hover:text-brand-teal transition-colors duration-300"
+          >
             <span className="block">Contact</span>
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-teal to-brand-mint transition-all duration-300 group-hover:w-full"></span>
           </Link>
         </nav>
         <div className="flex items-center gap-4">
           <Link href="/contact" className="hidden md:block">
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button className="bg-brand-teal hover:bg-brand-mint text-white hover:text-brand-dark shadow-lg hover:shadow-xl transition-all duration-300">
               Get In Touch
             </Button>
           </Link>
           <Button
             variant="outline"
             size="icon"
-            className="md:hidden"
+            className="md:hidden border-brand-teal/30 text-brand-teal hover:bg-brand-teal hover:text-white"
             onClick={toggleMobileMenu}
             aria-expanded={mobileMenuOpen}
           >
@@ -96,26 +102,26 @@ export function Header() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t">
+        <div className="md:hidden border-t border-brand-lavender/20 bg-white/95 backdrop-blur">
           <div className="container py-4 space-y-4">
             <nav className="flex flex-col space-y-4">
               <Link
                 href="/about"
-                className="text-sm font-medium py-2"
+                className="text-sm font-medium py-2 text-brand-dark hover:text-brand-teal transition-colors duration-300"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/products"
-                className="text-sm font-medium py-2"
+                className="text-sm font-medium py-2 text-brand-dark hover:text-brand-teal transition-colors duration-300"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Products
               </Link>
               <Link
                 href="/contact"
-                className="text-sm font-medium py-2"
+                className="text-sm font-medium py-2 text-brand-dark hover:text-brand-teal transition-colors duration-300"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Contact
@@ -123,7 +129,7 @@ export function Header() {
             </nav>
             <div className="pt-4">
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
-                <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
+                <Button className="w-full bg-gradient-to-r from-brand-teal to-brand-mint hover:from-brand-teal/90 hover:to-brand-mint/90 text-white shadow-lg hover:shadow-xl transition-all duration-300">
                   Contact Us
                 </Button>
               </Link>

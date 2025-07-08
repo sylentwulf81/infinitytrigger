@@ -1,158 +1,237 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { ArrowLeft, ArrowRight, Mail, MapPin, Phone } from "lucide-react";
+import { Label } from "@/components/ui/label";
+import { ArrowRight, Mail, MessageSquare, Users, Sparkles } from "lucide-react";
 
-export default function ContactPage() {
+export default function Contact() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col min-h-screen">
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+        {/* Hero Section */}
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-brand-mint/5">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl text-gray-900">
+            <div className="flex flex-col items-center space-y-8 text-center">
+              <div className="space-y-6">
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-[#416165]">
                   Get In Touch
                 </h1>
-                <p className="max-w-[700px] text-gray-600 md:text-xl">
-                  Get early access to our upcoming app Myriad Worlds through TestFlight, or reach out with questions about our creative tools. 
-                  Meanwhile is now available on the App Store!
+                <p className="mx-auto max-w-[700px] text-lg text-gray-600 md:text-xl">
+                  Have questions about our products? Want to join our TestFlight? 
+                  We'd love to hear from you and help you on your creative journey.
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-6xl gap-6 py-12 lg:grid-cols-2">
-              <Card className="bg-white shadow-sm">
+          </div>
+        </section>
+
+        {/* Contact Form Section */}
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-white">
+          <div className="container px-4 md:px-6">
+            <div className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-2">
+              {/* Contact Form Box*/}
+              <div className="space-y-6">
+                <div className="space-y-4">
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-[#416165]">
+                    Send Us a Message
+                  </h2>
+                  <p className="text-gray-600">
+                    Fill out the form below and we'll get back to you as soon as possible.
+                  </p>
+                </div>
+                
+                <Card className="border-1 border-brand-mint shadow-lg bg-brand-gray/70">
+                  <CardContent className="p-6 space-y-4">
+                    <div className="grid gap-4 md:grid-cols-2">
+                      <div className="space-y-2">
+                        <Label htmlFor="first-name" className="text-brand-dark font-medium">First Name</Label>
+                        <Input id="first-name" placeholder="Enter your first name" className="border-brand-purple/20 focus:border-brand-purple" />
+                      </div>
+                      <div className="space-y-2">
+                        <Label htmlFor="last-name" className="text-brand-dark font-medium">Last Name</Label>
+                        <Input id="last-name" placeholder="Enter your last name" className="border-brand-purple/20 focus:border-brand-purple" />
+                      </div>
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="email" className="text-brand-dark font-medium">Email</Label>
+                      <Input id="email" type="email" placeholder="Enter your email" className="border-brand-purple/20 focus:border-brand-purple" />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="subject" className="text-brand-dark font-medium">Subject</Label>
+                      <Input id="subject" placeholder="What's this about?" className="border-brand-purple/20 focus:border-brand-purple" />
+                    </div>
+                    <div className="space-y-2">
+                      <Label htmlFor="message" className="text-brand-dark font-medium">Message</Label>
+                      <Textarea 
+                        id="message" 
+                        placeholder="Tell us more about your inquiry..." 
+                        className="min-h-[120px] border-brand-purple/20 focus:border-brand-purple"
+                      />
+                    </div>
+                    <Button className="w-full bg-brand-mint text-brand-dark font-semibold px-6 py-2 rounded-lg shadow hover:text-brand-mint hover:bg-brand-dark transition-all duration-200">
+                      Send Message
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Contact Info */}
+              <div className="space-y-8">
+                <div className="space-y-6">
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-[#416165]">
+                    Let's Make Great Things Together
+                  </h2>
+                  <p className="text-gray-600">
+                    We're here to help you discover the perfect creative tools for your journey. 
+                    Whether you have questions about our products or want to join our community, 
+                    we'd love to hear from you.
+                  </p>
+                </div>
+
+                <div className="space-y-6">
+                  <Card className="border-1 bg-brand-gray/60 shadow-lg">
+                    <CardContent className="p-6">
+                      <div className="flex items-center space-x-4">
+                        <div className="p-3 rounded-xl bg-brand-mint shadow-lg">
+                          <Mail className="h-6 w-6 text-black" />
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-semibold text-brand-dark">Email Us</h3>
+                          <p className="text-brand-dark hover:text-blue-500"><a href="mailto:support@infinitytrigger.com">support@infinitytrigger.com</a></p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-1 bg-brand-gray/60 shadow-lg ">
+                    <CardContent className="p-6">
+                      <div className="flex items-center space-x-4">
+                        <div className="p-3 rounded-xl bg-brand-mint shadow-lg">
+                          <MessageSquare className="h-6 w-6 text-black" />
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-semibold text-brand-dark">TestFlight / Beta Testing</h3>
+                          <p className="text-gray-600">Help shape our products before they're released</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="border-1 bg-brand-gray/60 shadow-lg">
+                    <CardContent className="p-6">
+                      <div className="flex items-center space-x-4">
+                        <div className="p-3 rounded-xl bg-brand-mint shadow-lg">
+                          <Users className="h-6 w-6 text-black" />
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-semibold text-brand-dark">Community</h3>
+                          <p className="text-gray-600">Connect with fellow creatives</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-brand-purple/5 via-white to-brand-neon/5">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center space-y-4 text-center mb-12">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-brand-teal">
+                Frequently Asked Questions
+              </h2>
+              <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl">
+                Quick answers to common questions about our products and services.
+              </p>
+            </div>
+            
+            <div className="mx-auto grid max-w-4xl gap-6">
+              <Card className="border-2 border-brand-mint bg-brand-gray/70 shadow-lg">
                 <CardHeader>
-                  <CardTitle className="text-gray-900">Contact Information</CardTitle>
-                  <CardDescription className="text-gray-600">
-                    Reach out to us with questions about our apps or to join TestFlight.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <MapPin className="h-6 w-6 text-primary" />
-                    <div>
-                      <h3 className="font-medium text-gray-900">Address</h3>
-                      <p className="text-sm text-gray-600">
-                        Nagano City, Nagano Prefecture, Japan
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <Mail className="h-6 w-6 text-primary" />
-                    <div>
-                      <h3 className="font-medium text-gray-900">Email</h3>
-                      <p className="text-sm text-gray-600">
-                        support@infinitytrigger.com
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <Phone className="h-6 w-6 text-primary" />
-                    <div>
-                      <h3 className="font-medium text-gray-900">Phone</h3>
-                      <p className="text-sm text-gray-600">
-                        // Phone: +81 (0) 123-456-789
-                      </p>
-                    </div>
-                  </div>
-                  <div className="pt-4">
-                    <Image
-                      src="/images/nagano-landscape.png"
-                      width={500}
-                      height={300}
-                      alt="Nagano Landscape"
-                      className="rounded-lg object-cover w-full shadow-md"
-                    />
-                  </div>
-                </CardContent>
-              </Card>
-              <Card className="bg-white shadow-sm">
-                <CardHeader>
-                  <CardTitle className="text-gray-900">Get in Touch</CardTitle>
-                  <CardDescription className="text-gray-600">
-                    Join our TestFlight or ask questions about Meanwhile and Myriad Worlds.
-                  </CardDescription>
+                  <CardTitle className="text-brand-dark">How do I join the TestFlight for Myriad Worlds?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <form className="space-y-4">
-                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                      <div className="space-y-2">
-                        <Label htmlFor="first-name" className="text-gray-900">First name</Label>
-                        <Input
-                          id="first-name"
-                          placeholder="Enter your first name"
-                        />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="last-name" className="text-gray-900">Last name</Label>
-                        <Input
-                          id="last-name"
-                          placeholder="Enter your last name"
-                        />
-                      </div>
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email" className="text-gray-900">Email</Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="Enter your email"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="interest" className="text-gray-900">What are you interested in?</Label>
-                      <select
-                        id="interest"
-                        className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      >
-                        <option value="">Select your interest</option>
-                        <option value="testflight">Join TestFlight</option>
-                        <option value="meanwhile">Meanwhile Feedback</option>
-                        <option value="myriad-worlds">Myriad Worlds Feedback</option>
-                        <option value="general">General Questions</option>
-                      </select>
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="message" className="text-gray-900">Message</Label>
-                      <Textarea
-                        id="message"
-                        placeholder="Tell us about your interest in our creative tools or ask any questions"
-                        className="min-h-[120px]"
-                      />
-                    </div>
-                    <Button
-                      type="submit"
-                      className="w-full group relative overflow-hidden bg-primary text-primary-foreground hover:bg-primary/90"
-                    >
-                      <span className="relative z-10">Send Message</span>
-                      <span className="absolute inset-0 bg-primary-foreground/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
-                      <ArrowRight className="ml-2 h-4 w-4 relative z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    </Button>
-                  </form>
+                  <p className="text-brand-dark">
+                    Simply send us a message through the contact form above, and we'll add you to our TestFlight waiting list. 
+                    We'll notify you as soon as spots become available.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-brand-mint bg-brand-gray/70 shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-brand-dark">Is Meanwhile available on Android?</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-brand-dark">
+                    Currently, Meanwhile is only available on iOS and iPadOS. We're working on an Android version 
+                    and will announce it when it's ready for testing.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-brand-mint bg-brand-gray/70 shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-brand-dark">Can I use Myriad Worlds content in my own projects?</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-brand-dark">
+                    Yes! All content in Myriad Worlds is licensed under Creative Commons, 
+                    which means you can use it in your own creative projects, including commercial work.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-brand-mint bg-brand-gray/70 shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-brand-dark">Do you offer custom software solutions for outside organizations?</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-brand-dark">
+                    We're always interested in hearing about unique use cases and team needs. 
+                    Contact us to discuss how we might be able to help with custom digital solutions for Apple platforms, Android, and native web.
+                  </p>
                 </CardContent>
               </Card>
             </div>
-            <div className="flex justify-center">
-              <Link href="/">
-                <Button
-                  variant="outline"
-                  className="gap-1 group transition-all duration-300 border-gray-300 hover:bg-gray-900 hover:text-white"
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-brand-teal">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center space-y-4 text-center">
+              <div className="space-y-4">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
+                  Ready to Start Creating?
+                </h2>
+                <p className="mx-auto max-w-[700px] text-white/90 md:text-xl">
+                  Download Meanwhile from the App Store or join our upcoming TestFlight for Myriad Worlds to be among the first to try the new app.
+                </p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-2">
+                <Link 
+                  href="https://apps.apple.com/us/app/meanwhile-daily-writing/id6742810856" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform duration-300" />
-                  <span>Back to Home</span>
-                </Button>
-              </Link>
+                  <Button size="lg" className="bg-brand-dark text-brand-mint font-semibold px-8 py-4 rounded-lg hover:bg-brand-mint hover:text-brand-dark transition-all duration-200">
+                    Download Meanwhile
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+                <Link href="/products">
+                  <Button size="lg" className="border-1 border-brand-mint text-white font-semibold px-8 py-4 rounded-lg hover:bg-brand-mint hover:text-[#416165] transition-all duration-200">
+                    Explore Our Products
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </section>

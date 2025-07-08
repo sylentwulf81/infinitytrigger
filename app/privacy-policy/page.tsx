@@ -27,7 +27,9 @@ export default function PrivacyPolicyPage() {
 
             <div className="mx-auto max-w-3xl bg-white rounded-lg shadow-sm p-8 space-y-8">
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">1. Introduction</h2>
+                <h2 className="text-2xl font-bold text-gray-900">
+                  1. Introduction
+                </h2>
                 <p className="text-gray-700 leading-relaxed">
                   Infinity Trigger ("we," "our," or "us") is committed to
                   protecting your privacy. This Privacy Policy explains how we
@@ -161,7 +163,9 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">5. Data Security</h2>
+                <h2 className="text-2xl font-bold text-gray-900">
+                  5. Data Security
+                </h2>
                 <p className="text-gray-700 leading-relaxed">
                   We implement appropriate technical and organizational measures
                   to protect the security of your personal information. However,
@@ -171,7 +175,9 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">6. Third-Party Services</h2>
+                <h2 className="text-2xl font-bold text-gray-900">
+                  6. Third-Party Services
+                </h2>
                 <p className="text-gray-700 leading-relaxed">
                   Our Services may contain links to third-party websites and
                   services that are not owned or controlled by us. We have no
@@ -182,7 +188,9 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">7. Your Rights</h2>
+                <h2 className="text-2xl font-bold text-gray-900">
+                  7. Your Rights
+                </h2>
                 <p className="text-gray-700 leading-relaxed">
                   Depending on your location, you may have certain rights
                   regarding your personal information, including:
@@ -211,7 +219,9 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">8. Children's Privacy</h2>
+                <h2 className="text-2xl font-bold text-gray-900">
+                  8. Children's Privacy
+                </h2>
                 <p className="text-gray-700 leading-relaxed">
                   Our Services are not intended for individuals under the age of
                   13. We do not knowingly collect personal information from
@@ -239,7 +249,9 @@ export default function PrivacyPolicyPage() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">10. Contact Us</h2>
+                <h2 className="text-2xl font-bold text-gray-900">
+                  10. Contact Us
+                </h2>
                 <p className="text-gray-700 leading-relaxed">
                   If you have any questions about this Privacy Policy, please
                   contact us at:
