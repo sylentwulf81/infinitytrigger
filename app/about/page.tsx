@@ -18,13 +18,18 @@ export default function About() {
         {/* Hero Section */}
         <section className="w-full py-16 bg-brand-mint/20 dark:bg-brand-dark">
           <div className="container px-4 md:px-6 flex flex-col items-center text-center gap-8">
-            <h1 className="text-5xl md:text-6xl font-extrabold text-brand-dark dark:text-brand-lavender leading-tight">
+            <h1 className="text-5xl md:text-6xl font-extrabold text-brand-dark dark:text-brand-mint leading-tight">
               About Infinity Trigger
             </h1>
-            <p className="max-w-2xl mx-auto text-lg md:text-xl text-brand-dark/80 dark:text-brand-lavender/80 font-medium">
+            <p className="max-w-2xl mx-auto text-lg md:text-xl text-brand-dark/80 dark:text-white font-medium">
               We're a small team passionate about building creative tools that
               put humans first. We celebrate and help foster creativity in all
               its forms.
+            </p>
+            <p className="max-w-2xl mx-auto text-lg md:text-xl text-brand-dark/80 dark:text-white font-medium">
+              Infinity Trigger is based in Nagano City, Nagano Prefecture,
+              Japan. We strive to make our products accessible to everyone, all
+              over the world.
             </p>
           </div>
         </section>
@@ -33,40 +38,59 @@ export default function About() {
         <section className="w-full py-16 bg-brand-lavender dark:bg-gradient-to-b dark:from-brand-dark dark:to-brand-teal">
           <div className="container px-4 md:px-6">
             <div className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-2 items-center">
-              <div className="space-y-6">
-                <h2 className="text-3xl md:text-4xl font-bold text-brand-dark dark:text-brand-mint">
-                  Our Identity
-                </h2>
-                <p className="text-lg text-brand-dark/80 dark:text-white/80 leading-relaxed">
-                  At Infinity Trigger, we believe that technology should serve
-                  creativity, not replace it. Humans should always be in the
-                  driver's seat, telling the stories that move us. We build
-                  tools that amplify the human creative voice, celebrating the
-                  unique perspective that each of us brings to the world.
-                </p>
-                <p className="text-lg text-brand-dark/80 dark:text-white/80 leading-relaxed">
-                  Every piece of creative content in our apps is
-                  human-generated. Every story, every prompt, every element is
-                  crafted by real people who understand the creative process and
-                  the challenges and victories that come with it.
-                </p>
-              </div>
-              <div className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 flex flex-col gap-4">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="p-3 rounded-full bg-brand-dark/60 dark:bg-brand-mint/60">
-                    <Target className="h-7 w-7 text-brand-mint dark:text-brand-dark" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-brand-mint">
-                      Curated Creativity
-                    </h3>
-                  </div>
-                </div>
-                <p className="text-white">
-                  We prioritize human creativity and intuition in everything we
-                  build.
-                </p>
-              </div>
+              <Card className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 border-2 border-brand-gray dark:border-brand-mint">
+                <CardHeader>
+                  <CardTitle className="text-3xl md:text-4xl font-bold text-brand-mint">
+                    Our Identity
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-lg text-white/80 leading-relaxed">
+                    At Infinity Trigger, we believe that technology should serve
+                    human creativity, not replace it. Stories have always been at
+                    the heart of the human experience. We believe humans should
+                    always be in the driver's seat, telling the stories that move
+                    us, creating the worlds and experiences that we all share. We
+                    build tools that amplify the human creative voice, celebrating
+                    the unique perspective that each of us brings to the world.
+                  </p>
+                  <p className="text-lg text-white/80 leading-relaxed mt-4">
+                    Every piece of creative content in our apps is
+                    human-generated. Every story, every prompt, every element is
+                    crafted by real people who understand the creative process and
+                    the challenges and victories that come with it.
+                  </p>
+                </CardContent>
+              </Card>
+              <Image
+                src="/images/pexels-abby-chung-371167-1106468.jpg"
+                alt="A person browsing books in a library, symbolizing curated creativity."
+                width={600}
+                height={400}
+                className="rounded-2xl shadow-lg object-cover w-full h-full"
+              />
+              <Image
+                src="/images/pexels-dsd-143941-1829980.jpg"
+                alt="Matsumoto Castle in Japan, reflecting the company's roots."
+                width={600}
+                height={400}
+                className="rounded-2xl shadow-lg object-cover w-full h-full"
+              />
+              <Card className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 border-2 border-brand-gray dark:border-brand-mint">
+                <CardHeader>
+                  <CardTitle className="text-3xl md:text-4xl font-bold text-brand-mint">
+                    Our Story
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-lg text-white/80 leading-relaxed">
+                    Infinity Trigger started with a simple idea: to create tools that we, as creatives, would want to use. Our journey has been one of passion, late nights, and a relentless pursuit of quality.
+                  </p>
+                  <p className="text-lg text-white/80 leading-relaxed mt-4">
+                    From a small project based in the heart of the Japanese Alps, we've grown into a small but dedicated team, committed to building software that empowers and inspires artists, writers, and creators around the world.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
@@ -84,7 +108,7 @@ export default function About() {
             </div>
 
             <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
-              <div className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 flex flex-col gap-4 items-start">
+              <div className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 flex flex-col gap-4 items-start border-2 border-brand-gray dark:border-brand-mint">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="p-3 rounded-full bg-brand-dark/60">
                     <Users className="h-7 w-7 text-brand-mint" />
@@ -102,7 +126,7 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 flex flex-col gap-4 items-start">
+              <div className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 flex flex-col gap-4 items-start border-2 border-brand-gray dark:border-brand-mint">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="p-3 rounded-full bg-brand-dark/60">
                     <Lightbulb className="h-7 w-7 text-brand-mint" />
@@ -120,7 +144,7 @@ export default function About() {
                 </p>
               </div>
 
-              <div className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 flex flex-col gap-4 items-start">
+              <div className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 flex flex-col gap-4 items-start border-2 border-brand-gray dark:border-brand-mint">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="p-3 rounded-full bg-brand-dark/60">
                     <Heart className="h-7 w-7 text-brand-mint" />
@@ -152,14 +176,14 @@ export default function About() {
                 We are a small team with big dreams for the future of digital
                 creative tools. We are a team of developers, designers, and
                 content creators who are passionate about creating tools that
-                help people create. Many of the are creative hobbyists or
-                professionals ourselves, and we strive to build the tools that we want to
-                use ourselves.
+                help people create. Many of us are creative hobbyists or
+                professionals ourselves, and we strive to build the tools that
+                we want to use ourselves.
               </p>
             </div>
 
             <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
-              <div className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 flex flex-col items-center text-center gap-4">
+              <div className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 flex flex-col items-center text-center gap-4 border-2 border-brand-gray dark:border-brand-mint">
                 <div className="p-4 rounded-full bg-brand-dark/60">
                   <Users className="h-8 w-8 text-brand-mint" />
                 </div>
@@ -170,7 +194,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 flex flex-col items-center text-center gap-4">
+              <div className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 flex flex-col items-center text-center gap-4 border-2 border-brand-gray dark:border-brand-mint">
                 <div className="p-4 rounded-full bg-brand-dark/60">
                   <Heart className="h-8 w-8 text-brand-mint" />
                 </div>
@@ -181,7 +205,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 flex flex-col items-center text-center gap-4">
+              <div className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 flex flex-col items-center text-center gap-4 border-2 border-brand-gray dark:border-brand-mint">
                 <div className="p-4 rounded-full bg-brand-dark/60">
                   <Sparkles className="h-8 w-8 text-brand-mint" />
                 </div>

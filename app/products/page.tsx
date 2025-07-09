@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Brain, BookOpen, Earth } from "lucide-react";
-import { BrandButton, BrandButtonAlt } from "@/components/ui/BrandButton";
+import { BrandButton, BrandButtonAlt } from "@/components/BrandButton";
 import { ProductCard } from "@/components/ProductCard";
 
 export default function Products() {
@@ -85,7 +85,7 @@ export default function Products() {
                 imageSrc="/Assets/myriadworlds_mockup.png"
                 imageAlt="Myriad Worlds creative storytelling app interface preview"
                 badge={
-                  <div className="inline-flex items-center rounded-full bg-brand-pink px-3 py-1 text-xs font-medium text-brand-purple border border-brand-purple/30 dark:bg-brand-pink/60 dark:text-brand-dark">
+                  <div className="inline-flex items-center rounded-full bg-brand-pink px-3 py-1 text-xs font-medium text-brand-purple border border-brand-purple/30 dark:bg-brand-pink dark:text-brand-dark">
                     Coming Soon
                   </div>
                 }
