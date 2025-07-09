@@ -1989,8 +1989,18 @@ video {
 .text-white\/80 {
   color: rgb(255 255 255 / 0.8);
 }
+.text-brand-gray {
+  --tw-text-opacity: 1;
+  color: rgb(172 176 189 / var(--tw-text-opacity, 1));
+}
+.underline {
+  text-decoration-line: underline;
+}
 .underline-offset-4 {
   text-underline-offset: 4px;
+}
+.underline-offset-2 {
+  text-underline-offset: 2px;
 }
 .opacity-0 {
   opacity: 0;
