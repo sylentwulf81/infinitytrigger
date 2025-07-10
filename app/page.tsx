@@ -10,6 +10,7 @@ import {
   Users,
   Lightbulb,
   Monitor,
+  BookOpen,
 } from "lucide-react";
 
 export default function Home() {
@@ -17,15 +18,20 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-16 bg-brand-mint/20 dark:bg-brand-dark">
+        <section className="w-full py-20 bg-gradient-to-b from-brand-mint/20 to-white dark:from-brand-dark dark:to-brand-teal/20">
           <div className="container px-4 md:px-6 flex flex-col items-center text-center gap-8">
+            <div className="flex items-center gap-2 mb-2">
+              <BookOpen className="h-6 w-6 text-brand-teal dark:text-brand-mint" />
+              <span className="text-sm font-medium text-brand-teal dark:text-brand-mint">Welcome to Infinity Trigger</span>
+            </div>
             <h1 className="text-5xl md:text-6xl font-extrabold text-brand-dark dark:text-brand-mint leading-tight">
-              Human-Led Creativity
+              Where Human Creativity<br />Takes Center Stage
             </h1>
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-brand-dark/80 dark:text-white/80 font-medium">
-              At Infinity Trigger, we believe human creativity should be celebrated, fostered, and encouraged.
+              We're crafting tools that celebrate and amplify your creative voice. Our mission is simple: put powerful, 
+              human-centered creative tools in your hands, then step back and let your imagination soar.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
               <Link href="/products">
                 <BrandButton>
                   Explore Our Products
@@ -38,6 +44,17 @@ export default function Home() {
                 </BrandButtonAlt>
               </Link>
             </div>
+            <div className="mt-8 flex items-center gap-4 text-sm text-brand-dark/60 dark:text-white/60">
+              <div className="flex items-center gap-1">
+                <Heart className="h-4 w-4" />
+                <span>Made with love in Nagano Prefecture, Japan</span>
+              </div>
+              <div className="h-1 w-1 rounded-full bg-brand-dark/60 dark:bg-white/60" />
+              <div className="flex items-center gap-1">
+                <Users className="h-4 w-4" />
+                <span>Built for creators like you</span>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -45,25 +62,27 @@ export default function Home() {
         <section className="w-full py-16 bg-white dark:bg-brand-teal/70">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center mb-12">
+              <span className="text-brand-teal dark:text-brand-mint text-sm font-medium mb-2">Our Creative Tools</span>
               <h2 className="text-3xl md:text-4xl font-bold text-brand-dark dark:text-brand-mint mb-2">
-                Our Products
+                Tools That Inspire
               </h2>
               <p className="max-w-xl mx-auto text-brand-dark/80 dark:text-white/80 text-lg">
-                We build digital tools to stimulate your imagination, and help you tell your stories. Whether you're a writer, artist, filmmaker,or just someone who loves to create, we've got you covered.
+                Thoughtfully designed apps that help you write, create, and tell your stories. Whether you're a writer, 
+                artist, filmmaker, or someone who loves to create, we're here to support your creative journey.
               </p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
               {/* Meanwhile Card */}
-              <Card className="bg-brand-gray/70 dark:bg-brand-teal shadow-lg dark:shadow-gray-900/50 p-8 flex flex-col gap-4 items-start border-2 border-brand-mint dark:border-brand-mint">
+              <Card className="bg-brand-gray/70 dark:bg-brand-teal shadow-lg dark:shadow-gray-900/50 p-8 flex flex-col gap-4 items-start border-2 border-brand-teal dark:border-brand-mint">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="p-3 rounded-full bg-brand-mint/20 dark:bg-brand-mint/10">
+                  <div className="p-3 rounded-full bg-brand-mint dark:bg-brand-mint/30">
                     <Heart className="h-7 w-7 text-brand-teal dark:text-brand-mint" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-brand-dark dark:text-brand-mint">
                       Meanwhile
                     </h3>
-                    <span className="inline-block text-xs font-semibold bg-brand-mint/30 dark:bg-brand-mint/20 text-brand-teal dark:text-brand-mint px-3 py-1 rounded-full ml-2">
+                    <span className="inline-block text-xs font-semibold bg-brand-mint dark:bg-brand-mint text-brand-teal dark:text-brand-dark px-3 py-1 rounded-full ml-2">
                       Available Now
                     </span>
                   </div>
@@ -92,16 +111,16 @@ export default function Home() {
                 </div>
               </Card>
               {/* Myriad Worlds Card */}
-              <Card className="bg-brand-gray/70 dark:bg-brand-teal shadow-lg dark:shadow-gray-900/50 p-8 flex flex-col gap-4 items-start border-2 border-brand-mint dark:border-brand-mint">
+              <Card className="bg-brand-gray/70 dark:bg-brand-teal shadow-lg dark:shadow-gray-900/50 p-8 flex flex-col gap-4 items-start border-2 border-brand-teal dark:border-brand-mint">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="p-3 rounded-full bg-brand-lavender/20 dark:bg-brand-lavender/10">
+                  <div className="p-3 rounded-full bg-brand-lavender dark:bg-brand-lavender/10">
                     <Palette className="h-7 w-7 text-brand-teal dark:text-brand-mint" />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-brand-dark dark:text-brand-mint">
                       Myriad Worlds
                     </h3>
-                    <span className="inline-block text-xs font-semibold bg-brand-lavender/30 dark:bg-brand-lavender/20 text-brand-teal dark:text-brand-mint px-3 py-1 rounded-full ml-2">
+                    <span className="inline-block text-xs font-semibold bg-brand-pink dark:bg-brand-lavender text-brand-teal dark:text-brand-teal px-3 py-1 rounded-full ml-2">
                       Coming Soon
                     </span>
                   </div>
@@ -122,7 +141,7 @@ export default function Home() {
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </BrandButton>
                   </Link>
-                  <Link href="/contact">
+                  <Link href="https://testflight.apple.com/join/uJVk52wq" target="_blank" rel="noopener noreferrer">
                     <BrandButtonAlt>
                       TestFlight
                     </BrandButtonAlt>
@@ -147,8 +166,8 @@ export default function Home() {
             <div className="grid gap-8 md:grid-cols-3 max-w-5xl mx-auto">
               {/* Value Card 1 */}
               <Card className="bg-brand-mint/30 dark:bg-brand-mint/10 rounded-2xl shadow-lg dark:shadow-gray-900/50 p-8 flex flex-col items-center text-center gap-4 border-2 border-brand-mint/20 dark:border-brand-mint/10">
-                <div className="p-4 rounded-full bg-brand-lavender/30 dark:bg-brand-lavender/70">
-                  <Users className="h-8 w-8 text-brand-teal dark:text-brand-mint" />
+                <div className="p-4 rounded-full bg-brand-dark dark:bg-brand-lavender/70">
+                  <Users className="h-8 w-8 text-brand-mint dark:text-brand-teal" />
                 </div>
                 <h3 className="text-xl font-bold text-brand-dark dark:text-brand-mint">
                   Human-Centered
@@ -159,8 +178,8 @@ export default function Home() {
               </Card>
               {/* Value Card 2 */}
               <Card className="bg-brand-mint/30 dark:bg-brand-mint/10 rounded-2xl shadow-lg dark:shadow-gray-900/50 p-8 flex flex-col items-center text-center gap-4 border-2 border-brand-mint/20 dark:border-brand-mint/10">
-                <div className="p-4 rounded-full bg-brand-lavender/30 dark:bg-brand-lavender/70">
-                  <Lightbulb className="h-8 w-8 text-brand-teal dark:text-brand-mint" />
+                <div className="p-4 rounded-full bg-brand-dark dark:bg-brand-lavender/70">
+                  <Lightbulb className="h-8 w-8 text-brand-mint dark:text-brand-teal" />
                 </div>
                 <h3 className="text-xl font-bold text-brand-dark dark:text-brand-mint">
                   Celebrate Diversity
@@ -171,8 +190,8 @@ export default function Home() {
               </Card>
               {/* Value Card 3 */}
               <Card className="bg-brand-mint/30 dark:bg-brand-mint/10 rounded-2xl shadow-lg dark:shadow-gray-900/50 p-8 flex flex-col items-center text-center gap-4 border-2 border-brand-mint/20 dark:border-brand-mint/10">
-                <div className="p-4 rounded-full bg-brand-lavender/30 dark:bg-brand-lavender/70">
-                  <Heart className="h-8 w-8 text-brand-teal dark:text-brand-mint" />
+                <div className="p-4 rounded-full bg-brand-dark dark:bg-brand-lavender/70">
+                  <Heart className="h-8 w-8 text-brand-mint dark:text-brand-teal" />
                 </div>
                 <h3 className="text-xl font-bold text-brand-dark dark:text-brand-mint">
                   Authentic Content
@@ -195,10 +214,10 @@ export default function Home() {
               Join our TestFlight to get early access to our creative tools and be part of our community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-2">
-              <Link href="/contact">
+              <Link href="https://testflight.apple.com/join/uJVk52wq" target="_blank" rel="noopener noreferrer">
                 <BrandButton>
                   Join TestFlight
-                  <Smartphone className="ml-2 h-5 w-5" />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </BrandButton>
               </Link>
               <Link href="/products">

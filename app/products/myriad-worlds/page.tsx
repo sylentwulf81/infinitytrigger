@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowLeft, Heart, BookOpen, Share2 } from "lucide-react";
+import { BrandButton, BrandButtonAlt } from "@/components/BrandButton";
+import { ArrowRight } from "lucide-react";
 
 export default function MyriadWorldsPage() {
   return (
@@ -21,11 +23,12 @@ export default function MyriadWorldsPage() {
                   Use our human-generated stories as starting points for your own creative adventures.
                 </p>
               </div>
-              <div className="space-x-4">
-                <Link href="/contact">
-                  <Button size="lg">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="https://testflight.apple.com/join/uJVk52wq" target="_blank" rel="noopener noreferrer">
+                  <BrandButton>
                     Join TestFlight
-                  </Button>
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </BrandButton>
                 </Link>
                 <Link href="/products">
                   <Button size="lg" variant="outline" className="hover:bg-gray-100">
@@ -139,11 +142,12 @@ export default function MyriadWorldsPage() {
                   Join our TestFlight to get early access to Myriad Worlds and start exploring human-crafted stories.
                 </p>
               </div>
-              <div className="space-x-4">
-                <Link href="/contact">
-                  <Button size="lg">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-2">
+                <Link href="https://testflight.apple.com/join/uJVk52wq" target="_blank" rel="noopener noreferrer">
+                  <BrandButton>
                     Join TestFlight
-                  </Button>
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </BrandButton>
                 </Link>
                 <Link href="/products">
                   <Button size="lg" variant="outline" className="hover:bg-gray-100">

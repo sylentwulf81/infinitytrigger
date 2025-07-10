@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { ArrowRight, Mail, MessageSquare, Users, Sparkles } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 export default function Contact() {
   return (
@@ -211,68 +212,63 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="mx-auto grid max-w-4xl gap-6">
-              <Card className="border-2 border-brand-mint dark:border-brand-mint bg-brand-gray/70 dark:bg-brand-teal shadow-lg">
-                <CardHeader>
-                  <CardTitle className="text-brand-dark dark:text-brand-mint">
+            <div className="mx-auto">
+              <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto bg-white dark:bg-brand-dark dark:text-brand-mint">
+                <AccordionItem value="testflight">
+                  <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline">
                     How do I join the TestFlight for Myriad Worlds?
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-brand-dark dark:text-white">
-                    Simply send us a message through the contact form above, and
-                    we'll add you to our TestFlight waiting list. We'll notify
-                    you as soon as spots become available.
-                  </p>
-                </CardContent>
-              </Card>
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-700 leading-relaxed dark:text-white">
+                    You can join the Myriad Worlds TestFlight directly by clicking{" "}
+                    <Link 
+                      href="https://testflight.apple.com/join/uJVk52wq"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-brand-teal dark:text-brand-mint hover:underline"
+                    >
+                      here
+                    </Link>{" "}
+                    or visiting{" "}
+                    <span className="font-mono bg-gray-100 dark:bg-gray-800 px-1 py-0.5 rounded">
+                      https://testflight.apple.com/join/uJVk52wq
+                    </span>
+                  </AccordionContent>
+                </AccordionItem>
 
-              <Card className="border-2 border-brand-mint bg-brand-gray/70 dark:bg-brand-teal shadow-lg">
-                <CardHeader>
-                  <CardTitle className="text-brand-dark dark:text-brand-mint">
+                <AccordionItem value="android">
+                  <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline">
                     Is Meanwhile available on Android?
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-brand-dark dark:text-white">
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-700 leading-relaxed dark:text-white">
                     Currently, Meanwhile is only available on iOS and iPadOS.
                     We're working on an Android version and will announce it
                     when it's ready for testing.
-                  </p>
-                </CardContent>
-              </Card>
+                  </AccordionContent>
+                </AccordionItem>
 
-              <Card className="border-2 border-brand-mint bg-brand-gray/70 dark:bg-brand-teal shadow-lg">
-                <CardHeader>
-                  <CardTitle className="text-brand-dark dark:text-brand-mint">
+                <AccordionItem value="content-usage">
+                  <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline">
                     Can I use Myriad Worlds content in my own projects?
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-brand-dark dark:text-white">
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-700 leading-relaxed dark:text-white">
                     Yes! All content in Myriad Worlds is licensed under Creative
                     Commons, which means you can use it in your own creative
                     projects, including commercial work.
-                  </p>
-                </CardContent>
-              </Card>
+                  </AccordionContent>
+                </AccordionItem>
 
-              <Card className="border-2 border-brand-mint bg-brand-gray/70 dark:bg-brand-teal shadow-lg">
-                <CardHeader>
-                  <CardTitle className="text-brand-dark dark:text-brand-mint">
-                    Do you offer custom software solutions for outside
-                    organizations?
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-brand-dark dark:text-white">
+                <AccordionItem value="custom-solutions">
+                  <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline">
+                    Do you offer custom software solutions for outside organizations?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-700 leading-relaxed dark:text-white">
                     We're always interested in hearing about unique use cases
                     and team needs. Contact us to discuss how we might be able
                     to help with custom digital solutions for Apple platforms,
                     Android, and native web.
-                  </p>
-                </CardContent>
-              </Card>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
           </div>
         </section>
@@ -291,14 +287,10 @@ export default function Contact() {
                   new app.
                 </p>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-2">
-                <Link
-                  href="https://apps.apple.com/us/app/meanwhile-daily-writing/id6742810856"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                <Link href="https://testflight.apple.com/join/uJVk52wq" target="_blank" rel="noopener noreferrer">
                   <BrandButton>
-                    Download Meanwhile
+                    Join TestFlight
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </BrandButton>
                 </Link>
