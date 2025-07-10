@@ -1,267 +1,164 @@
 import Link from "next/link";
-import Image from "next/image";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 
 export default function TermsOfServicePage() {
   return (
-    <div className="flex min-h-screen flex-col">
-      <main className="flex-1">
-        <section className="w-full py-12 md:py-24 bg-gray-50">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900">
-                  Terms of Service
-                </h1>
-                <p className="text-gray-600">
-                  Last updated:{" "}
-                  {new Date().toLocaleDateString("en-US", {
-                    month: "long",
-                    day: "numeric",
-                    year: "numeric",
-                  })}
-                </p>
-              </div>
-            </div>
-
-            <div className="mx-auto max-w-3xl bg-white rounded-lg shadow-sm p-8 space-y-8">
-              <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">1. Agreement to Terms</h2>
-                <p className="text-gray-700 leading-relaxed">
-                  These Terms of Service ("Terms") constitute a legally binding
-                  agreement between you and Infinity Trigger ("we," "our," or
-                  "us") regarding your access to and use of our website and
-                  services (collectively, the "Services").
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                  By accessing or using our Services, you agree to be bound by
-                  these Terms. If you do not agree to these Terms, you may not
-                  access or use the Services.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">2. Services Description</h2>
-                <p className="text-gray-700 leading-relaxed">
-                  Infinity Trigger provides web and mobile application
-                  development services, including but not limited to website
-                  design, application development, maintenance, and related
-                  consulting services.
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                  We reserve the right to modify, suspend, or discontinue any
-                  aspect of our Services at any time, with or without notice.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">3. User Accounts</h2>
-                <p className="text-gray-700 leading-relaxed">
-                  Some of our Services may require you to create an account. You
-                  agree to provide accurate, current, and complete information
-                  during the registration process and to update such information
-                  to keep it accurate, current, and complete.
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                  You are responsible for safeguarding your account credentials
-                  and for all activities that occur under your account. You
-                  agree to notify us immediately of any unauthorized use of your
-                  account.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">
-                  4. Client Responsibilities
-                </h2>
-                <p className="text-gray-700 leading-relaxed">
-                  If you engage our development services, you agree to:
-                </p>
-                <ul className="list-disc pl-6 text-gray-700 space-y-2 leading-relaxed">
-                  <li>
-                    Provide accurate and complete information necessary for the
-                    completion of the project
-                  </li>
-                  <li>
-                    Review and provide feedback on deliverables in a timely
-                    manner
-                  </li>
-                  <li>
-                    Pay all fees as agreed upon in the project proposal or
-                    contract
-                  </li>
-                  <li>
-                    Obtain all necessary permissions and rights for materials
-                    provided to us
-                  </li>
-                </ul>
-              </div>
-
-              <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">5. Intellectual Property</h2>
-                <h3 className="text-xl font-semibold text-gray-800">
-                  5.1 Our Intellectual Property
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  The Services, including all content, features, and
-                  functionality, are owned by Infinity Trigger or our licensors
-                  and are protected by copyright, trademark, and other
-                  intellectual property laws.
-                </p>
-
-                <h3 className="text-xl font-semibold text-gray-800">5.2 Client Materials</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  You retain ownership of all materials you provide to us. By
-                  providing materials to us, you grant us a non-exclusive,
-                  worldwide, royalty-free license to use, reproduce, modify, and
-                  display such materials solely for the purpose of providing the
-                  Services to you.
-                </p>
-
-                <h3 className="text-xl font-semibold text-gray-800">5.3 Deliverables</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Upon full payment of all applicable fees, we will assign to
-                  you all rights, title, and interest in the deliverables
-                  specifically created for you, except for:
-                </p>
-                <ul className="list-disc pl-6 text-gray-700 space-y-2 leading-relaxed">
-                  <li>
-                    Third-party materials incorporated into the deliverables
-                  </li>
-                  <li>Our pre-existing intellectual property</li>
-                  <li>
-                    General programming techniques, algorithms, methods, or
-                    processes
-                  </li>
-                </ul>
-              </div>
-
-              <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">6. Payment Terms</h2>
-                <p className="text-gray-700 leading-relaxed">
-                  Payment terms will be specified in the project proposal or
-                  contract. Unless otherwise agreed upon:
-                </p>
-                <ul className="list-disc pl-6 text-gray-700 space-y-2 leading-relaxed">
-                  <li>A deposit may be required before work begins</li>
-                  <li>Invoices are due upon receipt</li>
-                  <li>Late payments may incur additional fees</li>
-                  <li>
-                    We reserve the right to suspend work on projects with
-                    outstanding payments
-                  </li>
-                </ul>
-              </div>
-
-              <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">
-                  7. Limitation of Liability
-                </h2>
-                <p className="text-gray-700 leading-relaxed">
-                  To the maximum extent permitted by law, in no event shall
-                  Infinity Trigger be liable for any indirect, incidental,
-                  special, consequential, or punitive damages, including without
-                  limitation, loss of profits, data, use, goodwill, or other
-                  intangible losses, resulting from:
-                </p>
-                <ul className="list-disc pl-6 text-gray-700 space-y-2 leading-relaxed">
-                  <li>
-                    Your access to or use of or inability to access or use the
-                    Services
-                  </li>
-                  <li>
-                    Any conduct or content of any third party on the Services
-                  </li>
-                  <li>Any content obtained from the Services</li>
-                  <li>
-                    Unauthorized access, use, or alteration of your
-                    transmissions or content
-                  </li>
-                </ul>
-              </div>
-
-              <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">8. Indemnification</h2>
-                <p className="text-gray-700 leading-relaxed">
-                  You agree to defend, indemnify, and hold harmless Infinity
-                  Trigger and our officers, directors, employees, and agents
-                  from and against any claims, liabilities, damages, judgments,
-                  awards, losses, costs, expenses, or fees (including reasonable
-                  attorneys' fees) arising out of or relating to your violation
-                  of these Terms or your use of the Services.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">9. Termination</h2>
-                <p className="text-gray-700 leading-relaxed">
-                  We may terminate or suspend your access to the Services
-                  immediately, without prior notice or liability, for any reason
-                  whatsoever, including without limitation if you breach these
-                  Terms.
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                  Upon termination, your right to use the Services will
-                  immediately cease. All provisions of these Terms which by
-                  their nature should survive termination shall survive
-                  termination.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">10. Changes to Terms</h2>
-                <p className="text-gray-700 leading-relaxed">
-                  We reserve the right to modify or replace these Terms at any
-                  time. If a revision is material, we will provide at least 30
-                  days' notice prior to any new terms taking effect. What
-                  constitutes a material change will be determined at our sole
-                  discretion.
-                </p>
-                <p className="text-gray-700 leading-relaxed">
-                  By continuing to access or use our Services after any
-                  revisions become effective, you agree to be bound by the
-                  revised terms.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">11. Governing Law</h2>
-                <p className="text-gray-700 leading-relaxed">
-                  These Terms shall be governed by and construed in accordance
-                  with the laws of Japan, without regard to its conflict of law
-                  provisions.
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <h2 className="text-2xl font-bold text-gray-900">12. Contact Us</h2>
-                <p className="text-gray-700 leading-relaxed">
-                  If you have any questions about these Terms, please contact us
-                  at:
-                </p>
-                <div className="text-gray-700 leading-relaxed">
-                  <p>Infinity Trigger</p>
-                  <p>Nagano City, Nagano Prefecture, Japan</p>
-                  <p>Email: support@infinitytrigger.com</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex justify-center mt-12">
-              <Link href="/">
-                <Button
-                  variant="outline"
-                  className="gap-1 group transition-all duration-300 hover:bg-background/80 border-primary/20 hover:border-primary/50"
-                >
-                  <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform duration-300" />
-                  <span>Back to Home</span>
-                </Button>
-              </Link>
-            </div>
+    <section className="w-full py-12 md:py-24 bg-gray-50 dark:bg-brand-dark dark:text-brand-mint">
+      <div className="container px-4 md:px-6">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-8">
+          <div className="space-y-2">
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900 dark:text-brand-mint">
+              Terms of Service
+            </h1>
+            <p className="text-gray-600 dark:text-white">
+              Last updated:{" "}
+              {new Date().toLocaleDateString("en-US", {
+                month: "long",
+                day: "numeric",
+                year: "numeric",
+              })}
+            </p>
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+
+        <Accordion
+          type="single"
+          collapsible
+          className="w-full max-w-3xl mx-auto bg-white dark:bg-brand-dark dark:text-brand-mint"
+        >
+          <AccordionItem value="item-1">
+            <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline">
+              Agreement to Terms
+            </AccordionTrigger>
+            <AccordionContent>
+              <p className="text-gray-700 leading-relaxed dark:text-white">
+                These Terms of Service ("Terms") constitute a legally binding
+                agreement between you and Infinity Trigger ("we," "our," or
+                "us", "the Company") regarding your access to and use of our
+                website, applications, communication channels, and services
+                (collectively, the "Services"). By accessing or using our
+                Services, you agree to be bound by these Terms. If you do not
+                agree to these Terms, you may not access or use the Services.
+              </p>
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-2">
+            <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline">
+              Services and Accounts
+            </AccordionTrigger>
+            <AccordionContent>
+              <p className="text-gray-700 leading-relaxed dark:text-white">
+                Infinity Trigger provides web applications, native mobile
+                applications, and digital application development services. We
+                reserve the right to modify, suspend, or discontinue any aspect
+                of our Services at any time. Some Services may require you to
+                create an account, and you are responsible for providing
+                accurate information and safeguarding your account credentials.
+              </p>
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-3">
+            <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline">
+              Intellectual Property
+            </AccordionTrigger>
+            <AccordionContent>
+              <p className="text-gray-700 leading-relaxed dark:text-white">
+                The Services and their original content are owned by Infinity
+                Trigger and are protected by intellectual property laws. Content
+                within specific Services may be covered under Creative Commons
+                licenses. Please refer to the specific Service's terms of
+                service for more information. You retain ownership of materials
+                you provide to us or create using our Services, but you grant us
+                a license to use them to provide, advertise, or improve our
+                Services. In the case of application or web development
+                services, in which payment is rendered in exchange for design
+                and development services, upon full payment to the Company for
+                the aforementioned services rendered, we assign to you all
+                applicable rights to the deliverables created for you, with some
+                exceptions.
+              </p>
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-4">
+            <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline">
+              Payment, Liability, and Termination
+            </AccordionTrigger>
+            <AccordionContent>
+              <p className="text-gray-700 leading-relaxed dark:text-white">
+                In the case of application or web development services, payment
+                terms will be specified in your project proposal. We are not
+                liable for any indirect or consequential damages arising from
+                your use of the Services. We may terminate or suspend your
+                access to the Services at any time for any reason, including if
+                you breach these Terms. In the case of our mobile applications
+                or native web applications, usage, payment, and other terms will
+                be specified in that product's terms of service and each product
+                may have additional terms as required.
+              </p>
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-5">
+            <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline">
+              Governing Law and Changes
+            </AccordionTrigger>
+            <AccordionContent>
+              <p className="text-gray-700 leading-relaxed dark:text-white">
+                These Terms are governed by the laws of the United States and
+                Japan. We reserve the right to modify these Terms at any time.
+                right to modify these Terms at any time. If a revision is
+                material, we will provide at least 30 days' notice to all users of the Services.
+              </p>
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-6">
+            <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline">
+              Contact Us
+            </AccordionTrigger>
+            <AccordionContent>
+              <p className="text-gray-700 leading-relaxed dark:text-white">
+                If you have any questions about these Terms, please contact us
+                at:
+              </p>
+              <div className="text-gray-700 leading-relaxed mt-4 dark:text-white">
+                <p>Infinity Trigger</p>
+                <p>
+                  Email:{" "}
+                  <a
+                    href="mailto:support@infinitytrigger.com"
+                    className="text-brand-gray hover:text-brand-mint dark:text-brand-mint dark:hover:text-white transition-colors underline underline-offset-2"
+                  >
+                    support@infinitytrigger.com
+                  </a>
+                </p>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+
+        <div className="flex justify-center mt-12">
+          <Link href="/">
+            <Button
+              variant="outline"
+              className="gap-1 group transition-all duration-300 hover:bg-background/80 border-primary/20 hover:border-primary/50"
+            >
+              <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform duration-300" />
+              <span>Back to Home</span>
+            </Button>
+          </Link>
+        </div>
+      </div>
+    </section>
   );
 }

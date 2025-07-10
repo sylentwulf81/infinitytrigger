@@ -157,7 +157,15 @@ export default function PrivacyPolicyPage() {
               </p>
               <div className="text-gray-700 leading-relaxed mt-4 dark:text-white">
                 <p>Infinity Trigger</p>
-                <p>Email: support@infinitytrigger.com</p>
+                <p>
+                  Email:{" "}
+                  <a
+                    href="mailto:support@infinitytrigger.com"
+                    className="text-brand-gray hover:text-brand-mint dark:text-brand-mint dark:hover:text-white transition-colors underline underline-offset-2"
+                  >
+                    support@infinitytrigger.com
+                  </a>
+                </p>
               </div>
             </AccordionContent>
           </AccordionItem>
