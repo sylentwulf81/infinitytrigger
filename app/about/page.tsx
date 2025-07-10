@@ -156,8 +156,8 @@ export default function About() {
                   </div>
                 </div>
                 <p className="text-white">
-                  All our creative content is made by humans, for humans. No
-                  AI-generated prompts or stories—just authentic, thoughtful
+                  All of our creative content is made by humans, for humans. No
+                  AI-generated prompts or stories. Just authentic, thoughtful
                   content crafted with care.
                 </p>
               </div>
