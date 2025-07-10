@@ -15,18 +15,20 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-brand-lavender/20 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
-          <Image
-            src="/Assets/logo-no-background.png"
-            alt="Infinity Trigger Logo"
-            width={150}
-            height={40}
-            className="object-contain"
-            priority
-          />
-        </Link>
-        <nav className="hidden md:flex gap-6">
+      <div className="container flex h-16 items-center">
+        <div className="flex-1 basis-[200px]">
+          <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="/Assets/logo-no-background.png"
+              alt="Infinity Trigger Logo"
+              width={150}
+              height={40}
+              className="object-contain"
+              priority
+            />
+          </Link>
+        </div>
+        <nav className="hidden md:flex gap-8 flex-1 justify-center">
           <Link
             href="/about"
             className="text-sm font-medium relative group text-brand-dark dark:text-brand-mint hover:text-brand-teal dark:hover:text-white transition-colors duration-300"
@@ -49,7 +51,7 @@ export function Header() {
             <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-brand-teal to-brand-mint transition-all duration-300 ${pathname === "/contact" ? "w-full" : "w-0 group-hover:w-full"}`}></span>
           </Link>
         </nav>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 justify-end flex-1 basis-[200px]">
           {/* Desktop theme switch only */}
           <ThemeSwitch className="hidden md:flex" />
           <Link href="/contact" className="hidden md:block">
