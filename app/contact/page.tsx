@@ -13,18 +13,19 @@ export default function Contact() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-brand-mint/20 dark:bg-brand-dark">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-brand-mint/10 to-transparent dark:from-brand-teal/20">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-8 text-center">
               <div className="space-y-6">
-                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl text-[#416165] dark:text-brand-mint">
+                <div className="inline-flex items-center rounded-full bg-brand-mint/20 border border-brand-teal/20 px-3 py-1 text-sm text-brand-teal dark:text-brand-mint">
+                  <Mail className="w-4 h-4 mr-2" />
+                  Contact Us
+                </div>
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl text-brand-dark dark:text-brand-mint">
                   Get In Touch
                 </h1>
-                <p className="mx-auto max-w-[700px] text-lg text-gray-600 md:text-xl dark:text-white">
-                  Have questions about our products? Want to join our Beta
-                  Testing community? We'd love to hear from you and help you on
-                  your creative journey and we're always looking for new ways to
-                  improve our products.
+                <p className="mx-auto max-w-[700px] text-gray-600 dark:text-brand-lavender/80 md:text-xl/relaxed lg:text-2xl/relaxed">
+                  Have questions about our products? Want to join our Beta Testing community? We'd love to hear from you.
                 </p>
               </div>
             </div>
@@ -32,55 +33,54 @@ export default function Contact() {
         </section>
 
         {/* Contact Form Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gradient-to-b dark:from-brand-dark dark:to-black">
+        <section className="w-full py-12 md:py-24 bg-white dark:bg-transparent">
           <div className="container px-4 md:px-6">
             <div className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-2">
               {/* Contact Form Box*/}
               <div className="space-y-6">
                 <div className="space-y-4">
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-[#416165] dark:text-brand-mint">
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-brand-dark dark:text-brand-mint">
                     Send Us a Message
                   </h2>
-                  <p className="text-gray-600 dark:text-white">
-                    Fill out the form below and we'll get back to you as soon as
-                    possible.
+                  <p className="text-gray-600 dark:text-brand-lavender/80">
+                    Fill out the form below and we'll get back to you as soon as possible.
                   </p>
                 </div>
 
-                <Card className="border-1 border-brand-mint shadow-lg bg-brand-gray/70">
+                <Card className="bg-white/50 dark:bg-brand-dark/50 border-brand-teal/20 dark:border-brand-mint/20">
                   <CardContent className="p-6 space-y-4">
                     <div className="grid gap-4 md:grid-cols-2">
                       <div className="space-y-2">
                         <Label
                           htmlFor="first-name"
-                          className="text-brand-dark font-medium"
+                          className="text-brand-dark dark:text-brand-mint font-medium"
                         >
                           First Name
                         </Label>
                         <Input
                           id="first-name"
                           placeholder="Enter your first name"
-                          className="border-brand-purple/20 focus:border-brand-purple"
+                          className="bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
                         />
                       </div>
                       <div className="space-y-2">
                         <Label
                           htmlFor="last-name"
-                          className="text-brand-dark font-medium"
+                          className="text-brand-dark dark:text-brand-mint font-medium"
                         >
                           Last Name
                         </Label>
                         <Input
                           id="last-name"
                           placeholder="Enter your last name"
-                          className="border-brand-purple/20 focus:border-brand-purple"
+                          className="bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
                         />
                       </div>
                     </div>
                     <div className="space-y-2">
                       <Label
                         htmlFor="email"
-                        className="text-brand-dark font-medium"
+                        className="text-brand-dark dark:text-brand-mint font-medium"
                       >
                         Email
                       </Label>
@@ -88,39 +88,39 @@ export default function Contact() {
                         id="email"
                         type="email"
                         placeholder="Enter your email"
-                        className="border-brand-purple/20 focus:border-brand-purple"
+                        className="bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
                       />
                     </div>
                     <div className="space-y-2">
                       <Label
                         htmlFor="subject"
-                        className="text-brand-dark font-medium"
+                        className="text-brand-dark dark:text-brand-mint font-medium"
                       >
                         Subject
                       </Label>
                       <Input
                         id="subject"
                         placeholder="What's this about?"
-                        className="border-brand-purple/20 focus:border-brand-purple"
+                        className="bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
                       />
                     </div>
                     <div className="space-y-2">
                       <Label
                         htmlFor="message"
-                        className="text-brand-dark font-medium"
+                        className="text-brand-dark dark:text-brand-mint font-medium"
                       >
                         Message
                       </Label>
                       <Textarea
                         id="message"
                         placeholder="Tell us more about your inquiry..."
-                        className="min-h-[120px] border-brand-purple/20 focus:border-brand-purple"
+                        className="min-h-[120px] bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
                       />
                     </div>
-                    <Button className="w-full bg-brand-mint text-brand-dark font-semibold px-6 py-2 rounded-lg shadow hover:text-brand-mint hover:bg-brand-dark transition-all duration-200">
+                    <BrandButton className="w-full">
                       Send Message
                       <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
+                    </BrandButton>
                   </CardContent>
                 </Card>
               </div>
@@ -128,47 +128,47 @@ export default function Contact() {
               {/* Contact Info */}
               <div className="space-y-8">
                 <div className="space-y-6">
-                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-[#416165] dark:text-brand-pink">
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-brand-dark dark:text-brand-mint">
                     We're Listening
                   </h2>
-                  <p className="text-gray-600 dark:text-white">
-                    Whether you have questions about our products or have a
-                    great idea for a new feature, we'd love to hear from you.
+                  <p className="text-gray-600 dark:text-brand-lavender/80">
+                    Whether you have questions about our products or have a great idea for a new feature, we'd love to hear from you.
                   </p>
                 </div>
 
                 <div className="space-y-6">
-                  <Card className="border-1 bg-brand-gray/60 dark:bg-brand-teal shadow-lg">
+                  <Card className="bg-white/50 dark:bg-brand-dark/50 border-brand-teal/20 dark:border-brand-mint/20">
                     <CardContent className="p-6">
                       <div className="flex items-center space-x-4">
-                        <div className="p-3 rounded-xl bg-brand-mint shadow-lg">
-                          <Mail className="h-6 w-6 text-black" />
+                        <div className="p-3 rounded-xl bg-brand-mint/20 dark:bg-brand-mint/10">
+                          <Mail className="h-6 w-6 text-brand-teal dark:text-brand-mint" />
                         </div>
                         <div>
                           <h3 className="text-lg font-semibold text-brand-dark dark:text-brand-mint">
                             Email Us
                           </h3>
-                          <p className="text-brand-dark hover:text-blue-500 dark:text-brand-gray dark:hover:text-brand-mint">
-                            <a href="mailto:support@infinitytrigger.com">
-                              support@infinitytrigger.com
-                            </a>
-                          </p>
+                          <Link 
+                            href="mailto:support@infinitytrigger.com"
+                            className="text-brand-teal hover:text-brand-dark dark:text-brand-mint/80 dark:hover:text-brand-mint transition-colors"
+                          >
+                            support@infinitytrigger.com
+                          </Link>
                         </div>
                       </div>
                     </CardContent>
                   </Card>
 
-                  <Card className="border-1 bg-brand-gray/60 dark:bg-brand-teal shadow-lg ">
+                  <Card className="bg-white/50 dark:bg-brand-dark/50 border-brand-teal/20 dark:border-brand-mint/20">
                     <CardContent className="p-6">
                       <div className="flex items-center space-x-4">
-                        <div className="p-3 rounded-xl bg-brand-mint shadow-lg">
-                          <MessageSquare className="h-6 w-6 text-black" />
+                        <div className="p-3 rounded-xl bg-brand-mint/20 dark:bg-brand-mint/10">
+                          <MessageSquare className="h-6 w-6 text-brand-teal dark:text-brand-mint" />
                         </div>
                         <div>
                           <h3 className="text-lg font-semibold text-brand-dark dark:text-brand-mint">
                             TestFlight / Beta Testing
                           </h3>
-                          <p className="text-gray-600 dark:text-white">
+                          <p className="text-gray-600 dark:text-brand-lavender/80">
                             Help shape our products before they're released
                           </p>
                         </div>
@@ -176,17 +176,17 @@ export default function Contact() {
                     </CardContent>
                   </Card>
 
-                  <Card className="border-1 bg-brand-gray/60 dark:bg-brand-teal shadow-lg">
+                  <Card className="bg-white/50 dark:bg-brand-dark/50 border-brand-teal/20 dark:border-brand-mint/20">
                     <CardContent className="p-6">
                       <div className="flex items-center space-x-4">
-                        <div className="p-3 rounded-xl bg-brand-mint shadow-lg">
-                          <Users className="h-6 w-6 text-black" />
+                        <div className="p-3 rounded-xl bg-brand-mint/20 dark:bg-brand-mint/10">
+                          <Users className="h-6 w-6 text-brand-teal dark:text-brand-mint" />
                         </div>
                         <div>
                           <h3 className="text-lg font-semibold text-brand-dark dark:text-brand-mint">
                             Community
                           </h3>
-                          <p className="text-gray-600 dark:text-white">
+                          <p className="text-gray-600 dark:text-brand-lavender/80">
                             Connect with fellow creatives
                           </p>
                         </div>
@@ -200,72 +200,61 @@ export default function Contact() {
         </section>
 
         {/* FAQ Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-brand-purple/5 via-white to-brand-neon/5">
+        <section className="w-full py-12 md:py-24 bg-gradient-to-b from-transparent to-brand-mint/10 dark:to-brand-teal/20">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center mb-12">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-brand-teal dark:text-brand-mint">
-                Frequently Asked Questions
-              </h2>
-              <p className="mx-auto max-w-[700px] text-gray-600 md:text-xl dark:text-white">
-                Quick answers to common questions about our products and
-                services.
-              </p>
-            </div>
+            <div className="mx-auto max-w-3xl space-y-8">
+              <div className="space-y-4 text-center">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-brand-dark dark:text-brand-mint">
+                  Frequently Asked Questions
+                </h2>
+                <p className="text-gray-600 dark:text-brand-lavender/80">
+                  Quick answers to common questions about our products and services.
+                </p>
+              </div>
 
-            <div className="mx-auto">
               <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto bg-white dark:bg-brand-dark dark:text-brand-mint">
-                <AccordionItem value="testflight">
-                  <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline">
+                <AccordionItem value="item-1" className="border-brand-teal/20 dark:border-brand-mint/20">
+                  <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline text-left w-full pl-4">
                     How do I join the TestFlight for Myriad Worlds?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-700 leading-relaxed dark:text-white">
-                    You can join the Myriad Worlds TestFlight directly by clicking{" "}
+                    You can join the Myriad Worlds TestFlight by clicking the TestFlight link on our products page or by visiting{" "}
                     <Link 
                       href="https://testflight.apple.com/join/uJVk52wq"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-brand-teal dark:text-brand-mint hover:underline"
+                      className="text-brand-teal hover:text-brand-dark dark:text-brand-mint dark:hover:text-brand-mint/80 transition-colors"
                     >
-                      here
-                    </Link>{" "}
-                    or visiting{" "}
-                    <span className="font-mono bg-gray-100 dark:bg-gray-800 px-1 py-0.5 rounded">
-                      https://testflight.apple.com/join/uJVk52wq
-                    </span>
+                      this direct link
+                    </Link>
+                    . TestFlight is Apple's beta testing platform and requires the TestFlight app to be installed on your iOS device.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="android">
-                  <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline">
+                <AccordionItem value="item-2" className="border-brand-teal/20 dark:border-brand-mint/20">
+                  <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline text-left w-full pl-4">
                     Is Meanwhile available on Android?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-700 leading-relaxed dark:text-white">
-                    Currently, Meanwhile is only available on iOS and iPadOS.
-                    We're working on an Android version and will announce it
-                    when it's ready for testing.
+                    Currently, Meanwhile is only available on iOS. We're focusing on providing the best possible experience for iOS users before considering other platforms.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="content-usage">
-                  <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline">
+                <AccordionItem value="item-3" className="border-brand-teal/20 dark:border-brand-mint/20">
+                  <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline text-left w-full pl-4">
                     Can I use Myriad Worlds content in my own projects?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-700 leading-relaxed dark:text-white">
-                    Yes! All content in Myriad Worlds is licensed under Creative
-                    Commons, which means you can use it in your own creative
-                    projects, including commercial work.
+                    Yes! All content in Myriad Worlds is released under Creative Commons licensing, which means you can use it as inspiration, adapt it, or build upon it for your own creative projects.
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="custom-solutions">
-                  <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline">
+                <AccordionItem value="item-4" className="border-brand-teal/20 dark:border-brand-mint/20">
+                  <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline text-left w-full pl-4">
                     Do you offer custom software solutions for outside organizations?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-700 leading-relaxed dark:text-white">
-                    We're always interested in hearing about unique use cases
-                    and team needs. Contact us to discuss how we might be able
-                    to help with custom digital solutions for Apple platforms,
-                    Android, and native web.
+                    While we primarily focus on our own products, we're always open to discussing potential collaborations. Contact us with your requirements, and we'll be happy to explore possibilities.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>

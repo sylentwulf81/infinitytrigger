@@ -59,22 +59,19 @@ export default function Products() {
                 actions={
                   <>
                     <Link href="/products/meanwhile">
-                      <Button className="bg-gradient-to-r from-[#416165] to-[#b1e69b] text-white font-semibold px-6 py-2 rounded-lg shadow hover:from-[#416165]/90 hover:to-[#b1e69b]/90 transition-all duration-200 dark:bg-brand-mint dark:text-brand-dark dark:hover:bg-brand-dark dark:hover:text-brand-mint">
+                      <BrandButton>
                         Learn More
                         <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
+                      </BrandButton>
                     </Link>
                     <Link
                       href="https://apps.apple.com/us/app/meanwhile-daily-writing/id6742810856"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Button
-                        variant="outline"
-                        className="border-2 border-[#416165] text-[#416165] bg-white font-semibold px-6 py-2 rounded-lg hover:bg-[#416165] hover:text-white transition-all duration-200 dark:bg-brand-dark dark:text-brand-mint dark:border-brand-mint dark:hover:bg-brand-mint dark:hover:text-brand-dark"
-                      >
+                      <BrandButtonAlt>
                         App Store
-                      </Button>
+                      </BrandButtonAlt>
                     </Link>
                   </>
                 }

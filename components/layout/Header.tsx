@@ -43,7 +43,7 @@ export function Header() {
             <span className="block">Products</span>
             <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-brand-teal to-brand-mint transition-all duration-300 ${pathname === "/products" ? "w-full" : "w-0 group-hover:w-full"}`}></span>
           </Link>
-          <Link 
+          <Link
             href="/contact" 
             className="text-sm font-medium relative group text-brand-dark dark:text-brand-mint hover:text-brand-teal dark:hover:text-white transition-colors duration-300"
           >
