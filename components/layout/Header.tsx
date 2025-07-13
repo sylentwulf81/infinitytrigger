@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, X, Cpu } from "lucide-react";
+import { Menu, X, Cpu, Info, Boxes, Heart } from "lucide-react";
 import { ThemeSwitch } from "@/components/ui/theme-switch";
 import { usePathname } from "next/navigation";
 
@@ -32,27 +32,42 @@ export function Header() {
             />
           </Link>
         </div>
-        <nav className="hidden md:flex gap-8 flex-1 justify-center">
+        <nav className="hidden md:flex gap-4 flex-1 justify-center">
           <Link
-            href="/products" 
-            className="text-sm font-medium relative group text-brand-dark dark:text-brand-mint hover:text-brand-teal dark:hover:text-white transition-colors duration-300"
+            href="/products"
+            className={
+              `relative flex items-center gap-1 px-4 py-2 rounded-full transition-all duration-300 font-semibold tracking-wide
+              text-brand-dark dark:text-brand-mint
+              hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/10 hover:shadow-md
+              ${pathname === "/products" ? "bg-brand-lavender/60 dark:bg-brand-mint/20" : ""}`
+            }
           >
-            <span className="block">Products</span>
-            <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-brand-teal to-brand-mint transition-all duration-300 ${pathname === "/products" ? "w-full" : "w-0 group-hover:w-full"}`}></span>
+            <Boxes className="w-4 h-4 opacity-70" />
+            Products
           </Link>
           <Link
             href="/about"
-            className="text-sm font-medium relative group text-brand-dark dark:text-brand-mint hover:text-brand-teal dark:hover:text-white transition-colors duration-300"
+            className={
+              `relative flex items-center gap-1 px-4 py-2 rounded-full transition-all duration-300 font-semibold tracking-wide
+              text-brand-dark dark:text-brand-mint
+              hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/10 hover:shadow-md
+              ${pathname === "/about" ? "bg-brand-lavender/60 dark:bg-brand-mint/20" : ""}`
+            }
           >
-            <span className="block">About</span>
-            <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-brand-teal to-brand-mint transition-all duration-300 ${pathname === "/about" ? "w-full" : "w-0 group-hover:w-full"}`}></span>
+            <Info className="w-4 h-4 opacity-70" />
+            About
           </Link>
           <Link
-            href="/values" 
-            className="text-sm font-medium relative group text-brand-dark dark:text-brand-mint hover:text-brand-teal dark:hover:text-white transition-colors duration-300"
+            href="/values"
+            className={
+              `relative flex items-center gap-1 px-4 py-2 rounded-full transition-all duration-300 font-semibold tracking-wide
+              text-brand-dark dark:text-brand-mint
+              hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/10 hover:shadow-md
+              ${pathname === "/values" ? "bg-brand-lavender/60 dark:bg-brand-mint/20" : ""}`
+            }
           >
-            <span className="block">Values</span>
-            <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-brand-teal to-brand-mint transition-all duration-300 ${pathname === "/values" ? "w-full" : "w-0 group-hover:w-full"}`}></span>
+            <Heart className="w-4 h-4 opacity-70" />
+            Values
           </Link>
         </nav>
         <div className="flex items-center gap-4 justify-end flex-1 basis-[200px]">
