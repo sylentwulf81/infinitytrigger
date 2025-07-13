@@ -5,19 +5,23 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Cpu } from "lucide-react";
 import { ThemeSwitch } from "@/components/ui/theme-switch";
 import { usePathname } from "next/navigation";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const isDevelopment = process.env.NODE_ENV === 'development';
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-brand-lavender/20 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <div className="flex-1 basis-[200px]">
           <Link href="/" className="flex items-center gap-2">
+            {isDevelopment && (
+              <Cpu className="w-5 h-5 text-brand-dark dark:text-brand-mint animate-pulse" />
+            )}
             <Image
               src="/Assets/logo-no-background.png"
               alt="Infinity Trigger Logo"
@@ -30,13 +34,6 @@ export function Header() {
         </div>
         <nav className="hidden md:flex gap-8 flex-1 justify-center">
           <Link
-            href="/about"
-            className="text-sm font-medium relative group text-brand-dark dark:text-brand-mint hover:text-brand-teal dark:hover:text-white transition-colors duration-300"
-          >
-            <span className="block">About</span>
-            <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-brand-teal to-brand-mint transition-all duration-300 ${pathname === "/about" ? "w-full" : "w-0 group-hover:w-full"}`}></span>
-          </Link>
-          <Link 
             href="/products" 
             className="text-sm font-medium relative group text-brand-dark dark:text-brand-mint hover:text-brand-teal dark:hover:text-white transition-colors duration-300"
           >
@@ -44,11 +41,18 @@ export function Header() {
             <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-brand-teal to-brand-mint transition-all duration-300 ${pathname === "/products" ? "w-full" : "w-0 group-hover:w-full"}`}></span>
           </Link>
           <Link
-            href="/contact" 
+            href="/about"
             className="text-sm font-medium relative group text-brand-dark dark:text-brand-mint hover:text-brand-teal dark:hover:text-white transition-colors duration-300"
           >
-            <span className="block">Contact</span>
-            <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-brand-teal to-brand-mint transition-all duration-300 ${pathname === "/contact" ? "w-full" : "w-0 group-hover:w-full"}`}></span>
+            <span className="block">About</span>
+            <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-brand-teal to-brand-mint transition-all duration-300 ${pathname === "/about" ? "w-full" : "w-0 group-hover:w-full"}`}></span>
+          </Link>
+          <Link
+            href="/values" 
+            className="text-sm font-medium relative group text-brand-dark dark:text-brand-mint hover:text-brand-teal dark:hover:text-white transition-colors duration-300"
+          >
+            <span className="block">Values</span>
+            <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-brand-teal to-brand-mint transition-all duration-300 ${pathname === "/values" ? "w-full" : "w-0 group-hover:w-full"}`}></span>
           </Link>
         </nav>
         <div className="flex items-center gap-4 justify-end flex-1 basis-[200px]">
@@ -90,13 +94,6 @@ export function Header() {
               <ThemeSwitch className="mb-4 md:hidden mx-auto" />
               <div className="p-4 space-y-2">
                 <Link
-                  href="/about"
-                  className="flex items-center px-3 py-2 text-sm font-medium text-brand-dark dark:text-white hover:text-brand-teal dark:hover:text-brand-mint hover:bg-brand-lavender/10 dark:hover:bg-brand-lavender/20 rounded-md transition-colors duration-300"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  About
-                </Link>
-                <Link
                   href="/products"
                   className="flex items-center px-3 py-2 text-sm font-medium text-brand-dark dark:text-white hover:text-brand-teal dark:hover:text-brand-mint hover:bg-brand-lavender/10 dark:hover:bg-brand-lavender/20 rounded-md transition-colors duration-300"
                   onClick={() => setMobileMenuOpen(false)}
@@ -104,11 +101,18 @@ export function Header() {
                   Products
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/about"
                   className="flex items-center px-3 py-2 text-sm font-medium text-brand-dark dark:text-white hover:text-brand-teal dark:hover:text-brand-mint hover:bg-brand-lavender/10 dark:hover:bg-brand-lavender/20 rounded-md transition-colors duration-300"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Contact
+                  About
+                </Link>
+                <Link
+                  href="/values"
+                  className="flex items-center px-3 py-2 text-sm font-medium text-brand-dark dark:text-white hover:text-brand-teal dark:hover:text-brand-mint hover:bg-brand-lavender/10 dark:hover:bg-brand-lavender/20 rounded-md transition-colors duration-300"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Values
                 </Link>
               </div>
               <div className="p-4 border-t border-brand-lavender/20 dark:border-gray-700">
