@@ -10,7 +10,7 @@ export default function Products() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-brand-mint/10 bg-none dark:bg-brand-teal/70">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-brand-mint/10 to-white dark:bg-gradient-to-b dark:from-brand-teal/70 dark:to-brand-teal/50">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-8 text-center">
               <div className="space-y-6">
@@ -34,7 +34,7 @@ export default function Products() {
         </section>
 
         {/* Products Grid */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-brand-teal/50">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-brand-pink/50 dark:bg-gradient-to-b dark:from-brand-teal/50 dark:to-brand-dark">
           <div className="container px-4 md:px-6">
             <div className="mx-auto grid max-w-5xl items-start gap-8 lg:grid-cols-2">
               {/* Meanwhile ProductCard */}
@@ -82,8 +82,8 @@ export default function Products() {
                 imageSrc="/Assets/myriadworlds_mockup.png"
                 imageAlt="Myriad Worlds creative storytelling app interface preview"
                 badge={
-                  <div className="inline-flex items-center rounded-full bg-brand-pink px-3 py-1 text-xs font-medium text-brand-purple border border-brand-purple/30 dark:bg-brand-pink dark:text-brand-dark">
-                    Coming Soon
+                  <div className="inline-flex items-center rounded-full bg-brand-mint/80 px-3 py-1 text-xs font-medium text-brand-neon border border-brand-neon/30 dark:bg-brand-mint/60 dark:text-brand-dark">
+                    Available Now
                   </div>
                 }
                 icon={<Earth className="h-8 w-8 text-brand-mint" />}
@@ -104,9 +104,9 @@ export default function Products() {
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </BrandButton>
                     </Link>
-                    <Link href="https://testflight.apple.com/join/uJVk52wq" target="_blank" rel="noopener noreferrer">
+                    <Link href="https://apps.apple.com/us/app/myriad-worlds/id6748325367" target="_blank" rel="noopener noreferrer">
                       <BrandButtonAlt>
-                        TestFlight
+                        App Store
                       </BrandButtonAlt>
                     </Link>
                   </>
@@ -117,7 +117,7 @@ export default function Products() {
         </section>
 
         {/* CTA Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-brand-pink/50 to-white text-white dark:bg-brand-dark dark:bg-none">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-brand-pink/50 to-brand-lavender dark:bg-gradient-to-b dark:from-brand-dark dark:to-brand-dark">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-4">
@@ -130,9 +130,9 @@ export default function Products() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-2">
-                <Link href="https://testflight.apple.com/join/uJVk52wq" target="_blank" rel="noopener noreferrer">
+                <Link href="https://apps.apple.com/us/app/myriad-worlds/id6748325367" target="_blank" rel="noopener noreferrer">
                   <BrandButton>
-                    Join TestFlight
+                    Download on App Store
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </BrandButton>
                 </Link>

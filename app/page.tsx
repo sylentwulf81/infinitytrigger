@@ -59,7 +59,7 @@ export default function Home() {
         </section>
 
         {/* Products/Features Section */}
-        <section className="w-full py-16 bg-white dark:bg-brand-teal/70">
+        <section className="w-full py-16 bg-gradient-to-b from-white to-brand-lavender/10 dark:bg-gradient-to-b dark:from-brand-teal/70 dark:to-brand-teal/40">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center mb-12">
               <span className="text-brand-teal dark:text-brand-mint text-sm font-medium mb-2">Our Creative Tools</span>
@@ -120,8 +120,8 @@ export default function Home() {
                     <h3 className="text-2xl font-bold text-brand-dark dark:text-brand-mint">
                       Myriad Worlds
                     </h3>
-                    <span className="inline-block text-xs font-semibold bg-brand-pink dark:bg-brand-lavender text-brand-teal dark:text-brand-teal px-3 py-1 rounded-full ml-2">
-                      Coming Soon
+                    <span className="inline-block text-xs font-semibold bg-brand-mint dark:bg-brand-mint text-brand-teal dark:text-brand-dark px-3 py-1 rounded-full ml-2">
+                      Available Now
                     </span>
                   </div>
                 </div>
@@ -141,9 +141,9 @@ export default function Home() {
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </BrandButton>
                   </Link>
-                  <Link href="https://testflight.apple.com/join/uJVk52wq" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://apps.apple.com/us/app/myriad-worlds/id6748325367" target="_blank" rel="noopener noreferrer">
                     <BrandButtonAlt>
-                      TestFlight
+                      App Store
                     </BrandButtonAlt>
                   </Link>
                 </div>
@@ -153,7 +153,7 @@ export default function Home() {
         </section>
 
         {/* Values Section */}
-        <section className="w-full py-16 bg-brand-lavender/10 dark:bg-brand-teal/40">
+        <section className="w-full py-16 bg-gradient-to-b from-brand-lavender/10 to-brand-teal dark:bg-gradient-to-b dark:from-brand-teal/40 dark:to-brand-dark">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-brand-dark dark:text-brand-mint mb-2">
@@ -205,7 +205,7 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="w-full py-16 bg-brand-teal dark:bg-brand-dark">
+        <section className="w-full py-16 bg-gradient-to-b from-brand-teal to-brand-lavender dark:bg-gradient-to-b dark:from-brand-dark dark:to-brand-dark">
           <div className="container px-4 md:px-6 flex flex-col items-center text-center gap-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white dark:text-brand-mint">
               Ready to Create?
@@ -214,9 +214,9 @@ export default function Home() {
               Join our TestFlight to get early access to our creative tools and be part of our community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-2">
-              <Link href="https://testflight.apple.com/join/uJVk52wq" target="_blank" rel="noopener noreferrer">
+              <Link href="https://apps.apple.com/us/app/myriad-worlds/id6748325367" target="_blank" rel="noopener noreferrer">
                 <BrandButton>
-                  Join TestFlight
+                  Download on App Store
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </BrandButton>
               </Link>

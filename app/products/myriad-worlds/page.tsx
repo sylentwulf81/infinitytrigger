@@ -27,9 +27,9 @@ export default function MyriadWorldsPage() {
                   </p>
                 </div>
                 <div className="flex flex-col gap-3 min-[400px]:flex-row items-center">
-                  <Link href="https://testflight.apple.com/join/uJVk52wq" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://apps.apple.com/us/app/myriad-worlds/id6748325367" target="_blank" rel="noopener noreferrer">
                     <BrandButton>
-                      Join TestFlight
+                      Download on App Store
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </BrandButton>
                   </Link>
@@ -220,9 +220,9 @@ export default function MyriadWorldsPage() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                <Link href="https://testflight.apple.com/join/uJVk52wq" target="_blank" rel="noopener noreferrer">
+                <Link href="https://apps.apple.com/us/app/myriad-worlds/id6748325367" target="_blank" rel="noopener noreferrer">
                   <BrandButton>
-                    Join TestFlight
+                    Download on App Store
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </BrandButton>
                 </Link>

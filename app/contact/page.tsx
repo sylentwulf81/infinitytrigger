@@ -215,19 +215,19 @@ export default function Contact() {
               <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto bg-white dark:bg-brand-dark dark:text-brand-mint">
                 <AccordionItem value="item-1" className="border-brand-teal/20 dark:border-brand-mint/20">
                   <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline text-left w-full pl-4">
-                    How do I join the TestFlight for Myriad Worlds?
+                    How do I download Myriad Worlds?
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-700 leading-relaxed dark:text-white">
-                    You can join the Myriad Worlds TestFlight by clicking the TestFlight link on our products page or by visiting{" "}
+                    You can download Myriad Worlds directly from the App Store by clicking the App Store link on our products page or by visiting{" "}
                     <Link 
-                      href="https://testflight.apple.com/join/uJVk52wq"
+                      href="https://apps.apple.com/us/app/myriad-worlds/id6748325367"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-brand-teal hover:text-brand-dark dark:text-brand-mint dark:hover:text-brand-mint/80 transition-colors"
                     >
-                      this direct link
+                      the App Store
                     </Link>
-                    . TestFlight is Apple's beta testing platform and requires the TestFlight app to be installed on your iOS device.
+                    . Myriad Worlds is now available for download on iOS devices.
                   </AccordionContent>
                 </AccordionItem>
 
@@ -271,15 +271,13 @@ export default function Contact() {
                   Ready To Jump In?
                 </h2>
                 <p className="mx-auto max-w-[700px] text-white/90 dark:text-white md:text-xl">
-                  Download Meanwhile from the App Store or join our upcoming
-                  TestFlight for Myriad Worlds to be among the first to try the
-                  new app.
+                  Download Meanwhile or Myriad Worlds from the App Store and start your creative journey today.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                <Link href="https://testflight.apple.com/join/uJVk52wq" target="_blank" rel="noopener noreferrer">
+                <Link href="https://apps.apple.com/us/app/myriad-worlds/id6748325367" target="_blank" rel="noopener noreferrer">
                   <BrandButton>
-                    Join TestFlight
+                    Download on App Store
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </BrandButton>
                 </Link>
