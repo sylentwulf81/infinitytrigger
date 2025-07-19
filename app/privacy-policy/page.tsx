@@ -46,13 +46,13 @@ export default function PrivacyPolicyPage() {
                 This Privacy Policy covers how Infinity Trigger ("the
                 Company", "we," "our," or "us") handles personal data
                 whether you interact with us on our websites, through our
-                apps (such as Myriad Worlds or Meanwhile), via email
+                apps (such as but not limited to Myriad Worlds or Meanwhile), via email
                 through our support channels, via phone, or through any
                 other means of communication or interaction with the
                 Company.
               </p>
               <p className="text-gray-700 leading-relaxed mt-4 dark:text-white">
-                Aggregated data is considered non‑personal data for the
+                Aggregated data is considered non-personal data for the
                 purposes of this Privacy Policy. Our Privacy Policy does
                 not cover how external third parties define "personal
                 data", how they collect, store, use, or share it. We
@@ -85,6 +85,8 @@ export default function PrivacyPolicyPage() {
                 </li>
                 <li>Subscribe to our newsletter</li>
                 <li>Request customer support</li>
+                <li>Participate in surveys or other research</li>
+                <li>Request access to TestFlight or Beta participation lists</li>
               </ul>
               <p className="text-gray-700 leading-relaxed mt-4 dark:text-white">
                 The personal information we collect may include: name, email

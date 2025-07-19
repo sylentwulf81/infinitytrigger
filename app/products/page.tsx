@@ -24,7 +24,7 @@ export default function Products() {
                   Apps For Creatives
                 </h1>
                 <p className="mx-auto max-w-[700px] text-lg text-gray-600 md:text-xl dark:text-brand-lavender/80">
-                  Discover our collection of human-crafted creative tools
+                  Discover our collection of creative tools
                   designed to inspire, support, and amplify your creative
                   journey.
                 </p>

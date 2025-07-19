@@ -23,11 +23,11 @@ export default function About() {
             </h1>
             <p className="max-w-3xl mx-auto text-lg md:text-xl text-brand-dark/80 dark:text-white font-medium">
               We're a small team passionate about building creative tools that
-              put humans first. We celebrate and help foster creativity in all
+              put imagination first. We celebrate and help foster creativity in all
               its forms.
             </p>
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-brand-dark/80 dark:text-white font-medium">
-            Storytelling has always been at the very core the human experience. From our earliest days, we've used stories to pass down our culture, explain truths about the world, and connect with one another across generations.
+            Storytelling has always been at the very core the human experience. From our earliest days, we've used stories to pass down culture, explain truths about the world, and connect with one another across generations.
             </p>
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-brand-dark/80 dark:text-white font-medium">
             At Infinity Trigger, we strive to empower people all over the world to bring their stories to life. We believe that everyone has a story to tell, and we're passionate about building tools that help people tell their stories, share their experiences, and connect with one another across generations.
@@ -68,7 +68,7 @@ export default function About() {
               </Card>
               <Image
                 src="/images/pexels-abby-chung-371167-1106468.jpg"
-                alt="A person browsing books in a library, symbolizing curated creativity."
+                alt="A Japanese young woman, facing away from the camera,browsing books in a library, symbolizing curated creativity."
                 width={600}
                 height={400}
                 className="rounded-2xl shadow-lg object-cover w-full h-full"
@@ -91,7 +91,7 @@ export default function About() {
                     Infinity Trigger started with a simple idea: to create tools that we, as creatives, would want to use. Our journey has been one of passion, late nights, and a relentless pursuit of quality.
                   </p>
                   <p className="text-lg text-white/80 leading-relaxed mt-4">
-                    From a small project based in the heart of the Japanese Alps, we've grown into a small but dedicated team, committed to building software that empowers and inspires artists, writers, and creators around the world.
+                    From a small project based in the heart of beautiful Nagano Prefecture, we've grown into a small but dedicated team, committed to building software that empowers and inspires artists, writers, and creators around the world.
                   </p>
                 </CardContent>
               </Card>

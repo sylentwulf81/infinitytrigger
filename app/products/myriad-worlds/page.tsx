@@ -15,9 +15,9 @@ export default function MyriadWorldsPage() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <div className="inline-flex items-center rounded-full bg-brand-pink/20 border border-brand-purple/20 px-3 py-1 text-sm text-brand-purple dark:text-brand-pink">
+                  <div className="inline-flex items-center rounded-full bg-brand-mint/20 border border-brand-teal/20 px-3 py-1 text-sm text-brand-teal dark:text-brand-mint">
                     <Sparkles className="w-4 h-4 mr-2" />
-                    Coming Soon
+                    Available Now
                   </div>
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl text-brand-dark dark:text-brand-mint">
                     Myriad Worlds
@@ -33,26 +33,18 @@ export default function MyriadWorldsPage() {
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </BrandButton>
                   </Link>
-                  <Link href="/products">
-                    <BrandButtonAlt>
-                      View All Products
-                    </BrandButtonAlt>
-                  </Link>
+
                 </div>
               </div>
               <div className="flex items-center justify-center">
-                <div className="relative w-[300px] h-[600px] bg-brand-dark rounded-[55px] border-[14px] border-brand-dark shadow-2xl dark:shadow-brand-mint/20 overflow-hidden">
-                  <div className="absolute top-0 w-[120px] h-[25px] bg-brand-dark left-1/2 transform -translate-x-1/2 rounded-b-[18px] z-10"></div>
-                  <div className="absolute top-[8px] w-[8px] h-[8px] bg-brand-dark right-[28px] rounded-full z-10"></div>
-                  <div className="absolute top-[11px] w-[40px] h-[4px] bg-brand-dark right-[40px] rounded-full z-10"></div>
-                  <Image
-                    src="/Assets/myriadworlds_mockup.png"
-                    alt="Myriad Worlds App Preview"
-                    fill
-                    className="object-cover rounded-[42px]"
-                    priority
-                  />
-                </div>
+                <Image
+                  src="/Assets/screens/myriadworlds11/01.png"
+                  alt="Myriad Worlds App Preview"
+                  width={300}
+                  height={600}
+                  className="rounded-lg shadow-2xl"
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -68,8 +60,8 @@ export default function MyriadWorldsPage() {
                     Stories by Humans, for Humans
                   </h2>
                   <p className="text-gray-600 dark:text-brand-lavender/80 leading-relaxed">
-                    Every story, character, and world in Myriad Worlds is crafted by human writers. 
-                    We believe in the power of human imagination and creativity.
+                    Every story, character, and world in Myriad Worlds is crafted by our creative team. 
+                    We believe in the power of imagination and creativity.
                   </p>
                   <p className="text-gray-600 dark:text-brand-lavender/80 leading-relaxed">
                     All content is released under Creative Commons licensing, so you can use our stories 
@@ -81,7 +73,7 @@ export default function MyriadWorldsPage() {
                   <ul className="space-y-3 text-gray-600 dark:text-brand-lavender/80 leading-relaxed">
                     <li className="flex items-start gap-3">
                       <Heart className="h-6 w-6 text-brand-pink dark:text-brand-pink mt-0.5 flex-shrink-0" />
-                      <span>Create a platform where human creativity thrives and inspires others</span>
+                      <span>Create a platform where creativity thrives and inspires others</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <Share2 className="h-6 w-6 text-brand-pink dark:text-brand-pink mt-0.5 flex-shrink-0" />
@@ -96,24 +88,20 @@ export default function MyriadWorldsPage() {
               </div>
               <div className="flex items-center justify-center">
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="relative w-[180px] h-[360px] bg-brand-dark rounded-[45px] border-[10px] border-brand-dark shadow-xl dark:shadow-brand-mint/10 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-b from-brand-pink/20 to-transparent"></div>
-                    <Image
-                      src="/Assets/myriadworlds_mockup.png"
-                      alt="Myriad Worlds Story View"
-                      fill
-                      className="object-cover rounded-[35px]"
-                    />
-                  </div>
-                  <div className="relative w-[180px] h-[360px] bg-brand-dark rounded-[45px] border-[10px] border-brand-dark shadow-xl dark:shadow-brand-mint/10 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-b from-brand-purple/20 to-transparent"></div>
-                    <Image
-                      src="/Assets/myriadworlds_mockup.png"
-                      alt="Myriad Worlds Character Creation"
-                      fill
-                      className="object-cover rounded-[35px]"
-                    />
-                  </div>
+                  <Image
+                    src="/Assets/screens/myriadworlds11/02.png"
+                    alt="Myriad Worlds Story View"
+                    width={180}
+                    height={360}
+                    className="rounded-lg shadow-xl"
+                  />
+                  <Image
+                    src="/Assets/screens/myriadworlds11/03.png"
+                    alt="Myriad Worlds Character Creation"
+                    width={180}
+                    height={360}
+                    className="rounded-lg shadow-xl"
+                  />
                 </div>
               </div>
             </div>
@@ -216,21 +204,21 @@ export default function MyriadWorldsPage() {
                   Ready to Explore?
                 </h2>
                 <p className="mx-auto max-w-[700px] text-gray-600 dark:text-brand-lavender/80 md:text-xl">
-                  Join our TestFlight to get early access to Myriad Worlds and start exploring human-crafted stories.
+                  Download Myriad Worlds and start exploring our creative team's crafted stories.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                <Link href="https://apps.apple.com/us/app/myriad-worlds/id6748325367" target="_blank" rel="noopener noreferrer">
-                  <BrandButton>
-                    Download on App Store
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </BrandButton>
-                </Link>
                 <Link href="/products">
                   <BrandButtonAlt>
                     <ArrowLeft className="mr-2 h-4 w-4" />
                     Back to Products
                   </BrandButtonAlt>
+                </Link>
+                <Link href="https://apps.apple.com/us/app/myriad-worlds/id6748325367" target="_blank" rel="noopener noreferrer">
+                  <BrandButton>
+                    Download on App Store
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </BrandButton>
                 </Link>
               </div>
             </div>

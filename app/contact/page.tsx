@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { BrandButton, BrandButtonAlt } from "@/components/BrandButton";
@@ -5,10 +7,49 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ArrowRight, Mail, MessageSquare, Users, Sparkles } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { useState } from "react";
 
 export default function Contact() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      firstName: formData.get('firstName'),
+      lastName: formData.get('lastName'),
+      email: formData.get('email'),
+      subject: formData.get('subject'),
+      message: formData.get('message'),
+    };
+
+    try {
+      // For now, we'll use a simple mailto link as a fallback
+      // In a real implementation, you'd send this to your backend
+      const mailtoLink = `mailto:support@infinitytrigger.com?subject=${encodeURIComponent(data.subject as string)}&body=${encodeURIComponent(`
+Name: ${data.firstName} ${data.lastName}
+Email: ${data.email}
+
+Message:
+${data.message}
+      `)}`;
+      
+      window.location.href = mailtoLink;
+      
+      // Reset form
+      e.currentTarget.reset();
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
@@ -49,78 +90,108 @@ export default function Contact() {
 
                 <Card className="bg-white/50 dark:bg-brand-dark/50 border-brand-teal/20 dark:border-brand-mint/20">
                   <CardContent className="p-6 space-y-4">
-                    <div className="grid gap-4 md:grid-cols-2">
+                    <form onSubmit={handleSubmit} className="space-y-4">
+                      <div className="grid gap-4 md:grid-cols-2">
+                        <div className="space-y-2">
+                          <Label
+                            htmlFor="first-name"
+                            className="text-brand-dark dark:text-brand-mint font-medium"
+                          >
+                            First Name
+                          </Label>
+                          <Input
+                            id="first-name"
+                            name="firstName"
+                            placeholder="Enter your first name"
+                            required
+                            className="bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
+                          />
+                        </div>
+                        <div className="space-y-2">
+                          <Label
+                            htmlFor="last-name"
+                            className="text-brand-dark dark:text-brand-mint font-medium"
+                          >
+                            Last Name (Optional)
+                          </Label>
+                          <Input
+                            id="last-name"
+                            name="lastName"
+                            placeholder="Enter your last name"
+                            className="bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
+                          />
+                        </div>
+                      </div>
                       <div className="space-y-2">
                         <Label
-                          htmlFor="first-name"
+                          htmlFor="email"
                           className="text-brand-dark dark:text-brand-mint font-medium"
                         >
-                          First Name
+                          Email
                         </Label>
                         <Input
-                          id="first-name"
-                          placeholder="Enter your first name"
+                          id="email"
+                          name="email"
+                          type="email"
+                          placeholder="Enter your email"
+                          required
                           className="bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
                         />
                       </div>
                       <div className="space-y-2">
                         <Label
-                          htmlFor="last-name"
+                          htmlFor="subject"
                           className="text-brand-dark dark:text-brand-mint font-medium"
                         >
-                          Last Name
+                          Subject
                         </Label>
-                        <Input
-                          id="last-name"
-                          placeholder="Enter your last name"
-                          className="bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
+                        <Select name="subject" required>
+                          <SelectTrigger className="bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint">
+                            <SelectValue placeholder="Select a topic" />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="App Support - Meanwhile">App Support - Meanwhile</SelectItem>
+                            <SelectItem value="App Support - Myriad Worlds">App Support - Myriad Worlds</SelectItem>
+                            <SelectItem value="Feature Suggestion">Feature Suggestion</SelectItem>
+                            <SelectItem value="TestFlight Inquiries">TestFlight Inquiries</SelectItem>
+                            <SelectItem value="Privacy Concern">Privacy Concern</SelectItem>
+                            <SelectItem value="Other Issue">Other Issue</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+                      <div className="space-y-2">
+                        <Label
+                          htmlFor="message"
+                          className="text-brand-dark dark:text-brand-mint font-medium"
+                        >
+                          Message
+                        </Label>
+                        <Textarea
+                          id="message"
+                          name="message"
+                          placeholder="Tell us more about your inquiry..."
+                          required
+                          className="min-h-[120px] bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
                         />
                       </div>
-                    </div>
-                    <div className="space-y-2">
-                      <Label
-                        htmlFor="email"
-                        className="text-brand-dark dark:text-brand-mint font-medium"
+                      <button
+                        type="submit"
+                        disabled={isSubmitting}
+                        className="w-full bg-brand-teal text-white font-semibold px-8 py-4 rounded-lg hover:bg-brand-mint hover:text-brand-dark transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                       >
-                        Email
-                      </Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="Enter your email"
-                        className="bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label
-                        htmlFor="subject"
-                        className="text-brand-dark dark:text-brand-mint font-medium"
-                      >
-                        Subject
-                      </Label>
-                      <Input
-                        id="subject"
-                        placeholder="What's this about?"
-                        className="bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label
-                        htmlFor="message"
-                        className="text-brand-dark dark:text-brand-mint font-medium"
-                      >
-                        Message
-                      </Label>
-                      <Textarea
-                        id="message"
-                        placeholder="Tell us more about your inquiry..."
-                        className="min-h-[120px] bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
-                      />
-                    </div>
-                    <BrandButton className="w-full">
-                      Send Message
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </BrandButton>
+                        {isSubmitting ? (
+                          <>
+                            <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+                            Sending...
+                          </>
+                        ) : (
+                          <>
+                            Send Message
+                            <ArrowRight className="ml-2 h-4 w-4" />
+                          </>
+                        )}
+                      </button>
+                    </form>
                   </CardContent>
                 </Card>
               </div>

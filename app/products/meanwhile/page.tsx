@@ -48,12 +48,7 @@ export default function MeanwhileProjectPage() {
                       <span>Download on App Store</span>
                     </div>
                   </Link>
-                  <Link href="/contact">
-                    <BrandButtonAlt>
-                      Contact Us
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </BrandButtonAlt>
-                  </Link>
+
                 </div>
               </div>
               <div className="flex items-center justify-center">
