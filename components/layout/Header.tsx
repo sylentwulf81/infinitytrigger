@@ -8,6 +8,7 @@ import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/co
 import { Menu, X, Cpu, Info, Boxes, Heart } from "lucide-react";
 import { ThemeSwitch } from "@/components/ui/theme-switch";
 import { usePathname } from "next/navigation";
+import { GlowButton } from "@/components/GlowButton";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -38,7 +39,7 @@ export function Header() {
             className={
               `relative flex items-center gap-1 px-4 py-2 rounded-full transition-all duration-300 font-semibold tracking-wide
               text-brand-dark dark:text-brand-mint
-              hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/10 hover:shadow-md
+              hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/25 dark:hover:text-brand-mint/90 hover:shadow-md
               ${pathname === "/products" ? "bg-brand-lavender/60 dark:bg-brand-mint/20" : ""}`
             }
           >
@@ -50,7 +51,7 @@ export function Header() {
             className={
               `relative flex items-center gap-1 px-4 py-2 rounded-full transition-all duration-300 font-semibold tracking-wide
               text-brand-dark dark:text-brand-mint
-              hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/10 hover:shadow-md
+              hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/25 dark:hover:text-brand-mint/90 hover:shadow-md
               ${pathname === "/about" ? "bg-brand-lavender/60 dark:bg-brand-mint/20" : ""}`
             }
           >
@@ -62,7 +63,7 @@ export function Header() {
             className={
               `relative flex items-center gap-1 px-4 py-2 rounded-full transition-all duration-300 font-semibold tracking-wide
               text-brand-dark dark:text-brand-mint
-              hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/10 hover:shadow-md
+              hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/25 dark:hover:text-brand-mint/90 hover:shadow-md
               ${pathname === "/values" ? "bg-brand-lavender/60 dark:bg-brand-mint/20" : ""}`
             }
           >
@@ -74,9 +75,9 @@ export function Header() {
           {/* Desktop theme switch only */}
           <ThemeSwitch className="hidden md:flex" />
           <Link href="/contact" className="hidden md:block">
-            <Button className="bg-brand-teal hover:bg-brand-mint text-white hover:text-brand-dark shadow-lg hover:shadow-xl transition-all duration-300">
+            <GlowButton variant="primary" className="shadow-lg hover:shadow-xl">
               Get In Touch
-            </Button>
+            </GlowButton>
           </Link>
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild>
