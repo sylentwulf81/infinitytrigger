@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { BrandButton, BrandButtonAlt } from "@/components/BrandButton";
@@ -7,12 +8,25 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { ArrowRight, Mail, MessageSquare, Users, Sparkles } from "lucide-react";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { useState } from "react";
 
 export default function Contact() {
+  const translateContact = useTranslations("contact");
+  const translateCommon = useTranslations("common");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -21,30 +35,32 @@ export default function Contact() {
 
     const formData = new FormData(e.currentTarget);
     const data = {
-      firstName: formData.get('firstName'),
-      lastName: formData.get('lastName'),
-      email: formData.get('email'),
-      subject: formData.get('subject'),
-      message: formData.get('message'),
+      firstName: formData.get("firstName"),
+      lastName: formData.get("lastName"),
+      email: formData.get("email"),
+      subject: formData.get("subject"),
+      message: formData.get("message"),
     };
 
     try {
       // For now, we'll use a simple mailto link as a fallback
       // In a real implementation, you'd send this to your backend
-      const mailtoLink = `mailto:support@infinitytrigger.com?subject=${encodeURIComponent(data.subject as string)}&body=${encodeURIComponent(`
+      const mailtoLink = `mailto:support@infinitytrigger.com?subject=${encodeURIComponent(
+        data.subject as string
+      )}&body=${encodeURIComponent(`
 Name: ${data.firstName} ${data.lastName}
 Email: ${data.email}
 
 Message:
 ${data.message}
       `)}`;
-      
+
       window.location.href = mailtoLink;
-      
+
       // Reset form
       e.currentTarget.reset();
     } catch (error) {
-      console.error('Error submitting form:', error);
+      console.error("Error submitting form:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -60,13 +76,13 @@ ${data.message}
               <div className="space-y-6">
                 <div className="inline-flex items-center rounded-full bg-brand-mint/20 border border-brand-teal/20 px-3 py-1 text-sm text-brand-teal dark:text-brand-mint">
                   <Mail className="w-4 h-4 mr-2" />
-                  Contact Us
+                  {translateCommon("contactUs")}
                 </div>
                 <h1 className="text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl text-brand-dark dark:text-brand-mint">
-                  Get In Touch
+                  {translateCommon("getInTouch")}
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-600 dark:text-brand-lavender/80 md:text-xl/relaxed lg:text-2xl/relaxed">
-                  Have questions about our products? Want to join our Beta Testing community? We'd love to hear from you.
+                  {translateContact("hero.description")}
                 </p>
               </div>
             </div>
@@ -81,10 +97,10 @@ ${data.message}
               <div className="space-y-6">
                 <div className="space-y-4">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-brand-dark dark:text-brand-mint">
-                    Send Us a Message
+                    {translateContact("form.title")}
                   </h2>
                   <p className="text-gray-600 dark:text-brand-lavender/80">
-                    Fill out the form below and we'll get back to you as soon as possible.
+                    {translateContact("form.description")}
                   </p>
                 </div>
 
@@ -95,14 +111,15 @@ ${data.message}
                         <div className="space-y-2">
                           <Label
                             htmlFor="first-name"
-                            className="text-brand-dark dark:text-brand-mint font-medium"
-                          >
-                            First Name
+                            className="text-brand-dark dark:text-brand-mint font-medium">
+                            {translateContact("form.fields.name.first")}
                           </Label>
                           <Input
                             id="first-name"
                             name="firstName"
-                            placeholder="Enter your first name"
+                            placeholder={translateContact(
+                              "form.fields.name.firstNamePlaceholder"
+                            )}
                             required
                             className="bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
                           />
@@ -110,14 +127,15 @@ ${data.message}
                         <div className="space-y-2">
                           <Label
                             htmlFor="last-name"
-                            className="text-brand-dark dark:text-brand-mint font-medium"
-                          >
-                            Last Name (Optional)
+                            className="text-brand-dark dark:text-brand-mint font-medium">
+                            {translateContact("form.fields.name.last")}
                           </Label>
                           <Input
                             id="last-name"
                             name="lastName"
-                            placeholder="Enter your last name"
+                            placeholder={translateContact(
+                              "form.fields.name.lastNamePlaceholder"
+                            )}
                             className="bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
                           />
                         </div>
@@ -125,15 +143,16 @@ ${data.message}
                       <div className="space-y-2">
                         <Label
                           htmlFor="email"
-                          className="text-brand-dark dark:text-brand-mint font-medium"
-                        >
-                          Email
+                          className="text-brand-dark dark:text-brand-mint font-medium">
+                          {translateCommon("email.title")}
                         </Label>
                         <Input
                           id="email"
                           name="email"
                           type="email"
-                          placeholder="Enter your email"
+                          placeholder={translateContact(
+                            "form.fields.email.placeholder"
+                          )}
                           required
                           className="bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
                         />
@@ -141,35 +160,63 @@ ${data.message}
                       <div className="space-y-2">
                         <Label
                           htmlFor="subject"
-                          className="text-brand-dark dark:text-brand-mint font-medium"
-                        >
-                          Subject
+                          className="text-brand-dark dark:text-brand-mint font-medium">
+                          {translateContact("form.fields.subject.label")}
                         </Label>
                         <Select name="subject" required>
                           <SelectTrigger className="bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint">
-                            <SelectValue placeholder="Select a topic" />
+                            <SelectValue
+                              placeholder={translateContact(
+                                "form.fields.subject.placeholder"
+                              )}
+                            />
                           </SelectTrigger>
                           <SelectContent>
-                            <SelectItem value="App Support - Meanwhile">App Support - Meanwhile</SelectItem>
-                            <SelectItem value="App Support - Myriad Worlds">App Support - Myriad Worlds</SelectItem>
-                            <SelectItem value="Feature Suggestion">Feature Suggestion</SelectItem>
-                            <SelectItem value="TestFlight Inquiries">TestFlight Inquiries</SelectItem>
-                            <SelectItem value="Privacy Concern">Privacy Concern</SelectItem>
-                            <SelectItem value="Other Issue">Other Issue</SelectItem>
+                            <SelectItem value="App Support - Meanwhile">
+                              {translateContact(
+                                "form.fields.subject.options.appSupportMeanwhile"
+                              )}
+                            </SelectItem>
+                            <SelectItem value="App Support - Myriad Worlds">
+                              {translateContact(
+                                "form.fields.subject.options.appSupportMyriadWorlds"
+                              )}
+                            </SelectItem>
+                            <SelectItem value="Feature Suggestion">
+                              {translateContact(
+                                "form.fields.subject.options.featureSuggestion"
+                              )}
+                            </SelectItem>
+                            <SelectItem value="TestFlight Inquiries">
+                              {translateContact(
+                                "form.fields.subject.options.testFlightInquiry"
+                              )}
+                            </SelectItem>
+                            <SelectItem value="Privacy Concern">
+                              {translateContact(
+                                "form.fields.subject.options.privacyConcern"
+                              )}
+                            </SelectItem>
+                            <SelectItem value="Other Issue">
+                              {translateContact(
+                                "form.fields.subject.options.otherIssue"
+                              )}
+                            </SelectItem>
                           </SelectContent>
                         </Select>
                       </div>
                       <div className="space-y-2">
                         <Label
                           htmlFor="message"
-                          className="text-brand-dark dark:text-brand-mint font-medium"
-                        >
-                          Message
+                          className="text-brand-dark dark:text-brand-mint font-medium">
+                          {translateContact("form.fields.message.label")}
                         </Label>
                         <Textarea
                           id="message"
                           name="message"
-                          placeholder="Tell us more about your inquiry..."
+                          placeholder={translateContact(
+                            "form.fields.message.placeholder"
+                          )}
                           required
                           className="min-h-[120px] bg-white/80 dark:bg-brand-dark/80 border-brand-teal/20 dark:border-brand-mint/20 focus:border-brand-teal dark:focus:border-brand-mint"
                         />
@@ -177,16 +224,17 @@ ${data.message}
                       <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="w-full bg-brand-teal text-white font-semibold px-8 py-4 rounded-lg hover:bg-brand-mint hover:text-brand-dark transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-                      >
+                        className="w-full bg-brand-teal text-white font-semibold px-8 py-4 rounded-lg hover:bg-brand-mint hover:text-brand-dark transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2">
                         {isSubmitting ? (
                           <>
                             <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
-                            Sending...
+                            {translateContact(
+                              "form.fields.submitButton.sending"
+                            )}
                           </>
                         ) : (
                           <>
-                            Send Message
+                            {translateContact("form.fields.submitButton.label")}
                             <ArrowRight className="ml-2 h-4 w-4" />
                           </>
                         )}
@@ -200,10 +248,10 @@ ${data.message}
               <div className="space-y-8">
                 <div className="space-y-6">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-brand-dark dark:text-brand-mint">
-                    We're Listening
+                    {translateContact("infoPanel.title")}
                   </h2>
                   <p className="text-gray-600 dark:text-brand-lavender/80">
-                    Whether you have questions about our products or have a great idea for a new feature, we'd love to hear from you.
+                    {translateContact("infoPanel.description")}
                   </p>
                 </div>
 
@@ -216,13 +264,14 @@ ${data.message}
                         </div>
                         <div>
                           <h3 className="text-lg font-semibold text-brand-dark dark:text-brand-mint">
-                            Email Us
+                            {translateContact(
+                              "infoPanel.supportCards.emailUs.title"
+                            )}
                           </h3>
-                          <Link 
+                          <Link
                             href="mailto:support@infinitytrigger.com"
-                            className="text-brand-teal hover:text-brand-dark dark:text-brand-mint/80 dark:hover:text-brand-mint transition-colors"
-                          >
-                            support@infinitytrigger.com
+                            className="text-brand-teal hover:text-brand-dark dark:text-brand-mint/80 dark:hover:text-brand-mint transition-colors">
+                            {translateCommon("email.address")}
                           </Link>
                         </div>
                       </div>
@@ -237,10 +286,14 @@ ${data.message}
                         </div>
                         <div>
                           <h3 className="text-lg font-semibold text-brand-dark dark:text-brand-mint">
-                            TestFlight / Beta Testing
+                            {translateContact(
+                              "infoPanel.supportCards.testing.title"
+                            )}
                           </h3>
                           <p className="text-gray-600 dark:text-brand-lavender/80">
-                            Help shape our products before they're released
+                            {translateContact(
+                              "infoPanel.supportCards.testing.description"
+                            )}
                           </p>
                         </div>
                       </div>
@@ -255,10 +308,14 @@ ${data.message}
                         </div>
                         <div>
                           <h3 className="text-lg font-semibold text-brand-dark dark:text-brand-mint">
-                            Community
+                            {translateContact(
+                              "infoPanel.supportCards.community.title"
+                            )}
                           </h3>
                           <p className="text-gray-600 dark:text-brand-lavender/80">
-                            Connect with fellow creatives
+                            {translateContact(
+                              "infoPanel.supportCards.community.description"
+                            )}
                           </p>
                         </div>
                       </div>
@@ -276,56 +333,66 @@ ${data.message}
             <div className="mx-auto max-w-3xl space-y-8">
               <div className="space-y-4 text-center">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-brand-dark dark:text-brand-mint">
-                  Frequently Asked Questions
+                  {translateContact("faq.title")}
                 </h2>
                 <p className="text-gray-600 dark:text-brand-lavender/80">
-                  Quick answers to common questions about our products and services.
+                  {translateContact("faq.description")}
                 </p>
               </div>
 
-              <Accordion type="single" collapsible className="w-full max-w-3xl mx-auto bg-white dark:bg-brand-dark dark:text-brand-mint">
-                <AccordionItem value="item-1" className="border-brand-teal/20 dark:border-brand-mint/20">
+              <Accordion
+                type="single"
+                collapsible
+                className="w-full max-w-3xl mx-auto bg-white dark:bg-brand-dark dark:text-brand-mint">
+                <AccordionItem
+                  value="item-1"
+                  className="border-brand-teal/20 dark:border-brand-mint/20">
                   <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline text-left w-full pl-4">
-                    How do I download Myriad Worlds?
+                    {translateContact("faq.questions.download")}
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-700 leading-relaxed dark:text-white">
-                    You can download Myriad Worlds directly from the App Store by clicking the App Store link on our products page or by visiting{" "}
-                    <Link 
+                    {translateContact("faq.answers.downloadPart1")}
+                    <Link
                       href="https://apps.apple.com/us/app/myriad-worlds/id6748325367"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-brand-teal hover:text-brand-dark dark:text-brand-mint dark:hover:text-brand-mint/80 transition-colors"
-                    >
-                      the App Store
+                      className="text-brand-teal hover:text-brand-dark dark:text-brand-mint dark:hover:text-brand-mint/80 transition-colors">
+                      {translateCommon("appStore")}
                     </Link>
-                    . Myriad Worlds is now available for download on iOS devices.
+                    {translateContact("faq.answers.downloadPart2")}
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-2" className="border-brand-teal/20 dark:border-brand-mint/20">
+                <AccordionItem
+                  value="item-2"
+                  className="border-brand-teal/20 dark:border-brand-mint/20">
                   <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline text-left w-full pl-4">
-                    Is Meanwhile available on Android?
+                    {translateContact("faq.questions.available")}
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-700 leading-relaxed dark:text-white">
-                    Currently, Meanwhile is only available on iOS. We're focusing on providing the best possible experience for iOS users before considering other platforms.
+                    {translateContact("faq.answers.available")}
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-3" className="border-brand-teal/20 dark:border-brand-mint/20">
+                <AccordionItem
+                  value="item-3"
+                  className="border-brand-teal/20 dark:border-brand-mint/20">
                   <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline text-left w-full pl-4">
-                    Can I use Myriad Worlds content in my own projects?
+                    {translateContact("faq.questions.license")}
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-700 leading-relaxed dark:text-white">
-                    Yes! All content in Myriad Worlds is released under Creative Commons licensing, which means you can use it as inspiration, adapt it, or build upon it for your own creative projects.
+                    {translateContact("faq.answers.license")}
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-4" className="border-brand-teal/20 dark:border-brand-mint/20">
+                <AccordionItem
+                  value="item-4"
+                  className="border-brand-teal/20 dark:border-brand-mint/20">
                   <AccordionTrigger className="text-2xl font-bold text-gray-900 dark:text-brand-mint hover:bg-brand-mint/10 dark:hover:bg-brand-gray dark:hover:text-brand-dark transition-all duration-300 hover:no-underline text-left w-full pl-4">
-                    Do you offer custom software solutions for outside organizations?
+                    {translateContact("faq.questions.customSoftware")}
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-700 leading-relaxed dark:text-white">
-                    While we primarily focus on our own products, we're always open to discussing potential collaborations. Contact us with your requirements, and we'll be happy to explore possibilities.
+                    {translateContact("faq.answers.customSoftware")}
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -339,22 +406,25 @@ ${data.message}
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white dark:text-brand-mint">
-                  Ready To Jump In?
+                  {translateContact("cta.title")}
                 </h2>
                 <p className="mx-auto max-w-[700px] text-white/90 dark:text-white md:text-xl">
-                  Download Meanwhile or Myriad Worlds from the App Store and start your creative journey today.
+                  {translateContact("cta.description")}
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                <Link href="https://apps.apple.com/us/app/myriad-worlds/id6748325367" target="_blank" rel="noopener noreferrer">
+                <Link
+                  href="https://apps.apple.com/us/app/myriad-worlds/id6748325367"
+                  target="_blank"
+                  rel="noopener noreferrer">
                   <BrandButton>
-                    Download on App Store
+                    {translateCommon("downloadOnAppStore")}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </BrandButton>
                 </Link>
                 <Link href="/products">
                   <BrandButtonAlt>
-                    Explore Our Products
+                    {translateCommon("exploreProducts")}
                   </BrandButtonAlt>
                 </Link>
               </div>
