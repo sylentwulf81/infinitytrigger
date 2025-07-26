@@ -16,6 +16,7 @@ import { Menu, X, Cpu, Info, Boxes, Heart } from "lucide-react";
 import { ThemeSwitch } from "@/components/ui/theme-switch";
 import { usePathname } from "next/navigation";
 import Languageselector from "@/components/LanguageSelector";
+import { GlowButton } from "@/components/GlowButton";
 
 export function Header() {
   const translateHeader = useTranslations("header");
@@ -47,12 +48,10 @@ export function Header() {
             href="/products"
             className={`relative flex items-center justify-center gap-1 px-4 py-2 rounded-full transition-all duration-300 font-semibold tracking-wide
               text-brand-dark dark:text-brand-mint
-              hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/10 hover:shadow-md
-              ${
-                pathname === "/products"
-                  ? "bg-brand-lavender/60 dark:bg-brand-mint/20"
-                  : ""
-              } min-w-[140px]`}>
+              hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/25 dark:hover:text-brand-mint/90 hover:shadow-md
+              ${pathname === "/products" ? "bg-brand-lavender/60 dark:bg-brand-mint/20" : ""}`
+            }
+          >
             <Boxes className="w-4 h-4 opacity-70" />
             {translateHeader("navigation.products")}
           </Link>
@@ -60,12 +59,10 @@ export function Header() {
             href="/about"
             className={`relative flex items-center justify-center gap-1 px-4 py-2 rounded-full transition-all duration-300 font-semibold tracking-wide
               text-brand-dark dark:text-brand-mint
-              hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/10 hover:shadow-md
-              ${
-                pathname === "/about"
-                  ? "bg-brand-lavender/60 dark:bg-brand-mint/20"
-                  : ""
-              } min-w-[170px]`}>
+              hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/25 dark:hover:text-brand-mint/90 hover:shadow-md
+              ${pathname === "/about" ? "bg-brand-lavender/60 dark:bg-brand-mint/20" : ""}`
+            }
+          >
             <Info className="w-4 h-4 opacity-70" />
             {translateHeader("navigation.about")}
           </Link>
@@ -73,12 +70,10 @@ export function Header() {
             href="/values"
             className={`relative flex items-center justify-center gap-1 px-4 py-2 rounded-full transition-all duration-300 font-semibold tracking-wide
               text-brand-dark dark:text-brand-mint
-              hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/10 hover:shadow-md
-              ${
-                pathname === "/values"
-                  ? "bg-brand-lavender/60 dark:bg-brand-mint/20"
-                  : ""
-              } min-w-[120px]`}>
+              hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/25 dark:hover:text-brand-mint/90 hover:shadow-md
+              ${pathname === "/values" ? "bg-brand-lavender/60 dark:bg-brand-mint/20" : ""}`
+            }
+          >
             <Heart className="w-4 h-4 opacity-70" />
             {translateHeader("navigation.values")}
           </Link>
@@ -90,9 +85,9 @@ export function Header() {
             <ThemeSwitch />
           </div>
           <Link href="/contact" className="hidden md:block">
-            <Button className="bg-brand-teal hover:bg-brand-mint text-white hover:text-brand-dark shadow-lg hover:shadow-xl transition-all duration-300">
+            <GlowButton variant="primary" className="shadow-lg hover:shadow-xl">
               {translateCommon("getInTouch")}
-            </Button>
+            </GlowButton>
           </Link>
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
             <SheetTrigger asChild>

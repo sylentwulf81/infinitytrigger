@@ -35,7 +35,7 @@ export default async function Home() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-20 bg-gradient-to-b from-brand-mint/20 to-white dark:from-brand-dark dark:to-brand-teal/20">
+        <section className="w-full py-20 bg-gradient-to-b from-brand-lavender to-white dark:from-brand-dark dark:to-brand-teal/20">
           <div className="container px-4 md:px-6 flex flex-col items-center text-center gap-8">
             <div className="flex items-center gap-2 mb-2">
               <BookOpen className="h-6 w-6 text-brand-teal dark:text-brand-mint" />
@@ -77,7 +77,7 @@ export default async function Home() {
         </section>
 
         {/* Products/Features Section */}
-        <section className="w-full py-16 bg-gradient-to-b from-white to-brand-lavender/10 dark:bg-gradient-to-b dark:from-brand-teal/70 dark:to-brand-teal/40">
+        <section className="w-full py-16 bg-gradient-to-b from-white to-brand-lavender dark:bg-gradient-to-b dark:from-brand-teal/70 dark:to-brand-teal/40">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center mb-12">
               <span className="text-brand-teal dark:text-brand-mint text-sm font-medium mb-2">
@@ -202,7 +202,7 @@ export default async function Home() {
         </section>
 
         {/* Values Section */}
-        <section className="w-full py-16 bg-gradient-to-b from-brand-lavender/10 to-brand-teal dark:bg-gradient-to-b dark:from-brand-teal/40 dark:to-brand-dark">
+        <section className="w-full py-16 bg-gradient-to-b from-brand-lavender to-white dark:bg-gradient-to-b dark:from-brand-teal/40 dark:to-brand-dark">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-brand-dark dark:text-brand-mint mb-2">
@@ -254,7 +254,7 @@ export default async function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="w-full py-16 bg-gradient-to-b from-brand-teal to-brand-lavender dark:bg-gradient-to-b dark:from-brand-dark dark:to-brand-dark">
+        <section className="w-full py-16 bg-white dark:bg-gradient-to-b dark:from-brand-dark dark:to-brand-dark">
           <div className="container px-4 md:px-6 flex flex-col items-center text-center gap-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white dark:text-brand-mint">
               {translateCommon("cta.title")}

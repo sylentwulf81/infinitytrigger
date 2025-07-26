@@ -21,10 +21,18 @@ export function Footer() {
         </div>
         <nav className="flex gap-4 sm:gap-6 dark:text-white">
           <Link
+            href="/team"
+            className="text-sm font-medium text-brand-dark dark:text-brand-mint hover:text-brand-teal dark:hover:text-white transition-colors duration-300"
+          >
+            Team
+          </Link>
+          <span className="text-sm text-gray-400 dark:text-gray-500">|</span>
+          <Link
             href="/privacy-policy"
             className="text-sm font-medium text-brand-dark dark:text-brand-mint hover:text-brand-teal dark:hover:text-white transition-colors duration-300">
             {translateFooter("links.privacyPolicy")}
           </Link>
+          <span className="text-sm text-gray-400 dark:text-gray-500">|</span>
           <Link
             href="/terms-of-service"
             className="text-sm font-medium text-brand-dark dark:text-brand-mint hover:text-brand-teal dark:hover:text-white transition-colors duration-300">
