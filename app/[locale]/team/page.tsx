@@ -14,8 +14,11 @@ import {
   Github,
   Linkedin,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function Team() {
+  const translateTeam = useTranslations("team");
+  const translateCommon = useTranslations("common");
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
@@ -23,15 +26,13 @@ export default function Team() {
         <section className="w-full py-16 bg-gradient-to-b from-brand-mint/20 to-brand-lavender dark:bg-gradient-to-b dark:from-brand-dark dark:to-brand-dark">
           <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col items-center text-center gap-8">
             <h1 className="text-5xl md:text-6xl font-extrabold text-brand-dark dark:text-brand-mint leading-tight">
-              Meet Our Team
+              {translateTeam("hero.title")}
             </h1>
             <p className="max-w-3xl mx-auto text-lg md:text-xl text-brand-dark/80 dark:text-white font-medium">
-              We're a small but passionate gloabl team, primarily based in Nagano City, Japan, 
-              dedicated to building creative tools that celebrate human imagination.
+              {translateTeam("hero.description1")}
             </p>
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-brand-dark/80 dark:text-white font-medium">
-              Each of us brings unique perspectives and skills to create tools 
-              that we, as creatives, would want to use ourselves.
+              {translateTeam("hero.description2")}
             </p>
           </div>
         </section>
@@ -41,10 +42,10 @@ export default function Team() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-brand-dark dark:text-brand-mint mb-2">
-                The Creatives Behind Infinity Trigger
+                {translateTeam("teamMembers.title")}
               </h2>
               <p className="max-w-xl mx-auto text-brand-dark/80 dark:text-white/80 text-lg">
-                Meet the minds building the next generation of tools for creators.
+                {translateTeam("teamMembers.subtitle")}
               </p>
             </div>
 
@@ -62,17 +63,17 @@ export default function Team() {
                     />
                   </div>
                   <CardTitle className="text-2xl font-bold text-brand-mint">
-                    Anthony Lavizzo
+                    {translateTeam("teamMembers.anthony.name")}
                   </CardTitle>
-                  <p className="text-brand-mint/80 text-lg">Founder & Lead Developer</p>
+                  <p className="text-brand-mint/80 text-lg">{translateTeam("teamMembers.anthony.role")}</p>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-white/80 leading-relaxed mb-4">
-                    A software engineer with a passion for creative tools and storytelling.
+                    {translateTeam("teamMembers.anthony.description")}
                   </p>
                   <div className="flex items-center justify-center gap-2 text-sm text-brand-mint/60 mb-4">
                     <MapPin className="h-4 w-4" />
-                    <span>Nagano City, Japan</span>
+                    <span>{translateTeam("teamMembers.anthony.location")}</span>
                   </div>
                   <div className="flex justify-center gap-3">
                     <Button variant="ghost" size="sm" className="text-brand-mint hover:text-white">
@@ -105,17 +106,17 @@ export default function Team() {
                     />
                   </div>
                   <CardTitle className="text-2xl font-bold text-brand-mint">
-                    Tanner Galloway
+                    {translateTeam("teamMembers.tanner.name")}
                   </CardTitle>
-                  <p className="text-brand-mint/80 text-lg">Full Stack Developer</p>
+                  <p className="text-brand-mint/80 text-lg">{translateTeam("teamMembers.tanner.role")}</p>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-white/80 leading-relaxed mb-4">
-                    A software engineer with a passion for building responsive, user-friendly applications and websites. Responsible for localization, functionality, and code reviews.
+                    {translateTeam("teamMembers.tanner.description")}
                   </p>
                   <div className="flex items-center justify-center gap-2 text-sm text-brand-mint/60 mb-4">
                     <MapPin className="h-4 w-4" />
-                    <span>Arizona USA</span>
+                    <span>{translateTeam("teamMembers.tanner.location")}</span>
                   </div>
                   <div className="flex justify-center gap-3">
                     <Button variant="ghost" size="sm" className="text-brand-mint hover:text-white">
@@ -142,18 +143,17 @@ export default function Team() {
                     <Sparkles className="h-12 w-12 text-brand-mint" />
                   </div>
                   <CardTitle className="text-2xl font-bold text-brand-mint">
-                    John Appleseed
+                    {translateTeam("teamMembers.john.name")}
                   </CardTitle>
-                  <p className="text-brand-mint/80 text-lg">Content Creator</p>
+                  <p className="text-brand-mint/80 text-lg">{translateTeam("teamMembers.john.role")}</p>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-white/80 leading-relaxed mb-4">
-                    A writer and storyteller who crafts the creative prompts and 
-                    content that inspire users to tell their own stories.
+                    {translateTeam("teamMembers.john.description")}
                   </p>
                   <div className="flex items-center justify-center gap-2 text-sm text-brand-mint/60 mb-4">
                     <MapPin className="h-4 w-4" />
-                    <span>Roppongi, Tokyo, Japan</span>
+                    <span>{translateTeam("teamMembers.john.location")}</span>
                   </div>
                   <div className="flex justify-center gap-3">
                     <Button variant="ghost" size="sm" className="text-brand-mint hover:text-white">
@@ -179,18 +179,15 @@ export default function Team() {
               <Card className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 border-2 border-brand-gray dark:border-brand-mint">
                 <CardHeader>
                   <CardTitle className="text-3xl md:text-4xl font-bold text-brand-mint">
-                    How We Work
+                    {translateTeam("approach.title")}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-lg text-white/80 leading-relaxed">
-                    We believe in the power of small teams and big ideas. While we're a compact size, it allows us to move quickly, make decisions efficiently, and maintain the personal touch 
-                    that makes our tools feel human and remain  approachable.
+                    {translateTeam("approach.description1")}
                   </p>
                   <p className="text-lg text-white/80 leading-relaxed mt-4">
-                    Every team member wears multiple hats, bringing diverse perspectives 
-                    to every project. This collaborative approach ensures that our tools 
-                    are built with both technical excellence and creative insight.
+                    {translateTeam("approach.description2")}
                   </p>
                 </CardContent>
               </Card>
@@ -210,10 +207,10 @@ export default function Team() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-brand-dark dark:text-brand-mint mb-2">
-                What Drives Us
+                {translateTeam("values.title")}
               </h2>
               <p className="max-w-xl mx-auto text-brand-dark/80 dark:text-white/80 text-lg">
-                The principles that guide our team and our work.
+                {translateTeam("values.subtitle")}
               </p>
             </div>
 
@@ -225,14 +222,12 @@ export default function Team() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-brand-mint">
-                      Collaboration
+                      {translateTeam("values.collaboration.title")}
                     </h3>
                   </div>
                 </div>
                 <p className="text-white">
-                  We believe the best ideas come from working together. Every team 
-                  member's voice matters, and we encourage open dialogue and creative 
-                  problem-solving.
+                  {translateTeam("values.collaboration.description")}
                 </p>
               </div>
 
@@ -243,14 +238,12 @@ export default function Team() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-brand-mint">
-                      Innovation
+                      {translateTeam("values.innovation.title")}
                     </h3>
                   </div>
                 </div>
                 <p className="text-white">
-                  We're constantly exploring new ways to enhance creativity. We 
-                  experiment, iterate, and push boundaries to create tools that 
-                  inspire and empower.
+                  {translateTeam("values.innovation.description")}
                 </p>
               </div>
 
@@ -261,14 +254,12 @@ export default function Team() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-brand-mint">
-                      Authenticity
+                      {translateTeam("values.authenticity.title")}
                     </h3>
                   </div>
                 </div>
                 <p className="text-white">
-                  We build tools that we would want to use ourselves. This means 
-                  staying true to our values and creating authentic experiences 
-                  that resonate with real creators.
+                  {translateTeam("values.authenticity.description")}
                 </p>
               </div>
             </div>
@@ -279,11 +270,10 @@ export default function Team() {
         <section className="w-full py-16 bg-brand-lavender dark:bg-brand-dark text-brand-dark dark:text-brand-mint">
           <div className="container px-4 md:px-6 flex flex-col items-center text-center gap-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-2">
-              Join Our Mission
+              {translateTeam("cta.title")}
             </h2>
             <p className="max-w-xl mx-auto text-lg text-brand-dark/90 dark:text-white/90">
-              Want to learn more about what we do? 
-              We'd love to hear from you.
+              {translateTeam("cta.description")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-2">
               <Link href="/contact">
@@ -291,7 +281,7 @@ export default function Team() {
                   size="lg"
                   className="bg-brand-teal text-white font-semibold px-8 py-4 rounded-lg hover:bg-brand-mint hover:text-brand-dark transition-all duration-200"
                 >
-                  Get In Touch
+                  {translateTeam("cta.getInTouch")}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
@@ -300,7 +290,7 @@ export default function Team() {
                   size="lg"
                   className="border-1 border-brand-mint text-brand-dark font-semibold px-8 py-4 rounded-lg hover:bg-brand-mint hover:text-[#416165] transition-all duration-200"
                 >
-                  Explore Our Products
+                  {translateTeam("cta.exploreProducts")}
                 </Button>
               </Link>
             </div>

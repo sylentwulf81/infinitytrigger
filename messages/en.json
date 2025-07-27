@@ -3,7 +3,8 @@
     "navigation": {
       "products": "Products",
       "about": "About",
-      "values": "Values"
+      "values": "Values",
+      "team": "Team"
     },
 
     "toggleMenu": "Toggle Menu",
@@ -493,6 +494,63 @@
     "email": {
       "title": "Email",
       "address": "support@infinitytrigger.com"
+    }
+  },
+
+  "team": {
+    "hero": {
+      "title": "Meet Our Team",
+      "description1": "We're a small but passionate global team, primarily based in Nagano City, Japan, dedicated to building creative tools that celebrate human imagination.",
+      "description2": "Each of us brings unique perspectives and skills to create tools that we, as creatives, would want to use ourselves."
+    },
+    "teamMembers": {
+      "title": "The Creatives Behind Infinity Trigger",
+      "subtitle": "Meet the minds building the next generation of tools for creators.",
+      "anthony": {
+        "name": "Anthony Lavizzo",
+        "role": "Founder & Lead Developer",
+        "description": "A software engineer with a passion for creative tools and storytelling.",
+        "location": "Nagano City, Japan"
+      },
+      "tanner": {
+        "name": "Tanner Galloway",
+        "role": "Full Stack Developer",
+        "description": "A software engineer with a passion for building responsive, user-friendly applications and websites. Responsible for localization, functionality, and code reviews.",
+        "location": "Arizona USA"
+      },
+      "john": {
+        "name": "John Appleseed",
+        "role": "Content Creator",
+        "description": "A writer and storyteller who crafts the creative prompts and content that inspire users to tell their own stories.",
+        "location": "Roppongi, Tokyo, Japan"
+      }
+    },
+    "approach": {
+      "title": "How We Work",
+      "description1": "We believe in the power of small teams and big ideas. While we're a compact size, it allows us to move quickly, make decisions efficiently, and maintain the personal touch that makes our tools feel human and remain approachable.",
+      "description2": "Every team member wears multiple hats, bringing diverse perspectives to every project. This collaborative approach ensures that our tools are built with both technical excellence and creative insight."
+    },
+    "values": {
+      "title": "What Drives Us",
+      "subtitle": "The principles that guide our team and our work.",
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "We believe the best ideas come from working together. Every team member's voice matters, and we encourage open dialogue and creative problem-solving."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We're constantly exploring new ways to enhance creativity. We experiment, iterate, and push boundaries to create tools that inspire and empower."
+      },
+      "authenticity": {
+        "title": "Authenticity",
+        "description": "We build tools that we would want to use ourselves. This means staying true to our values and creating authentic experiences that resonate with real creators."
+      }
+    },
+    "cta": {
+      "title": "Join Our Mission",
+      "description": "Want to learn more about what we do? We'd love to hear from you.",
+      "getInTouch": "Get In Touch",
+      "exploreProducts": "Explore Our Products"
     }
   },
 
