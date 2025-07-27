@@ -1,11 +1,24 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Heart, BookOpen, Share2, ArrowRight, Sparkles, Palette, BookMarked } from "lucide-react";
+import {
+  ArrowLeft,
+  Heart,
+  BookOpen,
+  Share2,
+  ArrowRight,
+  Sparkles,
+  Palette,
+  BookMarked,
+} from "lucide-react";
 import { BrandButton, BrandButtonAlt } from "@/components/BrandButton";
 
 export default function MyriadWorldsPage() {
+  const translateMyriadWorlds = useTranslations("products.myriadWorldsPage");
+  const translateCommon = useTranslations("common");
+
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
@@ -17,23 +30,25 @@ export default function MyriadWorldsPage() {
                 <div className="space-y-2">
                   <div className="inline-flex items-center rounded-full bg-brand-mint/20 border border-brand-teal/20 px-3 py-1 text-sm text-brand-teal dark:text-brand-mint">
                     <Sparkles className="w-4 h-4 mr-2" />
-                    Available Now
+                    {translateCommon("avaliblity")}
                   </div>
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl text-brand-dark dark:text-brand-mint">
-                    Myriad Worlds
+                    {translateMyriadWorlds("hero.title")}
                   </h1>
                   <p className="max-w-[600px] text-gray-600 dark:text-brand-lavender/80 md:text-xl/relaxed lg:text-2xl/relaxed">
-                    A creative storytelling app featuring Creative Commons licensed content. Use our human-generated stories as starting points for your own creative adventures.
+                    {translateMyriadWorlds("hero.description")}
                   </p>
                 </div>
                 <div className="flex flex-col gap-3 min-[400px]:flex-row items-center">
-                  <Link href="https://apps.apple.com/us/app/myriad-worlds/id6748325367" target="_blank" rel="noopener noreferrer">
+                  <Link
+                    href="https://apps.apple.com/us/app/myriad-worlds/id6748325367"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     <BrandButton>
-                      Download on App Store
+                      {translateCommon("downloadOnAppStore")}
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </BrandButton>
                   </Link>
-
                 </div>
               </div>
               <div className="flex items-center justify-center">
@@ -57,31 +72,43 @@ export default function MyriadWorldsPage() {
               <div className="flex flex-col justify-center space-y-6">
                 <div className="space-y-4">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-brand-dark dark:text-brand-mint">
-                    Stories by Humans, for Humans
+                    {translateMyriadWorlds("about.title")}
                   </h2>
                   <p className="text-gray-600 dark:text-brand-lavender/80 leading-relaxed">
-                    Every story, character, and world in Myriad Worlds is crafted by our creative team. 
-                    We believe in the power of imagination and creativity.
+                    {translateMyriadWorlds("about.description")}
                   </p>
                   <p className="text-gray-600 dark:text-brand-lavender/80 leading-relaxed">
-                    All content is released under Creative Commons licensing, so you can use our stories 
-                    as inspiration, adapt them, or build upon them for your own creative projects.
+                    {translateMyriadWorlds("about.creativeCommonsDescription")}
                   </p>
                 </div>
                 <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-brand-dark dark:text-brand-mint">Our Vision</h3>
+                  <h3 className="text-2xl font-bold text-brand-dark dark:text-brand-mint">
+                    {translateMyriadWorlds("about.vision.title")}
+                  </h3>
                   <ul className="space-y-3 text-gray-600 dark:text-brand-lavender/80 leading-relaxed">
                     <li className="flex items-start gap-3">
                       <Heart className="h-6 w-6 text-brand-pink dark:text-brand-pink mt-0.5 flex-shrink-0" />
-                      <span>Create a platform where creativity thrives and inspires others</span>
+                      <span>
+                        {translateMyriadWorlds(
+                          "about.vision.bulletPoints.platform"
+                        )}
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <Share2 className="h-6 w-6 text-brand-pink dark:text-brand-pink mt-0.5 flex-shrink-0" />
-                      <span>Foster a community of storytellers who build upon each other's ideas</span>
+                      <span>
+                        {translateMyriadWorlds(
+                          "about.vision.bulletPoints.community"
+                        )}
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <BookOpen className="h-6 w-6 text-brand-pink dark:text-brand-pink mt-0.5 flex-shrink-0" />
-                      <span>Provide rich, engaging content that sparks imagination and creativity</span>
+                      <span>
+                        {translateMyriadWorlds(
+                          "about.vision.bulletPoints.engagingContent"
+                        )}
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -114,10 +141,10 @@ export default function MyriadWorldsPage() {
             <div className="flex flex-col items-center space-y-4 text-center mb-12">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-brand-dark dark:text-brand-mint">
-                  Built for Creative Freedom
+                  {translateMyriadWorlds("features.title")}
                 </h2>
                 <p className="mx-auto max-w-[700px] text-gray-600 dark:text-brand-lavender/80 md:text-xl">
-                  Myriad Worlds is designed to inspire and support your creative journey.
+                  {translateMyriadWorlds("features.description")}
                 </p>
               </div>
             </div>
@@ -128,10 +155,12 @@ export default function MyriadWorldsPage() {
                     <div className="p-2 rounded-full bg-brand-pink/20 dark:bg-brand-pink/10">
                       <Heart className="h-6 w-6 text-brand-pink" />
                     </div>
-                    <h3 className="text-xl font-semibold text-brand-dark dark:text-brand-mint">Human-Crafted</h3>
+                    <h3 className="text-xl font-semibold text-brand-dark dark:text-brand-mint">
+                      {translateMyriadWorlds("features.humanCrafted.title")}
+                    </h3>
                   </div>
                   <p className="text-gray-600 dark:text-brand-lavender/80">
-                    Every story is written by human authors who pour their creativity and passion into each piece.
+                    {translateMyriadWorlds("features.humanCrafted.description")}
                   </p>
                 </CardContent>
               </Card>
@@ -142,10 +171,14 @@ export default function MyriadWorldsPage() {
                     <div className="p-2 rounded-full bg-brand-pink/20 dark:bg-brand-pink/10">
                       <Share2 className="h-6 w-6 text-brand-pink" />
                     </div>
-                    <h3 className="text-xl font-semibold text-brand-dark dark:text-brand-mint">Creative Commons</h3>
+                    <h3 className="text-xl font-semibold text-brand-dark dark:text-brand-mint">
+                      {translateMyriadWorlds("features.creativeCommons.title")}
+                    </h3>
                   </div>
                   <p className="text-gray-600 dark:text-brand-lavender/80">
-                    Use our stories as starting points for your own creative works under Creative Commons licensing.
+                    {translateMyriadWorlds(
+                      "features.creativeCommons.description"
+                    )}
                   </p>
                 </CardContent>
               </Card>
@@ -156,10 +189,14 @@ export default function MyriadWorldsPage() {
                     <div className="p-2 rounded-full bg-brand-pink/20 dark:bg-brand-pink/10">
                       <BookOpen className="h-6 w-6 text-brand-pink" />
                     </div>
-                    <h3 className="text-xl font-semibold text-brand-dark dark:text-brand-mint">Rich Storytelling</h3>
+                    <h3 className="text-xl font-semibold text-brand-dark dark:text-brand-mint">
+                      {translateMyriadWorlds("features.richStorytelling.title")}
+                    </h3>
                   </div>
                   <p className="text-gray-600 dark:text-brand-lavender/80">
-                    Explore diverse worlds, characters, and narratives that spark your imagination.
+                    {translateMyriadWorlds(
+                      "features.richStorytelling.description"
+                    )}
                   </p>
                 </CardContent>
               </Card>
@@ -170,10 +207,16 @@ export default function MyriadWorldsPage() {
                     <div className="p-2 rounded-full bg-brand-pink/20 dark:bg-brand-pink/10">
                       <Palette className="h-6 w-6 text-brand-pink" />
                     </div>
-                    <h3 className="text-xl font-semibold text-brand-dark dark:text-brand-mint">Character Creation</h3>
+                    <h3 className="text-xl font-semibold text-brand-dark dark:text-brand-mint">
+                      {translateMyriadWorlds(
+                        "features.characterCreation.title"
+                      )}
+                    </h3>
                   </div>
                   <p className="text-gray-600 dark:text-brand-lavender/80">
-                    Design and develop unique characters with our intuitive creation tools.
+                    {translateMyriadWorlds(
+                      "features.characterCreation.description"
+                    )}
                   </p>
                 </CardContent>
               </Card>
@@ -184,10 +227,14 @@ export default function MyriadWorldsPage() {
                     <div className="p-2 rounded-full bg-brand-pink/20 dark:bg-brand-pink/10">
                       <BookMarked className="h-6 w-6 text-brand-pink" />
                     </div>
-                    <h3 className="text-xl font-semibold text-brand-dark dark:text-brand-mint">Story Building</h3>
+                    <h3 className="text-xl font-semibold text-brand-dark dark:text-brand-mint">
+                      {translateMyriadWorlds("features.storyBuilding.title")}
+                    </h3>
                   </div>
                   <p className="text-gray-600 dark:text-brand-lavender/80">
-                    Craft your narratives with powerful storytelling tools and templates.
+                    {translateMyriadWorlds(
+                      "features.storyBuilding.description"
+                    )}
                   </p>
                 </CardContent>
               </Card>
@@ -201,22 +248,25 @@ export default function MyriadWorldsPage() {
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-brand-dark dark:text-brand-mint">
-                  Ready to Explore?
+                  {translateMyriadWorlds("cta.title")}
                 </h2>
                 <p className="mx-auto max-w-[700px] text-gray-600 dark:text-brand-lavender/80 md:text-xl">
-                  Download Myriad Worlds and start exploring our creative team's crafted stories.
+                  {translateMyriadWorlds("cta.description")}
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
                 <Link href="/products">
                   <BrandButtonAlt>
                     <ArrowLeft className="mr-2 h-4 w-4" />
-                    Back to Products
+                    {translateCommon("backToProducts")}
                   </BrandButtonAlt>
                 </Link>
-                <Link href="https://apps.apple.com/us/app/myriad-worlds/id6748325367" target="_blank" rel="noopener noreferrer">
+                <Link
+                  href="https://apps.apple.com/us/app/myriad-worlds/id6748325367"
+                  target="_blank"
+                  rel="noopener noreferrer">
                   <BrandButton>
-                    Download on App Store
+                    {translateCommon("downloadOnAppStore")}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </BrandButton>
                 </Link>
@@ -227,4 +277,4 @@ export default function MyriadWorldsPage() {
       </main>
     </div>
   );
-} 
+}

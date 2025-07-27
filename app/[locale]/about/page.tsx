@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -12,6 +13,8 @@ import {
 } from "lucide-react";
 
 export default function About() {
+  const translateAbout = useTranslations("about");
+  const translateCommon = useTranslations("common");
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
@@ -19,21 +22,19 @@ export default function About() {
         <section className="w-full py-16 bg-gradient-to-b from-brand-mint/20 to-brand-lavender dark:bg-gradient-to-b dark:from-brand-dark dark:to-brand-dark">
           <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col items-center text-center gap-8">
             <h1 className="text-5xl md:text-6xl font-extrabold text-brand-dark dark:text-brand-mint leading-tight">
-              About Infinity Trigger
+              {translateAbout("title")}
             </h1>
             <p className="max-w-3xl mx-auto text-lg md:text-xl text-brand-dark/80 dark:text-white font-medium">
-              We're a small team passionate about building creative tools that
-              put imagination first. We celebrate and help foster creativity in all
-              its forms.
+              {translateAbout("descriptionParagraph1")}
             </p>
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-brand-dark/80 dark:text-white font-medium">
-            Storytelling has always been at the very core the human experience. From our earliest days, we've used stories to pass down culture, explain truths about the world, and connect with one another across generations.
+              {translateAbout("descriptionParagraph2")}
             </p>
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-brand-dark/80 dark:text-white font-medium">
-            At Infinity Trigger, we strive to empower people all over the world to bring their stories to life. We believe that everyone has a story to tell, and we're passionate about building tools that help people tell their stories, share their experiences, and connect with one another across generations.
+              {translateAbout("descriptionParagraph3")}
             </p>
             <p className="max-w-2xl mx-auto text-lg md:text-xl text-brand-dark/80 dark:text-white font-medium">
-            We're a small team based in Nagano City, Nagano Prefecture, Japan, and we can't wait to hear your story.
+              {translateAbout("descriptionParagraph4")}
             </p>
           </div>
         </section>
@@ -45,24 +46,15 @@ export default function About() {
               <Card className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 border-2 border-brand-gray dark:border-brand-mint">
                 <CardHeader>
                   <CardTitle className="text-3xl md:text-4xl font-bold text-brand-mint">
-                    Our Identity
+                    {translateAbout("identity.title")}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-lg text-white/80 leading-relaxed">
-                    At Infinity Trigger, we believe that technology should serve
-                    human creativity, not replace it. Stories have always been at
-                    the heart of the human experience. We believe humans should
-                    always be in the driver's seat, telling the stories that move
-                    us, creating the worlds and experiences that we all share. We
-                    build tools that amplify the human creative voice, celebrating
-                    the unique perspective that each of us brings to the world.
+                    {translateAbout("identity.descriptionParagraph1")}
                   </p>
                   <p className="text-lg text-white/80 leading-relaxed mt-4">
-                    Every piece of creative content in our apps is
-                    human-generated. Every story, every prompt, every element is
-                    crafted by real people who understand the creative process and
-                    the challenges and victories that come with it.
+                    {translateAbout("identity.descriptionParagraph2")}
                   </p>
                 </CardContent>
               </Card>
@@ -83,15 +75,15 @@ export default function About() {
               <Card className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 border-2 border-brand-gray dark:border-brand-mint">
                 <CardHeader>
                   <CardTitle className="text-3xl md:text-4xl font-bold text-brand-mint">
-                    Our Story
+                    {translateAbout("story.title")}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-lg text-white/80 leading-relaxed">
-                    Infinity Trigger started with a simple idea: to create tools that we, as creatives, would want to use. Our journey has been one of passion, late nights, and a relentless pursuit of quality.
+                    {translateAbout("story.descriptionParagraph1")}
                   </p>
                   <p className="text-lg text-white/80 leading-relaxed mt-4">
-                    From a small project based in the heart of beautiful Nagano Prefecture, we've grown into a small but dedicated team, committed to building software that empowers and inspires artists, writers, and creators around the world.
+                    {translateAbout("story.descriptionParagraph2")}
                   </p>
                 </CardContent>
               </Card>
@@ -104,10 +96,10 @@ export default function About() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-brand-dark dark:text-brand-mint mb-2">
-                Our Values
+                {translateAbout("values.title")}
               </h2>
               <p className="max-w-xl mx-auto text-brand-dark/80 dark:text-white/80 text-lg">
-                The principles that guide everything we do.
+                {translateAbout("values.description")}
               </p>
             </div>
 
@@ -119,14 +111,12 @@ export default function About() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-brand-mint">
-                      Human-Centered
+                      {translateAbout("values.humanCentered.title")}
                     </h3>
                   </div>
                 </div>
                 <p className="text-white">
-                  Technology should serve creativity, not replace it. We put
-                  humans in control of their creative process and provide tools
-                  that enhance rather than dictate.
+                  {translateAbout("values.humanCentered.description")}
                 </p>
               </div>
 
@@ -137,14 +127,12 @@ export default function About() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-brand-mint">
-                      Celebrate Creativity
+                      {translateAbout("values.celebrateCreativity.title")}
                     </h3>
                   </div>
                 </div>
                 <p className="text-white">
-                  Every person has a unique creative voice. We build tools that
-                  amplify it, celebrate it, and help it grow stronger with each
-                  use.
+                  {translateAbout("values.celebrateCreativity.description")}
                 </p>
               </div>
 
@@ -155,14 +143,12 @@ export default function About() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-brand-mint">
-                      Authentic Content
+                      {translateAbout("values.authenticContent.title")}
                     </h3>
                   </div>
                 </div>
                 <p className="text-white">
-                  All of our creative content is made by humans, for humans. No
-                  AI-generated prompts or stories. Just authentic, thoughtful
-                  content crafted with care.
+                  {translateAbout("values.authenticContent.description")}
                 </p>
               </div>
             </div>
@@ -174,15 +160,10 @@ export default function About() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-brand-dark dark:text-brand-mint mb-2">
-                Our Team
+                {translateAbout("team.title")}
               </h2>
               <p className="max-w-xl mx-auto text-brand-dark/80 dark:text-white/80 text-lg">
-                We are a small team with big dreams for the future of digital
-                creative tools. We are a team of developers, designers, and
-                content creators who are passionate about creating tools that
-                help people create. Many of us are creative hobbyists or
-                professionals ourselves, and we strive to build the tools that
-                we want to use ourselves.
+                {translateAbout("team.description")}
               </p>
             </div>
 
@@ -193,7 +174,7 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-brand-mint">
-                    Creative Developers
+                    {translateAbout("team.roles.developers")}
                   </h3>
                 </div>
               </div>
@@ -204,7 +185,7 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-brand-mint">
-                    Content Creators
+                    {translateAbout("team.roles.creators")}
                   </h3>
                 </div>
               </div>
@@ -215,7 +196,7 @@ export default function About() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-brand-mint">
-                    Design Thinkers
+                    {translateAbout("team.roles.designers")}
                   </h3>
                 </div>
               </div>
@@ -227,28 +208,25 @@ export default function About() {
         <section className="w-full py-16 bg-brand-lavender dark:bg-brand-dark text-brand-dark dark:text-brand-mint">
           <div className="container px-4 md:px-6 flex flex-col items-center text-center gap-6">
             <h2 className="text-3xl md:text-4xl font-bold mb-2">
-              Join Our Journey
+              {translateAbout("cta.title")}
             </h2>
             <p className="max-w-xl mx-auto text-lg text-brand-dark/90 dark:text-white/90">
-              Be part of our mission to celebrate human creativity and build
-              tools that inspire.
+              {translateAbout("cta.description")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-2">
               <Link href="/contact">
                 <Button
                   size="lg"
-                  className="bg-brand-teal text-white font-semibold px-8 py-4 rounded-lg hover:bg-brand-mint hover:text-brand-dark transition-all duration-200"
-                >
-                  Get In Touch
+                  className="bg-brand-teal text-white font-semibold px-8 py-4 rounded-lg hover:bg-brand-mint hover:text-brand-dark transition-all duration-200">
+                  {translateCommon("getInTouch")}
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
               <Link href="/products">
                 <Button
                   size="lg"
-                  className="border-1 border-brand-mint text-brand-dark font-semibold px-8 py-4 rounded-lg hover:bg-brand-mint hover:text-[#416165] transition-all duration-200"
-                >
-                  Explore Our Products
+                  className="border-1 border-brand-mint text-brand-dark font-semibold px-8 py-4 rounded-lg hover:bg-brand-mint hover:text-[#416165] transition-all duration-200">
+                  {translateCommon("exploreProducts")}
                 </Button>
               </Link>
             </div>
