@@ -91,9 +91,7 @@ export function Header() {
           </div>
           <Link href="/contact" className="hidden md:block">
             <GlowButton variant="primary" className="shadow-lg hover:shadow-xl">
-            <GlowButton variant="primary" className="shadow-lg hover:shadow-xl">
               {translateCommon("getInTouch")}
-            </GlowButton>
             </GlowButton>
           </Link>
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>

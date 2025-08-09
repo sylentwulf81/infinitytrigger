@@ -21,13 +21,13 @@ export async function generateMetadata() {
     description: translateMetadata("description"),
     icons: {
       icon: [
-        { url: "/Assets/favicon.ico" },
-        { url: "/Assets/favicon-16x16.png", sizes: "16x16", type: "image/png" },
-        { url: "/Assets/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+        { url: "/Assets/logo/shinano labs logo.png" },
+        { url: "/Assets/logo/shinano labs logo.png", sizes: "16x16", type: "image/png" },
+        { url: "/Assets/logo/shinano labs logo.png", sizes: "32x32", type: "image/png" },
       ],
       apple: [
         {
-          url: "/Assets/apple-touch-icon.png",
+          url: "/Assets/logo/shinano labs logo.png",
           sizes: "180x180",
           type: "image/png",
         },
@@ -48,24 +48,10 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        <link rel="icon" type="image/x-icon" href="/Assets/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/Assets/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/Assets/favicon-16x16.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/Assets/apple-touch-icon.png"
-        />
+        <link rel="icon" type="image/png" href="/Assets/logo/shinano labs logo.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/Assets/logo/shinano labs logo.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/Assets/logo/shinano labs logo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/Assets/logo/shinano labs logo.png" />
       </head>
       <body className={`${inter.className} flex flex-col min-h-screen`}>
         <NextIntlClientProvider messages={messages}>
