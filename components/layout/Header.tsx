@@ -12,7 +12,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Menu, X, Cpu, Info, Boxes, Heart } from "lucide-react";
+import { Menu, Info, Boxes, Heart } from "lucide-react";
 import { ThemeSwitch } from "@/components/ui/theme-switch";
 import { usePathname } from "next/navigation";
 import { GlowButton } from "@/components/GlowButton";
@@ -23,16 +23,14 @@ export function Header() {
   const translateCommon = useTranslations("common");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-  const isDevelopment = process.env.NODE_ENV === "development";
+  
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-brand-lavender/30 dark:border-brand-mint/20 bg-brand-accent/80 dark:bg-brand-logo/20 backdrop-blur-md">
-      <div className="container flex h-20 items-center">
-        <div className="flex-1 basis-[200px]">
-          <Link href="/" className="flex items-center justify-center gap-4">
-            {isDevelopment && (
-              <Cpu className="w-5 h-5 text-brand-dark dark:text-brand-mint animate-pulse" />
-            )}
+      <div className="container flex h-20 items-center justify-between">
+        <div className="flex md:flex-1 basis-auto md:basis-[200px]">
+          <Link href="/" className="flex items-center justify-start md:justify-center gap-4">
+            {/* Development chip removed per request */}
             {/* Desktop/tablet: full logo + logotype */}
             <Image
               src="/Assets/logo/shinano labs logo and logotype.png"
@@ -46,8 +44,8 @@ export function Header() {
             <Image
               src="/Assets/logo/shinano labs logo.png"
               alt="Shinano Labs Logo"
-              width={44}
-              height={44}
+              width={56}
+              height={56}
               className="block md:hidden object-contain"
               priority
             />

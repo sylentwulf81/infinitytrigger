@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className="w-full border-t border-brand-lavender/30 dark:border-brand-mint/20 py-6 md:py-0 bg-brand-accent/80 dark:bg-brand-logo/20 backdrop-blur-md">
       <div className="container flex flex-col items-center justify-between gap-4 md:h-28 md:flex-row">
-        <div className="flex items-center gap-2">
+        <div className="flex flex-col md:flex-row items-center gap-2 text-center md:text-left">
           <Image
             src="/Assets/logo/shinano labs logo and logotype.png"
             alt="Shinano Labs Logo"
