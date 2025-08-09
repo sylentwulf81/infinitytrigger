@@ -12,7 +12,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Menu, X, Cpu, Info, Boxes, Heart, Users } from "lucide-react";
+import { Menu, X, Cpu, Info, Boxes, Heart } from "lucide-react";
 import { ThemeSwitch } from "@/components/ui/theme-switch";
 import { usePathname } from "next/navigation";
 import { GlowButton } from "@/components/GlowButton";
@@ -71,15 +71,7 @@ export function Header() {
             <Heart className="w-4 h-4 opacity-70" />
             {translateHeader("navigation.values")}
           </Link>
-          <Link
-            href="/team"
-            className={`relative flex items-center justify-center gap-1 px-4 py-2 rounded-full transition-all duration-300 font-semibold tracking-wide
-              text-brand-dark dark:text-brand-mint
-              hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/25 dark:hover:text-brand-mint/90 hover:shadow-md
-              ${pathname === "/team" ? "bg-brand-lavender/60 dark:bg-brand-mint/20" : ""} min-w-[120px]`}>
-            <Users className="w-4 h-4 opacity-70" />
-            {translateHeader("navigation.team")}
-          </Link>
+
         </nav>
         <div className="flex items-center gap-4 justify-end flex-1 basis-[200px]">
           {/* Desktop theme switch only */}
@@ -150,12 +142,7 @@ export function Header() {
                   onClick={() => setMobileMenuOpen(false)}>
                   {translateHeader("navigation.values")}
                 </Link>
-                <Link
-                  href="/team"
-                  className="flex items-center px-3 py-2 text-sm font-medium text-brand-dark dark:text-white hover:text-brand-teal dark:hover:text-brand-mint hover:bg-brand-lavender/10 dark:hover:bg-brand-lavender/20 rounded-md transition-colors duration-300"
-                  onClick={() => setMobileMenuOpen(false)}>
-                  {translateHeader("navigation.team")}
-                </Link>
+
               </div>
               <div className="p-4 border-t border-brand-lavender/20 dark:border-gray-700">
                 <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>

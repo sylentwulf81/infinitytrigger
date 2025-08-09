@@ -3,8 +3,7 @@
     "navigation": {
       "products": "Products",
       "about": "About",
-      "values": "Values",
-      "team": "Team"
+      "values": "Values"
     },
 
     "toggleMenu": "Toggle Menu",
