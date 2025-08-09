@@ -11,10 +11,10 @@ export default function ValuesPage() {
   const translateValues = useTranslations("valuesPage");
 
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-gradient-to-b dark:from-brand-dark dark:to-brand-dark">
+    <div className="flex flex-col min-h-screen bg-transparent dark:bg-transparent">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-16 bg-brand-mint/20 dark:bg-transparent">
+        <section className="w-full py-16 bg-transparent dark:bg-transparent">
           <div className="container px-4 md:px-6 flex flex-col items-center text-center gap-8">
             <h1 className="text-5xl md:text-6xl font-extrabold text-brand-dark dark:text-brand-mint leading-tight">
               {translateValues("title")}

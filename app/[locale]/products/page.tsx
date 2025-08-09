@@ -14,7 +14,7 @@ export default function Products() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-brand-mint/10 to-white dark:bg-gradient-to-b dark:from-brand-teal/70 dark:to-brand-teal/50">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-transparent dark:bg-transparent">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-8 text-center">
               <div className="space-y-6">
@@ -36,7 +36,7 @@ export default function Products() {
         </section>
 
         {/* Products Grid */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-white to-brand-pink/50 dark:bg-gradient-to-b dark:from-brand-teal/50 dark:to-brand-dark">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-transparent dark:bg-transparent">
           <div className="container px-4 md:px-6">
             <div className="mx-auto grid max-w-5xl items-start gap-8 lg:grid-cols-2">
               {/* Meanwhile ProductCard */}
@@ -129,7 +129,7 @@ export default function Products() {
         </section>
 
         {/* CTA Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-brand-pink/50 to-brand-lavender dark:bg-gradient-to-b dark:from-brand-dark dark:to-brand-dark">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-transparent dark:bg-transparent">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-4">

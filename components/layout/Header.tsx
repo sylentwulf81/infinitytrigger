@@ -15,8 +15,8 @@ import {
 import { Menu, X, Cpu, Info, Boxes, Heart } from "lucide-react";
 import { ThemeSwitch } from "@/components/ui/theme-switch";
 import { usePathname } from "next/navigation";
-import Languageselector from "@/components/LanguageSelector";
 import { GlowButton } from "@/components/GlowButton";
+import Languageselector from "@/components/LanguageSelector";
 
 export function Header() {
   const translateHeader = useTranslations("header");
@@ -26,19 +26,29 @@ export function Header() {
   const isDevelopment = process.env.NODE_ENV === "development";
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-brand-lavender/20 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+    <header className="sticky top-0 z-50 w-full border-b border-brand-lavender/30 dark:border-brand-mint/20 bg-brand-accent/80 dark:bg-brand-logo/20 backdrop-blur-md">
+      <div className="container flex h-20 items-center">
         <div className="flex-1 basis-[200px]">
           <Link href="/" className="flex items-center justify-center gap-4">
             {isDevelopment && (
               <Cpu className="w-5 h-5 text-brand-dark dark:text-brand-mint animate-pulse" />
             )}
+            {/* Desktop/tablet: full logo + logotype */}
             <Image
-              src="/Assets/logo-no-background.png"
-              alt="Infinity Trigger Logo"
-              width={150}
-              height={40}
-              className="object-contain"
+              src="/Assets/logo/shinano labs logo and logotype.png"
+              alt="Shinano Labs Logo"
+              width={200}
+              height={52}
+              className="hidden md:block object-contain"
+              priority
+            />
+            {/* Mobile: compact logo mark only */}
+            <Image
+              src="/Assets/logo/shinano labs logo.png"
+              alt="Shinano Labs Logo"
+              width={44}
+              height={44}
+              className="block md:hidden object-contain"
               priority
             />
           </Link>
@@ -49,9 +59,7 @@ export function Header() {
             className={`relative flex items-center justify-center gap-1 px-4 py-2 rounded-full transition-all duration-300 font-semibold tracking-wide
               text-brand-dark dark:text-brand-mint
               hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/25 dark:hover:text-brand-mint/90 hover:shadow-md
-              ${pathname === "/products" ? "bg-brand-lavender/60 dark:bg-brand-mint/20" : ""}`
-            }
-          >
+              ${pathname === "/products" ? "bg-brand-lavender/60 dark:bg-brand-mint/20" : ""} min-w-[140px]`}>
             <Boxes className="w-4 h-4 opacity-70" />
             {translateHeader("navigation.products")}
           </Link>
@@ -60,9 +68,7 @@ export function Header() {
             className={`relative flex items-center justify-center gap-1 px-4 py-2 rounded-full transition-all duration-300 font-semibold tracking-wide
               text-brand-dark dark:text-brand-mint
               hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/25 dark:hover:text-brand-mint/90 hover:shadow-md
-              ${pathname === "/about" ? "bg-brand-lavender/60 dark:bg-brand-mint/20" : ""}`
-            }
-          >
+              ${pathname === "/about" ? "bg-brand-lavender/60 dark:bg-brand-mint/20" : ""} min-w-[170px]`}>
             <Info className="w-4 h-4 opacity-70" />
             {translateHeader("navigation.about")}
           </Link>
@@ -71,12 +77,11 @@ export function Header() {
             className={`relative flex items-center justify-center gap-1 px-4 py-2 rounded-full transition-all duration-300 font-semibold tracking-wide
               text-brand-dark dark:text-brand-mint
               hover:bg-brand-lavender/40 dark:hover:bg-brand-mint/25 dark:hover:text-brand-mint/90 hover:shadow-md
-              ${pathname === "/values" ? "bg-brand-lavender/60 dark:bg-brand-mint/20" : ""}`
-            }
-          >
+              ${pathname === "/values" ? "bg-brand-lavender/60 dark:bg-brand-mint/20" : ""} min-w-[120px]`}>
             <Heart className="w-4 h-4 opacity-70" />
             {translateHeader("navigation.values")}
           </Link>
+
         </nav>
         <div className="flex items-center gap-4 justify-end flex-1 basis-[200px]">
           {/* Desktop theme switch only */}
@@ -86,7 +91,9 @@ export function Header() {
           </div>
           <Link href="/contact" className="hidden md:block">
             <GlowButton variant="primary" className="shadow-lg hover:shadow-xl">
+            <GlowButton variant="primary" className="shadow-lg hover:shadow-xl">
               {translateCommon("getInTouch")}
+            </GlowButton>
             </GlowButton>
           </Link>
           <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -112,11 +119,12 @@ export function Header() {
                     href="/"
                     className="flex items-center gap-2"
                     onClick={() => setMobileMenuOpen(false)}>
+                    {/* Mobile sheet header uses compact logo mark */}
                     <Image
-                      src="/Assets/logo-no-background.png"
-                      alt="Infinity Trigger Logo"
-                      width={120}
-                      height={32}
+                      src="/Assets/logo/shinano labs logo.png"
+                      alt="Shinano Labs Logo"
+                      width={40}
+                      height={40}
                       className="object-contain"
                     />
                   </Link>
@@ -147,6 +155,7 @@ export function Header() {
                   onClick={() => setMobileMenuOpen(false)}>
                   {translateHeader("navigation.values")}
                 </Link>
+
               </div>
               <div className="p-4 border-t border-brand-lavender/20 dark:border-gray-700">
                 <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>

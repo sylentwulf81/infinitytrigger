@@ -23,7 +23,7 @@ export default function MyriadWorldsPage() {
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-brand-pink/10 to-transparent dark:from-brand-purple/20">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-transparent dark:bg-transparent">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="flex flex-col justify-center space-y-4">
@@ -136,7 +136,7 @@ export default function MyriadWorldsPage() {
         </section>
 
         {/* Features Section */}
-        <section className="w-full py-12 md:py-24 bg-brand-pink/5 dark:bg-brand-purple/10">
+        <section className="w-full py-12 md:py-24 bg-transparent dark:bg-transparent">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center mb-12">
               <div className="space-y-2">
@@ -243,7 +243,7 @@ export default function MyriadWorldsPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="w-full py-12 md:py-24 bg-gradient-to-b from-transparent to-brand-pink/10 dark:to-brand-purple/20">
+        <section className="w-full py-12 md:py-24 bg-transparent dark:bg-transparent">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">

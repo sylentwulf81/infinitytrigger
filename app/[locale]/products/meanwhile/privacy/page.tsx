@@ -11,12 +11,12 @@ export default function MeanwhilePrivacyPage() {
           <Link href="/" className="flex items-center gap-2">
             <Image
               src="/images/logo.png"
-              alt="Infinity Trigger Logo"
+              alt="Shinano Labs Logo"
               width={32}
               height={32}
               className="rounded-full object-cover"
             />
-            <span className="text-xl font-bold tracking-tight">Infinity Trigger</span>
+            <span className="text-xl font-bold tracking-tight">Shinano Labs</span>
           </Link>
         </div>
       </header>
