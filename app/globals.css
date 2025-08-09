@@ -70,8 +70,15 @@
   * {
     @apply border-border;
   }
+  /* Previous gradient for reference:
   body {
     @apply bg-background text-foreground bg-gradient-to-b from-white via-brand-mint/5 to-brand-lavender/10 dark:from-brand-dark dark:via-brand-dark dark:to-brand-dark;
+  }
+  */
+
+  body {
+    /* Light: white → brand lavender; Dark: deep neutral → slightly lighter neutral */
+    @apply bg-background text-foreground bg-gradient-to-b from-white to-brand-lavender dark:from-gray-950 dark:to-gray-900;
   }
 }
 

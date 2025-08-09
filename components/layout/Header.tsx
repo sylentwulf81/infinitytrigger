@@ -26,19 +26,29 @@ export function Header() {
   const isDevelopment = process.env.NODE_ENV === "development";
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-brand-lavender/20 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
+    <header className="sticky top-0 z-50 w-full border-b border-brand-lavender/30 dark:border-brand-mint/20 bg-brand-accent/80 dark:bg-brand-logo/20 backdrop-blur-md">
+      <div className="container flex h-20 items-center">
         <div className="flex-1 basis-[200px]">
           <Link href="/" className="flex items-center justify-center gap-4">
             {isDevelopment && (
               <Cpu className="w-5 h-5 text-brand-dark dark:text-brand-mint animate-pulse" />
             )}
+            {/* Desktop/tablet: full logo + logotype */}
             <Image
-              src="/Assets/logo-no-background.png"
-              alt="Infinity Trigger Logo"
-              width={150}
-              height={40}
-              className="object-contain"
+              src="/Assets/logo/shinano labs logo and logotype.png"
+              alt="Shinano Labs Logo"
+              width={200}
+              height={52}
+              className="hidden md:block object-contain"
+              priority
+            />
+            {/* Mobile: compact logo mark only */}
+            <Image
+              src="/Assets/logo/shinano labs logo.png"
+              alt="Shinano Labs Logo"
+              width={44}
+              height={44}
+              className="block md:hidden object-contain"
               priority
             />
           </Link>
@@ -107,11 +117,12 @@ export function Header() {
                     href="/"
                     className="flex items-center gap-2"
                     onClick={() => setMobileMenuOpen(false)}>
+                    {/* Mobile sheet header uses compact logo mark */}
                     <Image
-                      src="/Assets/logo-no-background.png"
-                      alt="Infinity Trigger Logo"
-                      width={120}
-                      height={32}
+                      src="/Assets/logo/shinano labs logo.png"
+                      alt="Shinano Labs Logo"
+                      width={40}
+                      height={40}
                       className="object-contain"
                     />
                   </Link>

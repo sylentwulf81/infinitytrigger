@@ -5,14 +5,14 @@ import { useTranslations } from "next-intl";
 export function Footer() {
   const translateFooter = useTranslations("footer");
   return (
-    <footer className="w-full border-t border-brand-lavender/20 py-6 md:py-0 bg-gradient-to-br from-brand-lavender/5 to-brand-mint/5">
-      <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+    <footer className="w-full border-t border-brand-lavender/30 dark:border-brand-mint/20 py-6 md:py-0 bg-brand-accent/80 dark:bg-brand-logo/20 backdrop-blur-md">
+      <div className="container flex flex-col items-center justify-between gap-4 md:h-28 md:flex-row">
         <div className="flex items-center gap-2">
           <Image
-            src="/Assets/logo-no-background.png"
-            alt="Infinity Trigger Logo"
-            width={100}
-            height={27}
+            src="/Assets/logo/shinano labs logo and logotype.png"
+            alt="Shinano Labs Logo"
+            width={140}
+            height={38}
             className="object-contain"
           />
           <p className="text-sm text-gray-600 dark:text-white">

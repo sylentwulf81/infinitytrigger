@@ -70,7 +70,7 @@ ${data.message}
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-brand-mint/10 to-transparent dark:from-brand-teal/20">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-transparent dark:bg-transparent">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-8 text-center">
               <div className="space-y-6">
@@ -90,7 +90,7 @@ ${data.message}
         </section>
 
         {/* Contact Form Section */}
-        <section className="w-full py-12 md:py-24 bg-white dark:bg-transparent">
+        <section className="w-full py-12 md:py-24 bg-transparent dark:bg-transparent">
           <div className="container px-4 md:px-6">
             <div className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-2">
               {/* Contact Form Box*/}
@@ -328,7 +328,7 @@ ${data.message}
         </section>
 
         {/* FAQ Section */}
-        <section className="w-full py-12 md:py-24 bg-gradient-to-b from-transparent to-brand-mint/10 dark:to-brand-teal/20">
+        <section className="w-full py-12 md:py-24 bg-transparent dark:bg-transparent">
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-3xl space-y-8">
               <div className="space-y-4 text-center">
@@ -401,7 +401,7 @@ ${data.message}
         </section>
 
         {/* CTA Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-brand-teal dark:bg-brand-dark">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-transparent dark:bg-transparent">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-4">
