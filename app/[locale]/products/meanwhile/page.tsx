@@ -13,6 +13,7 @@ import {
   Star,
   Zap,
 } from "lucide-react";
+import StatsCount from "@/components/ui/statscount";
 
 export default function MeanwhileProjectPage() {
   const translateMeanwhile = useTranslations("products.meanwhilePage");
@@ -269,6 +270,22 @@ export default function MeanwhileProjectPage() {
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </section>
+
+        {/* Stats Section */}
+        <section className="w-full py-12 md:py-24 bg-white dark:bg-transparent">
+          <div className="container px-4 md:px-6">
+            <StatsCount
+              stats={[
+                { value: 5000, suffix: "+", label: "Daily Active Users" },
+                { value: 100000, suffix: "+", label: "Total Downloads" },
+                { value: 4.8, suffix: "/5", label: "Average Rating" },
+              ]}
+              title="JOIN A THRIVING COMMUNITY OF WRITERS"
+              showDividers={true}
+              className="text-brand-dark dark:text-brand-mint"
+            />
           </div>
         </section>
 

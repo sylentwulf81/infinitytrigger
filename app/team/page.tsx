@@ -20,7 +20,7 @@ export default function Team() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-16 bg-gradient-to-b from-brand-mint/20 via-white to-brand-lavender dark:bg-gradient-to-b dark:from-brand-dark dark:to-brand-dark">
+        <section className="w-full py-16 bg-gradient-to-b from-brand-mint/20 to-brand-lavender dark:bg-gradient-to-b dark:from-brand-dark dark:to-brand-dark">
           <div className="max-w-7xl mx-auto px-4 md:px-6 flex flex-col items-center text-center gap-8">
             <h1 className="text-5xl md:text-6xl font-extrabold text-brand-dark dark:text-brand-mint leading-tight">
               Meet Our Team
@@ -37,7 +37,7 @@ export default function Team() {
         </section>
 
         {/* Team Members Section */}
-        <section className="w-full py-16 bg-gradient-to-b from-brand-lavender via-brand-mint/50 to-brand-teal dark:bg-gradient-to-b dark:from-brand-dark dark:via-brand-dark/50 dark:to-brand-teal">
+        <section className="w-full py-16 bg-gradient-to-b from-brand-lavender to-brand-teal dark:bg-gradient-to-b dark:from-brand-dark dark:to-brand-teal">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-brand-dark dark:text-brand-mint mb-2">
@@ -173,7 +173,7 @@ export default function Team() {
         </section>
 
         {/* Our Approach Section */}
-        <section className="w-full py-16 bg-gradient-to-b from-brand-teal via-brand-dark/80 to-brand-mint/20 dark:bg-gradient-to-b dark:from-brand-teal dark:via-brand-dark/70 dark:to-brand-dark/50">
+        <section className="w-full py-16 bg-gradient-to-b from-brand-teal to-brand-mint/20 dark:bg-gradient-to-b dark:from-brand-teal dark:to-brand-dark/50">
           <div className="container px-4 md:px-6">
             <div className="mx-auto grid max-w-5xl gap-8 lg:grid-cols-2 items-center">
               <Card className="bg-brand-dark/60 rounded-2xl shadow-lg p-8 border-2 border-brand-gray dark:border-brand-mint">
@@ -206,7 +206,7 @@ export default function Team() {
         </section>
 
         {/* Values Section */}
-        <section className="w-full py-16 bg-gradient-to-b from-brand-mint/20 via-white to-brand-lavender dark:bg-gradient-to-b dark:from-brand-dark/50 dark:via-brand-dark/70 dark:to-brand-dark">
+        <section className="w-full py-16 bg-gradient-to-b from-brand-mint/20 to-brand-lavender dark:bg-gradient-to-b dark:from-brand-dark/50 dark:to-brand-dark">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-brand-dark dark:text-brand-mint mb-2">

@@ -78,7 +78,7 @@
 
   body {
     /* Light: white → brand lavender; Dark: deep neutral → slightly lighter neutral */
-    @apply bg-background text-foreground bg-gradient-to-b from-white via-brand-mint/5 to-brand-lavender/10 dark:from-slate-950 dark:via-gray-950 dark:to-gray-900;
+    @apply bg-background text-foreground bg-gradient-to-b from-white to-brand-lavender dark:from-gray-950 dark:to-gray-900;
   }
 }
 
