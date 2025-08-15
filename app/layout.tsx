@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { MagicDockWrapper } from "@/components/MagicDockWrapper";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -63,6 +64,7 @@ export default async function RootLayout({
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
+            <MagicDockWrapper />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

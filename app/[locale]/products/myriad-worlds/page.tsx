@@ -14,6 +14,7 @@ import {
   BookMarked,
 } from "lucide-react";
 import { BrandButton, BrandButtonAlt } from "@/components/BrandButton";
+import StatsCount from "@/components/ui/statscount";
 
 export default function MyriadWorldsPage() {
   const translateMyriadWorlds = useTranslations("products.myriadWorldsPage");
@@ -239,6 +240,22 @@ export default function MyriadWorldsPage() {
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </section>
+
+        {/* Stats Section */}
+        <section className="w-full py-12 md:py-24 bg-white dark:bg-transparent">
+          <div className="container px-4 md:px-6">
+            <StatsCount
+              stats={[
+                { value: 1000, suffix: "+", label: "Active Storytellers" },
+                { value: 50000, suffix: "+", label: "Total Downloads" },
+                { value: 4.9, suffix: "/5", label: "Average Rating" },
+              ]}
+              title="JOIN A THRIVING COMMUNITY OF CREATORS"
+              showDividers={true}
+              className="text-brand-dark dark:text-brand-mint"
+            />
           </div>
         </section>
 

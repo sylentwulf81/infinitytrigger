@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Brain, BookOpen, Earth } from "lucide-react";
 import { BrandButton, BrandButtonAlt } from "@/components/BrandButton";
 import { ProductCard } from "@/components/ProductCard";
@@ -44,9 +45,9 @@ export default function Products() {
                 imageSrc="/images/meanwhile-preview.png"
                 imageAlt="Meanwhile daily writing app interface showing clean, minimalist design"
                 badge={
-                  <div className="inline-flex items-center rounded-full bg-brand-mint/80 px-3 py-1 text-xs font-medium text-brand-neon border border-brand-neon/30 dark:bg-brand-mint/60 dark:text-brand-dark">
+                  <Badge variant="default" shiny={true}>
                     {translateCommon("avaliblity")}
-                  </div>
+                  </Badge>
                 }
                 icon={<BookOpen className="h-8 w-8 text-brand-mint" />}
                 title={translateProducts("meanwhileCard.title")}
@@ -85,9 +86,9 @@ export default function Products() {
                 imageSrc="/Assets/myriadworlds_mockup.png"
                 imageAlt="Myriad Worlds creative storytelling app interface preview"
                 badge={
-                  <div className="inline-flex items-center rounded-full bg-brand-mint/80 px-3 py-1 text-xs font-medium text-brand-neon border border-brand-neon/30 dark:bg-brand-mint/60 dark:text-brand-dark">
+                  <Badge variant="default" shiny={true}>
                     {translateCommon("avaliblity")}
-                  </div>
+                  </Badge>
                 }
                 icon={<Earth className="h-8 w-8 text-brand-mint" />}
                 title={translateProducts("myriadWorldsCard.title")}
