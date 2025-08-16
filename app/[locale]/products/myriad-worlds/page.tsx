@@ -259,38 +259,6 @@ export default function MyriadWorldsPage() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="w-full py-12 md:py-24 bg-transparent dark:bg-transparent">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-brand-dark dark:text-brand-mint">
-                  {translateMyriadWorlds("cta.title")}
-                </h2>
-                <p className="mx-auto max-w-[700px] text-gray-600 dark:text-brand-lavender/80 md:text-xl">
-                  {translateMyriadWorlds("cta.description")}
-                </p>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                <Link href="/products">
-                  <BrandButtonAlt>
-                    <ArrowLeft className="mr-2 h-4 w-4" />
-                    {translateCommon("backToProducts")}
-                  </BrandButtonAlt>
-                </Link>
-                <Link
-                  href="https://apps.apple.com/us/app/myriad-worlds/id6748325367"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <BrandButton>
-                    {translateCommon("downloadOnAppStore")}
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </BrandButton>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
     </div>
   );

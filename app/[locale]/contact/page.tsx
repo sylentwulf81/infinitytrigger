@@ -400,37 +400,6 @@ ${data.message}
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-transparent dark:bg-transparent">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white dark:text-brand-mint">
-                  {translateContact("cta.title")}
-                </h2>
-                <p className="mx-auto max-w-[700px] text-white/90 dark:text-white md:text-xl">
-                  {translateContact("cta.description")}
-                </p>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                <Link
-                  href="https://apps.apple.com/us/app/myriad-worlds/id6748325367"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <BrandButton>
-                    {translateCommon("downloadOnAppStore")}
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </BrandButton>
-                </Link>
-                <Link href="/products">
-                  <BrandButtonAlt>
-                    {translateCommon("exploreProducts")}
-                  </BrandButtonAlt>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
     </div>
   );

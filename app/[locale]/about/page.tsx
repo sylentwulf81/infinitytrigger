@@ -204,34 +204,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="w-full py-16 bg-transparent dark:bg-transparent text-brand-dark dark:text-brand-mint">
-          <div className="container px-4 md:px-6 flex flex-col items-center text-center gap-6">
-            <h2 className="text-3xl md:text-4xl font-bold mb-2">
-              {translateAbout("cta.title")}
-            </h2>
-            <p className="max-w-xl mx-auto text-lg text-brand-dark/90 dark:text-white/90">
-              {translateAbout("cta.description")}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-2">
-              <Link href="/contact">
-                <Button
-                  size="lg"
-                  className="bg-brand-teal text-white font-semibold px-8 py-4 rounded-lg hover:bg-brand-mint hover:text-brand-dark transition-all duration-200">
-                  {translateCommon("getInTouch")}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <Link href="/products">
-                <Button
-                  size="lg"
-                  className="border-1 border-brand-mint text-brand-dark font-semibold px-8 py-4 rounded-lg hover:bg-brand-mint hover:text-[#416165] transition-all duration-200">
-                  {translateCommon("exploreProducts")}
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </section>
       </main>
     </div>
   );

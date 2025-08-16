@@ -253,34 +253,6 @@ export default async function Home() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="w-full py-16 bg-transparent dark:bg-transparent">
-          <div className="container px-4 md:px-6 flex flex-col items-center text-center gap-6">
-            <h2 className="text-3xl md:text-4xl font-bold mb-2 text-white dark:text-brand-mint">
-              {translateCommon("cta.title")}
-            </h2>
-            <p className="max-w-xl mx-auto text-lg text-white/90 dark:text-white md:text-xl">
-              {translateCommon("cta.description")}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-2">
-              <Link
-                href="https://apps.apple.com/us/app/myriad-worlds/id6748325367"
-                target="_blank"
-                rel="noopener noreferrer">
-                <BrandButton>
-                  {translateCommon("downloadOnAppStore")}
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </BrandButton>
-              </Link>
-              <Link href="/products">
-                <BrandButtonAlt>
-                  {translateCommon("exploreProducts")}
-                  <Monitor className="ml-2 h-5 w-5" />
-                </BrandButtonAlt>
-              </Link>
-            </div>
-          </div>
-        </section>
       </main>
     </div>
   );

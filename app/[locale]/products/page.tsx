@@ -129,37 +129,6 @@ export default function Products() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-transparent dark:bg-transparent">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-brand-teal dark:text-brand-mint">
-                  {translateCommon("cta.title")}
-                </h2>
-                <p className="mx-auto max-w-[700px] md:text-xl text-black dark:text-white">
-                  {translateCommon("cta.description")}
-                </p>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mt-2">
-                <Link
-                  href="https://apps.apple.com/us/app/myriad-worlds/id6748325367"
-                  target="_blank"
-                  rel="noopener noreferrer">
-                  <BrandButton>
-                    {translateCommon("downloadOnAppStore")}
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </BrandButton>
-                </Link>
-                <Link href="/about">
-                  <BrandButtonAlt>
-                    {translateCommon("learnAboutUs")}
-                  </BrandButtonAlt>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
     </div>
   );
