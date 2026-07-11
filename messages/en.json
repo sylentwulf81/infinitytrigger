@@ -1,560 +1,98 @@
 {
   "header": {
-    "navigation": {
-      "products": "Products",
-      "about": "About",
-      "values": "Values"
-    },
-
-    "toggleMenu": "Toggle Menu",
-    "navigationMenu": "Navigation Menu",
     "changeLanguage": "Change Language"
   },
-
   "footer": {
     "copyWrite": "Shinano Labs. All rights reserved.",
-
     "links": {
       "privacyPolicy": "Privacy Policy",
       "termsOfService": "Terms of Service"
     }
   },
-
-  "hero": {
-    "title": "Welcome to Shinano Labs",
-    "headline": {
-      "part1": "Where Human Creativity",
-      "part2": "Takes Center Stage"
-    },
-    "description": " We're crafting tools that celebrate and amplify your creative voice. Our mission is simple: put powerful, human-centered creative tools in your hands, then step back and let your imagination soar.",
-    "footerLove": "Made with love in Nagano Prefecture, Japan",
-    "footerCreators": "Built for creators like you"
-  },
-
-  "tools": {
-    "title": "Our Creative Tools",
-    "header": "Tools That Inspire",
-    "description": "Thoughtfully designed apps that help you write, create, and tell your stories. Whether you're a writer, artist, filmmaker, or someone who loves to create, we're here to support your creative journey."
-  },
-
-  "ourValuesHomePage": {
-    "title": "Our Values",
-    "description": "The principles that guide everything we do.",
-
-    "values": {
-      "humanCentered": {
-        "title": "Human-Centered",
-        "description": "Technology should enable creativity, not take over the process. We make tools that help you generate ideas and stimulate your imagination."
-      },
-
-      "celebrateDiversity": {
-        "title": "Celebrate Diversity",
-        "description": "Every person has a unique creative voice. We build tools that amplify it."
-      },
-
-      "authenticContent": {
-        "title": "Authentic Content",
-        "description": "All our creative content is made by humans, for humans."
-      }
-    }
-  },
-
-  "valuesPage": {
-    "title": "Our Values",
-    "description": "At Shinano Labs, we believe in creating a positive impact through our work. Our values guide everything we do.",
-
-    "sustainableGoals": {
-      "title": "Sustainable Development Goals",
-      "description": "We are committed to supporting the UN's Sustainable Development Goals through our products and operations. Our focus areas include quality education, sustainable cities, and climate action."
-    },
-
-    "accessibility": {
-      "title": "Accessibility",
-      "description": "We believe technology should be accessible to everyone. Our products are designed with WCAG guidelines in mind, ensuring that all users can engage with our content regardless of their abilities."
-    },
-
-    "diversity&Inclusion": {
-      "title": "Diversity & Inclusion",
-      "description": "We celebrate diversity in all its forms. Our team and products reflect our commitment to creating inclusive spaces where everyone feels welcome and represented."
-    },
-
-    "commitment": {
-      "title": "Our Commitment",
-      "description": "These values aren't just words on a page - they're the principles that guide our decision-making, product development, and company culture. We continuously strive to improve and make a positive impact in everything we do."
-    }
-  },
-
-  "about": {
-    "title": "About Shinano Labs",
-    "descriptionParagraph1": "We're a small team passionate about building creative tools that put imagination first. We celebrate and help foster creativity in all its forms.",
-
-    "descriptionParagraph2": "Storytelling has always been at the very core of the human experience. From our earliest days, we've used stories to pass down wisdom, explain truths about the world, and connect with one another across generations.",
-
-    "descriptionParagraph3": "At Shinano Labs, we strive to empower people all over the world to bring their stories to life. We believe that everyone has a story to tell—and we're passionate about building tools that help people tell their stories, share their experiences, and connect with one another across generations.",
-
-    "descriptionParagraph4": "We're a small team based in Nagano City, Nagano Prefecture, Japan, and we can't wait to hear your story.",
-
-    "identity": {
-      "title": "Our Identity",
-      "descriptionParagraph1": "At Shinano Labs, we believe that technology should amplify, not replace, human stories. Stories have always been at the heart of how we relate to the world and to each other. Our mission is to build creative tools that amplify human creative voices, celebrating the incredible power these voices have to bring life to the world.",
-      "descriptionParagraph2": "Every piece of creative content in our apps has a human-centered design. Every story, every journey, every adventure is crafted by people who understand the creative process and the challenges and victories that come with it."
-    },
-
-    "story": {
-      "title": "Our Story",
-      "descriptionParagraph1": "Shinano Labs started with a simple idea: to create tools that are, yes, creative, would inspire new ideas, new stories, and a relentless pursuit of quality.",
-      "descriptionParagraph2": "From a small project based in the heart of the beautiful Nagano Prefecture, we've grown into a mission-driven team, serving a global creative community that includes artists, writers, and creators around the world."
-    },
-
-    "values": {
-      "title": "Our Values",
-      "description": "The principles that guide everything we do.",
-
-      "humanCentered": {
-        "title": "Human-Centered",
-        "description": "Technology should fit around creativity—not the other way around. We build tools with a human-first approach to enhance the creative process."
-      },
-
-      "celebrateCreativity": {
-        "title": "Celebrate Creativity",
-        "description": "Every person has a unique creative spark. We build tools to amplify that, cultivate it, and help it grow stronger with time."
-      },
-
-      "authenticContent": {
-        "title": "Authentic Content",
-        "description": "All of our creative content is built on the foundation of authentic human experiences, not algorithms. We support authentic, thoughtful, and user-centered storytelling."
-      }
-    },
-
-    "team": {
-      "title": "Our Team",
-      "description": "We are a small team with big dreams for the future of digital creative tools. We have a team of developers, designers, and content creators with a passion for advancing tools that help real people tell real stories. Many of us are creative hobbyists or professionals ourselves, and it drives us to build the tools we want to use ourselves.",
-      "roles": {
-        "developers": "Creative Developers",
-        "creators": "Content Creators",
-        "designers": "Design Thinkers"
-      }
-    },
-
-    "cta": {
-      "title": "Join Our Journey",
-      "description": "Be part of our mission to celebrate human creativity and build tools that inspire."
-    }
-  },
-
-  "products": {
-    "badge": "Our Products",
-    "title": "Apps For Creatives",
-    "description": "Discover our collection of creative tools designed to inspire, support, and amplify your creative journey.",
-
-    "meanwhileCard": {
-      "title": "Meanwhile",
-      "subtitle": "Daily Writing Companion",
-      "description": "A thoughtfully designed daily writing companion that helps you develop a consistent writing practice through human-crafted prompts, streak tracking, and privacy-focused design.",
-
-      "features": {
-        "humanCraftedPrompts": "Human-crafted daily writing prompts",
-        "privacyFocused": "Privacy-focused, distraction-free writing",
-        "streakTracking": "Streak tracking and progress insights",
-        "design": "Beautiful, minimalist iOS design"
-      }
-    },
-    "meanwhilePage": {
-      "hero": {
+  "home": {
+    "brand": "Shinano Labs",
+    "headline": "Creative tools for human imagination.",
+    "description": "A small studio in Nagano, Japan, building apps that amplify your creative voice—then get out of the way.",
+    "scrollCta": "See our apps",
+    "apps": {
+      "title": "What we're building",
+      "description": "Thoughtful apps for writers and storytellers. Open them on the App Store.",
+      "openAppStore": "Open in App Store",
+      "meanwhile": {
         "title": "Meanwhile",
-        "description": "A daily writing companion designed to help you develop a consistent writing practice through thoughtful prompts, gentle encouragement, and distraction-free writing."
+        "subtitle": "Daily writing",
+        "description": "A quiet daily writing companion with human-crafted prompts and streak tracking."
       },
-      "about": {
-        "title": "About Meanwhile",
-        "description": "Meanwhile is a thoughtfully designed iOS application that helps users establish and maintain a daily writing habit.",
-        "inspiration": {
-          "title": "The Inspiration",
-          "descriptionParagraph1": "Many people want to write more regularly but struggle with consistency and motivation. Traditional journaling apps often lack the specific features needed to build a sustainable writing habit.",
-          "descriptionParagraph2": "We created Meanwhile with a vision for an app that would specifically focus on helping users develop a daily writing practice through gentle encouragement, thoughtful prompts, and a distraction-free writing environment."
-        },
-
-        "approach": {
-          "title": "Our Approach",
-          "description": "We focused on understanding the psychology behind habit formation and what makes writing apps effective. Our approach centered on:",
-
-          "bulletPoints": {
-            "writingEnvironment": "Creating a minimalist, distraction-free writing environment",
-            "reminders": "Implementing gentle reminders and streak tracking to build consistency",
-            "writingPrompts": "Developing a library of thoughtful writing prompts to inspire users",
-            "interfaceDesign": "Designing an intuitive interface that gets out of the way of the writing process"
-          }
-        }
-      },
-      "features": {
-        "title": "Key Features",
-        "description": "Meanwhile combines thoughtful design with practical features to make daily writing effortless.",
-
-        "dailyPrompts": {
-          "title": "Daily Prompts",
-          "description": "Thoughtfully crafted writing prompts that inspire creativity and reflection, updated daily."
-        },
-
-        "streakTracking": {
-          "title": "Streak Tracking",
-          "description": "Build consistency with gentle reminders and motivating streak tracking."
-        },
-
-        "focusMode": {
-          "title": "Focus Mode",
-          "description": "A distraction-free writing environment that helps you stay focused on your writing."
-        },
-
-        "quickEntry": {
-          "title": "Quick Entry",
-          "description": "Start writing in seconds with our streamlined interface and quick access tools."
-        }
-      },
-
-      "cta": {
-        "title": "Start Your Writing Journey",
-        "description": "Download Meanwhile today and discover the joy of daily writing."
-      }
-    },
-
-    "myriadWorldsCard": {
-      "title": "Myriad Worlds",
-      "subtitle": "Creative Storytelling",
-      "description": "A creative storytelling app featuring Creative Commons licensed content. Use our human-generated stories as starting points for your own creative adventures.",
-
-      "features": {
-        "humanCraftedStories": "Human-crafted stories and characters",
-        "creativeCommons": "Creative Commons commercial licensing",
-        "storytelling": "Rich storytelling worlds to explore",
-        "storyBuildingTools": "Tools to build your own characters, narratives, and worlds"
-      }
-    },
-
-    "myriadWorldsPage": {
-      "hero": {
+      "myriadWorlds": {
         "title": "Myriad Worlds",
-        "description": "A creative storytelling app featuring Creative Commons licensed content. Use our human-generated stories as starting points for your own creative adventures."
-      },
-
-      "about": {
-        "title": "Stories by Humans, for Humans",
-        "description": "Every story, character, and world in Myriad Worlds is crafted by our creative team. We believe in the power of imagination and creativity.",
-        "creativeCommonsDescription": "All content is released under Creative Commons licensing, so you can use our stories as inspiration, adapt them, or build upon them for your own creative projects.",
-
-        "vision": {
-          "title": "Our Vision",
-
-          "bulletPoints": {
-            "platform": "Create a platform where creativity thrives and inspires others",
-            "community": "Foster a community of storytellers who build upon each other's ideas",
-            "engagingContent": "Provide rich, engaging content that sparks imagination and creativity"
-          }
-        }
-      },
-
-      "features": {
-        "title": "Built for Creative Freedom",
-        "description": "Myriad Worlds is designed to inspire and support your creative journey.",
-
-        "humanCrafted": {
-          "title": "Human-Crafted",
-          "description": "Every story is written by human authors who pour their creativity and passion into each piece."
-        },
-
-        "creativeCommons": {
-          "title": "Creative Commons",
-          "description": "Use our stories as starting points for your own creative works under Creative Commons licensing."
-        },
-
-        "richStorytelling": {
-          "title": "Rich Storytelling",
-          "description": "Explore diverse worlds, characters, and narratives that spark your imagination."
-        },
-
-        "characterCreation": {
-          "title": "Character Creation",
-          "description": "Design and develop unique characters with our intuitive creation tools."
-        },
-
-        "storyBuilding": {
-          "title": "Story Building",
-          "description": "Craft your narratives with powerful storytelling tools and templates."
-        }
-      },
-      "cta": {
-        "title": "Ready to Explore?",
-        "description": "Download Myriad Worlds and start exploring our creative team's crafted stories."
+        "subtitle": "Creative storytelling",
+        "description": "Human-crafted stories under Creative Commons—starting points for your own adventures."
       }
     }
   },
-
-  "contact": {
-    "hero": {
-      "description": "Have questions about our products? Want to join our Beta Testing community? We'd love to hear from you."
-    },
-    "form": {
-      "title": "Send Us a Message",
-      "description": "Fill out the form below and we'll get back to you as soon as possible.",
-
-      "fields": {
-        "name": {
-          "first": "First Name",
-          "firstNamePlaceholder": "Enter your first name",
-          "last": "Last Name (Optional)",
-          "lastNamePlaceholder": "Enter your last name"
-        },
-
-        "email": {
-          "placeholder": "Enter your email"
-        },
-
-        "subject": {
-          "label": "Subject",
-          "placeholder": "Select a topic",
-
-          "options": {
-            "appSupportMeanwhile": "App Support - Meanwhile",
-            "appSupportMyriadWorlds": "App Support - Myriad Worlds",
-            "featureSuggestion": "Feature Suggestion",
-            "testFlightInquiry": "TestFlight Inquiries",
-            "privacyConcern": "Privacy Concern",
-            "otherIssue": "Other Issue"
-          }
-        },
-
-        "message": {
-          "label": "Message",
-          "placeholder": "Tell us more about your inquiry..."
-        },
-
-        "submitButton": {
-          "label": "Send Message",
-          "sending": "Sending..."
-        }
-      }
-    },
-    "infoPanel": {
-      "title": "We're Listening",
-      "description": "Whether you have questions about our products or have a great idea for a new feature, we'd love to hear from you.",
-
-      "supportCards": {
-        "emailUs": {
-          "title": "Email Us"
-        },
-
-        "testing": {
-          "title": "TestFlight / Beta Testing",
-          "description": "Help shape our products before they're released"
-        },
-
-        "community": {
-          "title": "Community",
-          "description": "Connect with fellow creatives"
-        }
-      }
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "description": "Quick answers to common questions about our products and services.",
-
-      "questions": {
-        "download": "How do I download Myriad Worlds?",
-        "available": "Is Meanwhile available on Android?",
-        "license": "Can I use Myriad Worlds content in my own projects?",
-        "customSoftware": "Do you offer custom software solutions for outside organizations?"
-      },
-
-      "answers": {
-        "downloadPart1": "You can download Myriad Worlds directly from the App Store by clicking the App Store link on our products page or by visiting the ",
-        "downloadPart2": ". Myriad Worlds is now available for download on iOS devices.",
-        "available": "Currently, Meanwhile is only available on iOS. We're focusing on providing the best possible experience for iOS users before considering other platforms.",
-        "license": "Yes! All content in Myriad Worlds is released under Creative Commons licensing, which means you can use it as inspiration, adapt it, or build upon it for your own creative projects.",
-        "customSoftware": "While we primarily focus on our own products, we're always open to discussing potential collaborations. Contact us with your requirements, and we'll be happy to explore possibilities."
-      }
-    },
-
-    "cta": {
-      "title": "Ready To Jump In?",
-      "description": "Download Meanwhile or Myriad Worlds from the App Store and start your creative journey today."
-    }
-  },
-
   "privacyPolicy": {
     "title": "Privacy Policy",
-
-    "accordionOptions": {
+    "sections": {
       "introduction": {
         "title": "Introduction",
-        "descriptionParagraph1": "At Shinano Labs, we believe in that privacy is a fundamental right. We consider any data that personally identifies you - such as name, address, and phone number, among other data - as personal data.",
-        "descriptionParagraph2": "This Privacy Policy covers how Shinano Labs ('the Company', 'we,' 'our,' or 'us') handles personal data whether you interact with us on our websites, through our apps (such as but not limited to Myriad Worlds or Meanwhile), via email through our support channels, via phone, or through any other means of communication or interaction with the Company.",
-        "descriptionParagraph3": "Aggregated data is considered non-personal data for the purposes of this Privacy Policy. Our Privacy Policy does not cover how external third parties define 'personal data', how they collect, store, use, or share it. We encourage you to read their privacy policies and know your privacy rights.",
-        "descriptionParagraph4": "Please read this Privacy Policy carefully. By accessing or using our Services, you acknowledge that you have read, understood, and agree to be bound by the terms of this Privacy Policy."
+        "body": "Shinano Labs (“we,” “our,” or “us”) respects your privacy. This policy explains how we handle personal data when you use our websites, apps (including Meanwhile and Myriad Worlds), or contact us."
       },
-
-      "collectedData": {
-        "title": "Personal Data We Collect",
-        "descriptionParagraph1": "We may collect personal information that you voluntarily provide to us when you:",
-
-        "bulletPoints": {
-          "forms": "Fill out forms on our website",
-          "account": "Create an account",
-          "communication": "Contact us via email, phone, or other communication channels",
-          "subscribe": "Subscribe to our newsletter",
-          "support": "Request customer support",
-          "participate": "Participate in surveys or other research",
-          "access": "Request access to TestFlight or Beta participation lists"
-        },
-
-        "descriptionParagraph2": "The personal information we collect may include: name, email address, phone number, company name, job title, and billing information."
+      "dataWeCollect": {
+        "title": "Information we collect",
+        "body": "We may collect information you choose to give us—such as your name, email address, or message content—when you contact support or join a beta list.\n\nWe may also collect limited technical data (device type, OS, approximate location derived from IP) to keep our services reliable and secure."
       },
-
-      "children&Data": {
-        "title": "Children and Personal Data",
-        "description": "Our Services are not intended for individuals under the age of 13 in the United States or under the age of 15 in Japan, unless parental consent has been provided. We do not knowingly collect personal information from children under these ages without such consent. If you are a parent or guardian and believe that your child has provided us with personal information without your consent, please contact us at "
+      "howWeUse": {
+        "title": "How we use information",
+        "body": "We use personal data to respond to you, improve our products, and meet legal obligations. We do not sell your personal information. Aggregated, non-identifying data may be used for analytics."
       },
-
-      "ourTechnologies": {
-        "title": "Our Technologies",
-        "descriptionParagraph1": "When you access our Services, we may use technologies like cookies and other identifiers to automatically collect certain information, including:",
-
-        "bulletPoints": {
-          "deviceInfo": "Device information (e.g., device type, operating system)",
-          "ip": "IP address",
-          "browser": "Browser type and version",
-          "pages": "Pages visited and time spent on those pages",
-          "referring": "Referring website addresses",
-          "location": "Geographic location"
-        },
-
-        "descriptionParagraph2": "This information helps us to improve our services, analyze trends, and administer the site."
+      "yourRights": {
+        "title": "Your rights & children",
+        "body": "You may request access, correction, or deletion of your personal data by contacting us. Our services are not directed at children under 13 (US) or 15 (Japan) without parental consent. If you believe a child has provided data without consent, please contact us."
       },
-
-      "yourPrivacy": {
-        "title": "Our Commitment to Your Privacy",
-        "descriptionParagraph1": "We are committed to protecting your privacy. We implement appropriate technical and organizational measures to protect the security of your personal information. We may update our Privacy Policy from time to time, and we will notify you of any changes by posting the new Privacy Policy on this page and updating the 'Last updated' date.",
-        "descriptionParagraph2": "You have rights regarding your personal information, including the right to access, rectify, or delete your data. To exercise these rights, or if you have any questions about this Privacy Policy, please contact us at:"
+      "contact": {
+        "title": "Contact",
+        "body": "Questions about this policy? Reach us at:"
       }
     }
   },
-
   "termsOfService": {
     "title": "Terms of Service",
-
-    "accordionOptions": {
+    "sections": {
       "agreement": {
-        "title": "Agreement to Terms",
-        "description": "These Terms of Service ('Terms') constitute a legally binding agreement between you and Shinano Labs ('we,' 'our,' or 'us', 'the Company') regarding your access to and use of our website, applications, communication channels, and services (collectively, the 'Services'). By accessing or using our Services, you agree to be bound by these Terms. If you do not agree to these Terms, you may not access or use the Services."
+        "title": "Agreement",
+        "body": "By using Shinano Labs websites, apps, or related services (“Services”), you agree to these Terms. If you do not agree, please do not use the Services."
       },
-
-      "services&accounts": {
-        "title": "Services and Accounts",
-        "description": "Shinano Labs provides web applications, native mobile applications, and digital application development services. We reserve the right to modify, suspend, or discontinue any aspect of our Services at any time. Some Services may require you to create an account, and you are responsible for providing accurate information and safeguarding your account credentials."
+      "services": {
+        "title": "Services",
+        "body": "We provide creative software and related digital services. We may update, suspend, or discontinue features at any time. Some Services may require an account; you are responsible for accurate information and keeping credentials secure."
       },
-
       "intellectualProperty": {
-        "title": "Intellectual Property",
-        "description": "The Services and their original content are owned by Shinano Labs and are protected by intellectual property laws. Content within specific Services may be covered under Creative Commons licenses. Please refer to the specific Service's terms of service for more information. You retain ownership of materials you provide to us or create using our Services, but you grant us a license to use them to provide, advertise, or improve our Services. In the case of application or web development services, in which payment is rendered in exchange for design and development services, upon full payment to the Company for the aforementioned services rendered, we assign to you all applicable rights to the deliverables created for you, with some exceptions."
+        "title": "Intellectual property",
+        "body": "Our Services and original content are owned by Shinano Labs unless otherwise noted. Some app content (for example in Myriad Worlds) may be offered under Creative Commons—see that product’s terms. You retain rights to content you create; you grant us a limited license to operate and improve the Services."
       },
-
-      "disclaimers": {
-        "title": "Payment, Liability, and Termination",
-        "description": "In the case of application or web development services, payment terms will be specified in your project proposal. We are not liable for any indirect or consequential damages arising from your use of the Services. We may terminate or suspend your access to the Services at any time for any reason, including if you breach these Terms. In the case of our mobile applications or native web applications, usage, payment, and other terms will be specified in that product's terms of service and each product may have additional terms as required."
+      "liability": {
+        "title": "Liability & termination",
+        "body": "Services are provided “as is.” To the fullest extent permitted by law, we are not liable for indirect or consequential damages. We may suspend or terminate access if these Terms are breached. Individual apps may have additional terms."
       },
-
-      "governingLaw&Changes": {
-        "title": "Governing Law and Changes",
-        "description": "These Terms are governed by the laws of the United States and Japan. We reserve the right to modify these Terms at any time. right to modify these Terms at any time. If a revision is material, we will provide at least 30 days' notice to all users of the Services."
+      "governingLaw": {
+        "title": "Governing law",
+        "body": "These Terms are governed by applicable laws of Japan and the United States. We may update these Terms; material changes will be posted with an updated date."
       },
-      "contactUs": {
-        "description": "If you have any questions about these Terms, please contact us at:"
+      "contact": {
+        "title": "Contact",
+        "body": "Questions about these Terms? Contact us at:"
       }
     }
   },
-
   "common": {
-    "title": "Shinano Labs",
-    "getInTouch": "Get in Touch",
-    "contactUs": "Contact Us",
-    "learnMore": "Learn More",
-    "learnAboutUs": "Learn About Us",
-    "appStore": "App Store",
-    "downloadOnAppStore": "Download on App Store",
-    "downloadNow": "Download Now",
-    "avaliblity": "Available Now",
-    "avaliblityIOS": "Available on iOS",
-    "exploreProducts": "Explore Our Products",
-    "backToProducts": "Back to Products",
-    "viewAllProducts": "View All Products",
-    "backtoHome": "Back to Home",
-    "updatedDate": " Last updated: ",
-    "cta": {
-      "title": "Ready to Create?",
-      "description": "Join our TestFlight to get early access to our creative tools and be part of our community."
-    },
+    "backToHome": "Back to Home",
+    "updatedDate": "Last updated: ",
     "email": {
-      "title": "Email",
       "address": "support@infinitytrigger.com"
     }
   },
-
-  "team": {
-    "hero": {
-      "title": "Meet Our Team",
-      "description1": "We're a small but passionate global team, primarily based in Nagano City, Japan, dedicated to building creative tools that celebrate human imagination.",
-      "description2": "Each of us brings unique perspectives and skills to create tools that we, as creatives, would want to use ourselves."
-    },
-    "teamMembers": {
-      "title": "The Creatives Behind Shinano Labs",
-      "subtitle": "Meet the minds building the next generation of tools for creators.",
-      "anthony": {
-        "name": "Anthony Lavizzo",
-        "role": "Founder & Lead Developer",
-        "description": "A software engineer with a passion for creative tools and storytelling.",
-        "location": "Nagano City, Japan"
-      },
-      "tanner": {
-        "name": "Tanner Galloway",
-        "role": "Full Stack Developer",
-        "description": "A software engineer with a passion for building responsive, user-friendly applications and websites. Responsible for localization, functionality, and code reviews.",
-        "location": "Arizona USA"
-      },
-      "john": {
-        "name": "John Appleseed",
-        "role": "Content Creator",
-        "description": "A writer and storyteller who crafts the creative prompts and content that inspire users to tell their own stories.",
-        "location": "Roppongi, Tokyo, Japan"
-      }
-    },
-    "approach": {
-      "title": "How We Work",
-      "description1": "We believe in the power of small teams and big ideas. While we're a compact size, it allows us to move quickly, make decisions efficiently, and maintain the personal touch that makes our tools feel human and remain approachable.",
-      "description2": "Every team member wears multiple hats, bringing diverse perspectives to every project. This collaborative approach ensures that our tools are built with both technical excellence and creative insight."
-    },
-    "values": {
-      "title": "What Drives Us",
-      "subtitle": "The principles that guide our team and our work.",
-      "collaboration": {
-        "title": "Collaboration",
-        "description": "We believe the best ideas come from working together. Every team member's voice matters, and we encourage open dialogue and creative problem-solving."
-      },
-      "innovation": {
-        "title": "Innovation",
-        "description": "We're constantly exploring new ways to enhance creativity. We experiment, iterate, and push boundaries to create tools that inspire and empower."
-      },
-      "authenticity": {
-        "title": "Authenticity",
-        "description": "We build tools that we would want to use ourselves. This means staying true to our values and creating authentic experiences that resonate with real creators."
-      }
-    },
-    "cta": {
-      "title": "Join Our Mission",
-      "description": "Want to learn more about what we do? We'd love to hear from you.",
-      "getInTouch": "Get In Touch",
-      "exploreProducts": "Explore Our Products"
-    }
-  },
-
   "metadata": {
-    "tabTitle": "Shinano Labs | Creative Tools for Creatives",
-    "description": "We make creative tools that celebrate human creativity. Discover Meanwhile and Myriad Worlds - apps designed to inspire your creative journey."
+    "tabTitle": "Shinano Labs",
+    "description": "Shinano Labs builds creative tools for human imagination—from Nagano, Japan."
   }
 }
