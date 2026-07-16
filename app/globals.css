@@ -90,4 +90,9 @@
   html {
     scroll-behavior: smooth;
   }
+
+  /* Syne descenders (g, y, etc.) clip under default heading line-heights */
+  .font-display {
+    overflow: visible;
+  }
 }

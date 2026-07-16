@@ -16,17 +16,24 @@
     "scrollCta": "See our apps",
     "apps": {
       "title": "What we're building",
-      "description": "Thoughtful apps for writers and storytellers. Open them on the App Store.",
-      "openAppStore": "Open in App Store",
+      "description": "Thoughtful apps for writers and storytellers. Download them where you create.",
+      "badges": {
+        "appStore": "Download on the App Store",
+        "playStore": "Get it on Google Play",
+        "web": "Visit website",
+        "comingSoon": "Coming soon"
+      },
       "meanwhile": {
         "title": "Meanwhile",
-        "subtitle": "Daily writing",
         "description": "A quiet daily writing companion with human-crafted prompts and streak tracking."
       },
       "myriadWorlds": {
         "title": "Myriad Worlds",
-        "subtitle": "Creative storytelling",
         "description": "Human-crafted stories under Creative Commons—starting points for your own adventures."
+      },
+      "bard": {
+        "title": "Bard",
+        "description": "A full novel-writing suite in your pocket. Craft the next great written work on the go."
       }
     }
   },
@@ -35,7 +42,7 @@
     "sections": {
       "introduction": {
         "title": "Introduction",
-        "body": "Shinano Labs (“we,” “our,” or “us”) respects your privacy. This policy explains how we handle personal data when you use our websites, apps (including Meanwhile and Myriad Worlds), or contact us."
+        "body": "Shinano Labs (“we,” “our,” or “us”) respects your privacy. This policy explains how we handle personal data when you use our websites, apps (including Meanwhile, Myriad Worlds, Bard, and Amethyst Writer), or contact us."
       },
       "dataWeCollect": {
         "title": "Information we collect",
@@ -64,7 +71,7 @@
       },
       "services": {
         "title": "Services",
-        "body": "We provide creative software and related digital services. We may update, suspend, or discontinue features at any time. Some Services may require an account; you are responsible for accurate information and keeping credentials secure."
+        "body": "We provide creative software and related digital services, including apps such as Meanwhile, Myriad Worlds, Bard, and Amethyst Writer. We may update, suspend, or discontinue features at any time. Some Services may require an account; you are responsible for accurate information and keeping credentials secure."
       },
       "intellectualProperty": {
         "title": "Intellectual property",

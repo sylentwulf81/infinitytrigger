@@ -16,17 +16,24 @@
     "scrollCta": "アプリを見る",
     "apps": {
       "title": "つくっているもの",
-      "description": "書き手と語り手のためのアプリ。App Storeからどうぞ。",
-      "openAppStore": "App Storeで開く",
+      "description": "書き手と語り手のためのアプリ。お好みのストアからどうぞ。",
+      "badges": {
+        "appStore": "App Storeからダウンロード",
+        "playStore": "Google Playで手に入れよう",
+        "web": "ウェブサイトを見る",
+        "comingSoon": "近日公開"
+      },
       "meanwhile": {
         "title": "Meanwhile",
-        "subtitle": "毎日の執筆",
         "description": "人が書いたプロンプトとストリーク機能のある、静かな日々の執筆コンパニオン。"
       },
       "myriadWorlds": {
         "title": "Myriad Worlds",
-        "subtitle": "創造的な物語",
         "description": "Creative Commonsの人の手による物語—あなた自身の冒険の出発点に。"
+      },
+      "bard": {
+        "title": "Bard",
+        "description": "ポケットの中の本格的な小説執筆スイート。移動中に、次の名作を紡ぎましょう。"
       }
     }
   },
@@ -35,7 +42,7 @@
     "sections": {
       "introduction": {
         "title": "はじめに",
-        "body": "Shinano Labs（「当社」）はプライバシーを尊重します。本ポリシーは、ウェブサイト、アプリ（Meanwhile、Myriad Worldsを含む）、またはお問い合わせの際に個人データをどのように扱うかを説明します。"
+        "body": "Shinano Labs（「当社」）はプライバシーを尊重します。本ポリシーは、ウェブサイト、アプリ（Meanwhile、Myriad Worlds、Bard、Amethyst Writerを含む）、またはお問い合わせの際に個人データをどのように扱うかを説明します。"
       },
       "dataWeCollect": {
         "title": "収集する情報",
@@ -64,7 +71,7 @@
       },
       "services": {
         "title": "サービス",
-        "body": "当社はクリエイティブソフトウェアおよび関連デジタルサービスを提供します。機能の更新・停止・終了を行うことがあります。アカウントが必要な場合、正確な情報の提供と認証情報の管理は利用者の責任です。"
+        "body": "当社はクリエイティブソフトウェアおよび関連デジタルサービス（Meanwhile、Myriad Worlds、Bard、Amethyst Writerなどのアプリを含む）を提供します。機能の更新・停止・終了を行うことがあります。アカウントが必要な場合、正確な情報の提供と認証情報の管理は利用者の責任です。"
       },
       "intellectualProperty": {
         "title": "知的財産",

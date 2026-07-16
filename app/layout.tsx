@@ -33,9 +33,32 @@ export async function generateMetadata() {
     namespace: "metadata",
   });
 
+  const title = translateMetadata("tabTitle");
+  const description = translateMetadata("description");
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : "https://www.shinanolabs.com");
+
   return {
-    title: translateMetadata("tabTitle"),
-    description: translateMetadata("description"),
+    metadataBase: new URL(siteUrl),
+    title,
+    description,
+    openGraph: {
+      type: "website",
+      locale: locale === "ja" ? "ja_JP" : "en_US",
+      siteName: "Shinano Labs",
+      title,
+      description,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
     icons: {
       icon: [
         { url: "/Assets/logo/shinano labs logo.png" },

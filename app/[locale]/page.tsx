@@ -53,11 +53,11 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* App highlights — link out, no subpages */}
+      {/* App highlights — store badges link out, no subpages */}
       <section id="apps" className="w-full py-20 md:py-28">
         <div className="container px-4 md:px-6">
           <div className="max-w-2xl mb-12 md:mb-16">
-            <h2 className="font-display text-3xl md:text-4xl font-semibold text-chocolate_cosmos dark:text-white_smoke">
+            <h2 className="font-display text-3xl md:text-4xl font-semibold leading-snug pb-1 text-chocolate_cosmos dark:text-white_smoke">
               {t("apps.title")}
             </h2>
             <p className="mt-3 text-lg text-chocolate_cosmos/70 dark:text-white_smoke/70">
@@ -65,22 +65,39 @@ export default async function Home() {
             </p>
           </div>
 
-          <div className="grid gap-5 md:gap-6 md:grid-cols-2 max-w-5xl">
+          <div className="grid gap-5 md:gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl">
             <AppHighlight
               title={t("apps.meanwhile.title")}
-              subtitle={t("apps.meanwhile.subtitle")}
               description={t("apps.meanwhile.description")}
-              href="https://apps.apple.com/us/app/meanwhile-daily-writing/id6742810856"
-              cta={t("apps.openAppStore")}
               accent="red"
+              locale={locale}
+              isAvailOnAppStore
+              appStoreUrl="https://apps.apple.com/us/app/meanwhile-daily-writing/id6742810856"
+              appStoreBadgeAlt={t("apps.badges.appStore")}
+              playStoreBadgeAlt={t("apps.badges.playStore")}
+              webLabel={t("apps.badges.web")}
             />
             <AppHighlight
               title={t("apps.myriadWorlds.title")}
-              subtitle={t("apps.myriadWorlds.subtitle")}
               description={t("apps.myriadWorlds.description")}
-              href="https://apps.apple.com/us/app/myriad-worlds/id6748325367"
-              cta={t("apps.openAppStore")}
               accent="blue"
+              locale={locale}
+              isAvailOnAppStore
+              appStoreUrl="https://apps.apple.com/us/app/myriad-worlds/id6748325367"
+              appStoreBadgeAlt={t("apps.badges.appStore")}
+              playStoreBadgeAlt={t("apps.badges.playStore")}
+              webLabel={t("apps.badges.web")}
+            />
+            <AppHighlight
+              title={t("apps.bard.title")}
+              description={t("apps.bard.description")}
+              accent="navy"
+              locale={locale}
+              isComingSoon
+              comingSoonLabel={t("apps.badges.comingSoon")}
+              appStoreBadgeAlt={t("apps.badges.appStore")}
+              playStoreBadgeAlt={t("apps.badges.playStore")}
+              webLabel={t("apps.badges.web")}
             />
           </div>
         </div>

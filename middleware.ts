@@ -7,7 +7,9 @@ export default createMiddleware({
   localePrefix: "never",
 });
 
-// This matcher ensures that the middleware applies to all routes except API routes, Next.js internals, and static files.
+// Skip API, Next internals, metadata images, and static files.
 export const config = {
-  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
+  matcher: [
+    "/((?!api|_next|_vercel|opengraph-image|twitter-image|favicon.ico|.*\\..*).*)",
+  ],
 };
