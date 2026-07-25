@@ -84,6 +84,35 @@
       }
     }
   },
+  "aiPosition": {
+    "title": "Our Position on AI",
+    "sections": {
+      "philosophy": {
+        "title": "Human imagination comes first",
+        "body": "Shinano Labs exists to amplify human creativity, not to replace it. We build tools for writers and storytellers because we believe the most meaningful work still comes from people. Our stance on artificial intelligence follows directly from that belief: technology should serve the imagination, then get out of the way."
+      },
+      "howWeUse": {
+        "title": "How we use AI",
+        "body": "Where AI genuinely helps—reducing friction, handling repetitive tasks, or surfacing possibilities—we may use it thoughtfully and transparently. When we do, it is in service of your creative voice, never a substitute for it.\n\nThe prompts in Meanwhile and the stories in Myriad Worlds are human-crafted. That is a deliberate choice, and one we intend to keep."
+      },
+      "whatWeWont": {
+        "title": "What we won't do",
+        "body": "We will not train models on your private work without clear, explicit consent. We will not pass off machine-generated content as human-made. And we will not build features whose main purpose is to remove the human from the creative process."
+      },
+      "yourWork": {
+        "title": "Your work is yours",
+        "body": "Anything you create in our apps belongs to you. We treat your writing as private by default and will always be clear about how any data is used—consistent with our Privacy Policy."
+      },
+      "evolving": {
+        "title": "A living position",
+        "body": "AI is changing quickly, and so is our thinking. We treat this as a living document and will update it as our tools and the wider landscape evolve. If your perspective differs from ours, we'd genuinely like to hear it."
+      },
+      "contact": {
+        "title": "Contact",
+        "body": "Questions or thoughts about our position on AI? Reach us at:"
+      }
+    }
+  },
   "common": {
     "backToHome": "Back to Home",
     "updatedDate": "Last updated: ",
